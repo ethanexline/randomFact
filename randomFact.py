@@ -119,10 +119,11 @@ ends = [" while @ was still president.", ", using QQ $ to chug a two-liter of mo
 ", utilizing only %% and %%.", ", causing @ to break QQ $.", ", causing @ to instantly grow new $s.", ", after which @ got QQ $ pierced.", " - in other words, " + madeUpWord(False) + "."]
 
 companies = ["Coca-Cola", "Monster Energy", "Frito-Lay", "Nestle", "Google", "Microsoft", "Minecraft", "JP Morgan", "Taco Bell", "Verizon", "US Cellular", "Cingular", 
-"VVCC Jeans, Inc.", "Lauris Online", "Fatheads", "Fiji Water", "Vance Refrigeration", "Disney", "Fox News", "MSNBC", "Walmart", "IKEA", "Snuggie", "FlexTape", 
+"VVCC Jeans, Inc.", "IBM", "Fatheads", "Fiji Water", "Vance Refrigeration", "Disney", "Fox News", "MSNBC", "Walmart", "IKEA", "Snuggie", "FlexTape", 
 "Piggly Wiggly", "Purple Flurp", "Facebook", "Twitter", "Doofenshmirtz Evil, Inc.", "Netflix", "Dunder Mifflin", "Apple", "WUPHF", "the Krusty Krab", "the Chum Bucket",
-"Doritoes", "Target", "PETA", "Gamestop", "Dogecoin", "Youtube", "Naughty Dog", "CoolMath Games", "Starbucks", "McDonald's", "Burger King", "Long John Silver's", 
-"Nintendo", "Sony", "Gfuel", "Gamer Goo", "Dunkin Donuts", "Raid: Shadow Legends", "Pixar", "Integrated Imaging"]
+"Doritoes", "Target", "PETA", "Gamestop", "Dogecoin", "Youtube", "Naughty Dog", "CoolMath Games", "McDonald's", "Burger King", "Long John Silver's", 
+"Nintendo", "Sony", "Gfuel", "Gamer Goo", "Dunkin Donuts", "Raid: Shadow Legends", "Pixar", "Popeye's", "Papa John's", "Tik Tok", "Buy N' Large", "Activision", "DreamWorks",
+"Starbucks", "Raid: Shadow Legends", "Blizzard", "FizzBuzz, Inc.", "Los Pollos Hermanos", "Amazon", "SpaceX", "Tesla", "Tumblr", "MySpace", "Reddit", "BitConnect", ""]
 
 celebs = ["Dolly Parton", "Robert Pattinson", "the Geico =CC", "the mascot for the Pittsburg Steelers", "the = from Air Bud", "Keanu Reeves", "the Car =CC", 
 "Ben Shapiro", "PewDiePie", "Elvis", "Nickelback", "Guy Fieri", "Gordon Ramsay", "a =", "a ^ =", "a ^ =", "The ^CC Man", "a ^ piece of fruit", 
@@ -134,11 +135,11 @@ celebs = ["Dolly Parton", "Robert Pattinson", "the Geico =CC", "the mascot for t
 "the Duke of Nuts", "Jake the =CC", "the Ice King", "Spongebob Squarepants", "QQ ^ VV", "Will Smith", "Miranda Cosgrove", "Drake and Josh", "the Burger King",
 "CatDog", "= =", "Arnold (from Hey Arnold)", "=CCMan", "The all-new Hyundai Sonata", "The ^CC $CC", "Joker (from Joker)", "Squidward", "Patrick",
 "Brendan Frasier", "Tommy Wiseau", "Kirby", "Bubsy", "Bigfoot", "Sonic the =CC", "Gurbanguly Berdimuhamedow", "Kim Jong Un", "Xi Jinping", "Moon Jae-in", 
-"Reggie Fils-Aime", "Yoshihide Suga", "Grandma", "Grandpa", "^CCMan", "Finn the =CC"]
+"Reggie Fils-Aime", "Yoshihide Suga", "Grandma", "Grandpa", "^CCMan", "Finn the =CC", "a _ employee"]
 
 places = ["^CC Jersey", "the ^CC States", "Europe", "Russia", "Asia", "Japan", "yo VV's house", "the sock drawer", "Madagascar", "Californ-I-A", "your soul", 
 "the corporate offices of _", "the ^CC House", "Yellowstone Park", "Italy", "the Pentagon", "Mt. Everest", "an underground city", "the dungeon", "a ^ city",
-"China", "Fiji", "India", "Pyongyang", "Seoul", "one of the Koreas", "the states of ^CC and ^CC Dakota", "Hell", "^CC Virginia", "^CC Carolina", 
+"China", "Fiji", "India", "Pyongyang", "Seoul", "one of the Koreas", "the states of ^CC and ^CC Dakota", "Hell", "^CC Virginia", "^CC Carolina", "Hell",
 "^CC York", "^CC Delhi", "Stonehenge", "Gramps' basement", "any given island in the Pacific Ocean", "the tip of the Statue of Liberty's torch", madeUpWord(True),
 "a ^ hill of termites", "the realm of the =CC Queen", "a store that only sells ^ pictures of @'s $", "#", "Disneyland", "Mt. Rushmore", "the Animal Kingdom",
 "Tokyo", "Beijing", "Athens", "Ancient Rome", "London", "Austrialia", "^CC Zealand", "Azerbaijan", "Heaven", "the University of +", "^CCLand", "^CC ^CCLand"]
@@ -164,7 +165,8 @@ theirReplacements = ["their", "its", "his/her", "the", "a", "her", "his", "de", 
 
 family = ["mom", "gramma", "grampa", "gramps", "grampie", "g-dizzle", "brother", "sister", "mother", "dad", "stepdad", "step-sister", "step-brother", "stepmom", "cousin",
 "great-great-great VV", "uncle", "aunt", "daddy", "mommy", "gruncle", "daughter", "son", "niece", "nephew", "&th cousin, & times removed", "father",
-"VV's VV's VV's great VV's great step-VV", "husband", "wife", "&th husband", "&th wife", "family", "sis", "bruv", "honey", "sweetie"]
+"VV's VV's VV's great VV's great step-VV", "husband", "wife", "&th husband", "&th wife", "family", "sis", "bruv", "honey", "sweetie", "baby", "teenage child", 
+"disgruntled employee"]
 
 def returnFact():
     fact = getRand(begs) + " " + getRand(parties) + " " + getRand(verbs) + " " + getRand(parties) + getRand(ends)
