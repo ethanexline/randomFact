@@ -78,7 +78,7 @@ begs = ["In other news,", "In light of today's events,", "Despite what you may h
 "Once upon a time,", "When you really think about it,", "Yesterday,", "Whenever @ looks ^, it's because", "In the year of Our Lord #,", 
 "In case you haven't heard yet,", "Through sheer | and |,", "If you ever have a ^ day, just remember", "In an act of desperation,", "^CCly, due to " + getRand(parties) + ", ",
 "If you squint and turn your head ^ly to the side, you'll see that", "Despite having ^ |,", "If a = or @ is attacking you, remember that", 
-"Wanna really get somebody's attention? Try screaming this:", "The German word " + madeUpWord(False) + " describes the situation where", 
+"Wanna really get somebody's attention? Try this:", "The German word " + madeUpWord(False) + " describes the situation where", 
 "The hidden country of " + madeUpWord(True) + " is where"]
 
 adjectives = ["dumb", "ugly", "brown", "fuchsia", "campy", "proverbial", "obtuse", "arrogant", "swollen", "frightening", "hungry", "diseased", "naked", "squirming", "^-$'ed", "surprising",
@@ -141,7 +141,7 @@ celebs = ["Dolly Parton", "Robert Pattinson", "the Geico =CC", "the mascot for t
 "Reggie Fils-Aime", "Yoshihide Suga", "Grandma", "Grandpa", "^CCMan", "Finn the =CC", "a _ employee", "Warren Buffet", "Billie Eilish", "Videogamedunkey", "Grover Cleveland", 
 "Thomas Edison", "Winnie the Pooh", "QuailMan", "Jeffery Bezos", "Vermin Supreme", "Chris Hemsworth", "Chevy Chase", "Dick Van Dyke", "Andy Griffith", "Bob Hope", 
 "Regis Philbin", "Dr. Phil", "Hulk Hogan", "Honey Boo-Boo", "Gordon Ramsay", "Bo Burnham", "Obamna", "Conan O'Brian", "Steve Carrell", 
-"Steve Harvey", "Tim Apple", "The One True =CC", "Peewee Herman", "Bill Nye the Science =", "me"]
+"Steve Harvey", "Tim Apple", "The One True =CC", "Peewee Herman", "Bill Nye the Science =", "me", "VVCC"]
 
 places = ["^CC Jersey", "the ^CC States", "Europe", "Russia", "Asia", "Japan", "yo VV's house", "the sock drawer", "Madagascar", "Californ-I-A", "your soul", 
 "the corporate offices of _", "the ^CC House", "Yellowstone Park", "Italy", "the Pentagon", "Mt. Everest", "an underground city", "the dungeon", "a ^ city",
@@ -161,7 +161,7 @@ animals = ["lion", "cat", "dog", "squid", "mollusk", "clam", "zebra", "axolotl",
 "porpoise", "Shamu", "frog", "pit bull", "eldritch being", "dingo", "indeterminate bug", "hedgehog", "toucan", "turtle", "lizard", "toad", "tiger"]
 
 parts = ["ear", "eyes", "nose", "earlobe", "right pinky toe", "patella", "&th eyelash from the right", "entire body", "&th nipple", "foot", "third foot", "top right incisor", 
-"tooth", "teeth", "elbow", "trick knee", "bellybutton", "fingernail", "beating heart", "brain", "xiphoid process", "tooth enamel", "skin", "armpit", "foot", "bottom leg", 
+"tooth", "teeth", "elbow", "bellybutton", "fingernail", "beating heart", "brain", "xiphoid process", "tooth enamel", "skin", "armpit", "foot", "bottom leg", 
 "spare rib", "cheek", "butt", "no-no square", "fingie", "upper lip", "glabella", "pituitary gland", "thyroid gland", "tear ducts", "epidermis", "nerve ending", "bunion", 
 "amygdala", "toe", "finger", "eye", "chest", "knee", "lower back", "upper back", "ab", "diaphragm", "tongue", "epiglottis", "vocal folds", "uvula", "stomach", "peep",
 "gut", "larynx", "esophagus", "pelvis", "tibia", "phalange", "skull", "head", "scapula", "spleen", "sacrum", "coccyx", "spine", "funny bone", "cerebral cortex", "brain stem", "neck",
@@ -372,6 +372,9 @@ def returnFact():
     
     if fact.find("les-") != -1:
         fact = fact.replace("les-", "less-")
+
+    if fact.find("Have you considered the fact that") != -1:
+        fact = fact.replace(".", "?")
 
     return fact
 
