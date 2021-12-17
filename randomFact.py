@@ -33,7 +33,9 @@ def madeUpWord(c):
     "bya", "slo", "chee", "nel", "oxna", "berni", "blau", "fie", "clae", "bakle", "voni", "swo", "bee", "mada", "modo", "meeker", "baert", "ski", "cue", "kae", "zena", "moomo", "momo",
     "chacha", "bingo", "tata", "fera", "voomoo", "slappy", "chundy", "boost", "naka", "badi", "voz", "minko", "bada", "nikler", "fedma", "seldu", "wudma", "dindy", "mek", "soo", "freg",
     "vee", "kla", "bu", "zoo", "fla", "show", "bunkna", "wip", "pelni", "zunksha", "chwee", "snad", "glin", "bup", "cod", "snif", "de", "chi", "gun", "po", "whop", "snooby", "borch", "fosk",
-    "tway", "shuk", "nax", "sub", "misk", "chap", "land", "ton", "waya", "asel", "fuer", "gaen", "fasha", "bubby"]
+    "tway", "shuk", "nax", "sub", "misk", "chap", "land", "ton", "waya", "asel", "fuer", "gaen", "fasha", "bubby", "besma", "golti", "bornsnap", "pumper", "xanathu", "gukky",
+    "forma", "gugmunger", "westler", "pango", "beesnog", "hollas", "ackaboob", "tit", "boob", "weewee", "snorp", "flexor", "ublubber", "kacky", "elemen", "yuckma", "kalora", 
+    "fabby", "underous"]
 
     while i < numGoes:
         word += getRand(wordParts)
@@ -73,31 +75,37 @@ verbs = ["got", "chuggled", "fell in love with the idea of", "slurped", "locked 
 "raised a ^ $ toward", "created the first prototype for", "envisioned a ^ future for", "proposed a toast to", "threw a ^ party to celebrate", "flew too close to", 
 "engaged in $-to-$ combat with", "started a restaurant that only serves", "joked about the size of @'s $ by referencing", "started a petition to outlaw", "held",
 "was cast as @ in a TV show about", "started a Kickstarter campaign to fund the creation of", "gave an unexpected proposal to", "became", "was transformed by a magic = into",
-"traveled to + with"]
+"traveled to + with", "saw a !! game with", "created a ^ sport where you try to recreate", "wore a ^ dress made of", "made * out of", "contracted a ^ case of ~ from",
+"was served fine *, which they paid for by pawning", "commit an armed robbery using", "began a criminal enterprise focused upon", "was marooned in + with only", 
+"prepared @'s favorite * using", "made a pilot for a show about", "climbed to the top of + using just", "climbed _'s corporate ladder by negotiating using QQ",
+"did groundbreaking research which discovered", "discovered that the secret to time travel is", "stole the secret recipe for * from", "built a factory to produce",
+"began a club that focuses on", "conquered QQ intense fear of", "felt a pang of | while mourning the loss of"]
 
 parties = ["a = wearing false teeth", "the President of +", "the most ^ haircut of all time", "your $ (but & inches in length)", "a =", "Flat Earth Theory",
-"nuclear war", "white people", "^ people", "^ stool", "a = that " + getRand(verbs) + " @", "the CFO of _", "a new street gang called 'the ^ VVs'", 
-"& push-ups", "a ^, ^ bodybuilder", "a = disguised as @", "a ^ly ^ Halloween costume", "the bathroom", "^ soup", "@'s new $s", "^ *",
- "a ^CC =CC Champion", "the annual _ dance-off", "Dracula (but if he was from +)", "a ^ly ^ handshake", "an extra set of $s",
-"^ly ^ *", "your ^ dentist", "@'s accountant", "a mirror that makes you look ^ly ^", "gorgonzola cheese", "the CEO of _", "liquid *",
+"nuclear war", "white people", "^ people", "^ stool", "a = that " + getRand(verbs) + " @", "the CFO of _", 'a new street gang called "the ^CC VVCCs"', 
+"& push-ups", "a ^, ^ bodybuilder", "a = disguised as @", "a ^ly ^ Halloween costume", "the bathroom", "^ soup", "@'s new $s", "^ *", 
+ "a ^CC =CC Champion", "the annual _ dance-off", "Dracula (but if he was from +)", "a ^ly ^ handshake", "an extra set of $s", "the coach of the !!",
+"^ly ^ *", "your ^ dentist", "@'s accountant", "a mirror that makes you look ^ly ^", "gorgonzola cheese", "the CEO of _", "liquid *", "Obama's last name",
 "the entire South Pole", "a stairway to +", "the reason you were born", "a ^ resignation letter", "a ^ly ^ almond", "a tree", "The World's Largest *CC",
-"barf", "^, ^ *", "a war between =s and =s", "a ^ly ^ corn dog", "a = with a tail that's just too ^", "a = with a =", "a = with too much |",
+"barf", "^, ^ *", "a war between =s and =s", "a ^ly ^ corn dog", "a = with a $ that's just too ^", "a = with a =", "a = with too much |", "a = with a ^ $",
 "the element of surprise", "a slip of the $", "hard, ^ drugs", "a banana that needs to be peeled & times", "* and *", "a perfect doppelganger for @",
-"the =CC President", "= enthusiasts", "attendees of a $ convention", "the stink eye", "the surface of the sun", "your VV's *", "@'s *", "a ='s $",
-"_-branded swag", "_'s holiday bash", "@", "@'s secret $", "@'s $", "#", "a program that teaches =s to speak +-ese", "@'s raison d'etre",
-"one of those small cheeses in wax", "toast", "two =s square-knotted together", "= cruelty", "2nd degree murder", "organized crime", "the NYPD", 
-"someone who looks vaguely like @", "*", "^ *", "a mountain of *", "^ gossip", "memes from #", "a ^ baby", "+", "animals", "plants", "dirt", 
-"butt", "immortality", "|", "=s", "= enthusiasts", "your $", "the $ of a =", " a = with & extra $s", "^ pants", "QQ VV wearing a @ costume", "QQ VV",
+"the =CC President", "= enthusiasts", "attendees of a $ convention", "the stink eye", "the surface of the sun", "your VV's *", "@'s *", "a ='s $", "a ='s *",
+"_-branded swag", "_'s holiday bash", "@", "@'s secret $", "@'s $", "#", "a program that teaches =s to speak +-ese", "@'s raison d'etre", "the !!", "an outbreak of ~",
+"one of those small cheeses in wax", "toast", "two =s square-knotted together", "= cruelty", "2nd degree murder", "organized crime", "the NYPD", "waaay too much *",
+"someone who looks vaguely like @", "*", "^ *", "a mountain of *", "^ gossip", "memes from #", "a ^ baby", "+", "animals", "plants", "dirt", "an active volcano",
+"butt", "immortality", "|", "=s", "= enthusiasts", "your $", "the $ of a =", " a = with & extra $s", "^ pants", "QQ VV wearing a @ costume", "QQ VV", "a ^ case of ~",
 "@'s VV's favorite VV", "your VV riding a =", "^ chicken nuggets", madeUpWord(False), "a ^ PR campaign", "~", "the asteroid belt", "@'s pet =", "the sun", "the moon"]
 
-begs = ["In other news,", "In light of today's events,", "Despite what you may have heard,", "He looked me right in the eye and said these exact words:", 
+begs = ["In other news,", "In light of today's events,", "Despite what you may have heard,", "QQVV looked me right in the $ and said:", 
 "Having been born in the year #,", "Despite a lifelong battle with ~,", "Picture this in your mind for a moment:", "Fun fact:", "Did you know?",
 "Have you considered the fact that", "My favorite childhood memory is when", "What's ^ is that mainstream media would have you believe", 
 "Once upon a time,", "When you really think about it,", "Yesterday,", "Whenever @ looks ^, it's because", "In the year of Our Lord #,", 
 "In case you haven't heard yet,", "Through sheer | and |,", "If you ever have a ^ day, just remember", "In an act of |,", "^CCly, due to " + getRand(parties) + ", ",
 "If you squint and turn your head ^ly to the side, you'll see that", "Despite having ^ |,", "If a = or @ is attacking you, remember that", 
 "Wanna really get somebody's attention? Lay one of these on 'em:", "The German word " + madeUpWord(False) + " describes the situation where", 
-"The hidden country of " + madeUpWord(True) + " is where"]
+"The hidden country of " + madeUpWord(True) + " is where", "To strike a balance between | and |,", "To fill your life with |,", "To fill your $ with |,",
+"To impart | into the $ of @, declare that", "To make @ feel |,", "Were you aware that", "If you ever visit +, ask the locals about how", "It fills me with | to know that",
+"What if", "What they teach in schools now is that", "An unprecendented turn of events:"]
 
 adjectives = ["dumb", "ugly", "brown", "fuchsia", "campy", "proverbial", "obtuse", "arrogant", "swollen", "frightening", "hungry", "diseased", "naked", "squirming", "^-$'ed", "surprising",
 "short", "rank", "malodorous", "cold", "long", "wide", "clammy", "strong", "stirring", "classy", "high-brow", "fat", "overweight", "wooden", "verdant", "al dente", "chewy", "fudgy",
@@ -114,83 +122,86 @@ adjectives = ["dumb", "ugly", "brown", "fuchsia", "campy", "proverbial", "obtuse
 "final", "innappropriate", "quick", "fluent", "odd", "weird", "unusual", "stupid", "suspicious", "slight", "confident", "exaggerated", "unwavering", "true", "real", "emotional",
 "physical", "spiritual", "virtual", "textural", "perfect", "hot", "male", "female", "broken", "stern", "whiny", "indignant", "bright", "massive", "bare", "deft", "swift",
 "convenient", "functional", "chic", "united", "greedy", "brash", "proud", "unstoppable", "floppy", "flailing", "full", "positive", "negative", "dirty", "fishy", "filthy",
-"candy", "iron", "bronzen", "flaxen", "golden", "rock-hard", "titanium", "VV's", madeUpWord(False), "moderate", "impressive", "successful", "unsuccessful", "hypothetical",
+"candy", "iron", "bronzen", "flaxen", "golden", "rock-hard", "titanium", madeUpWord(False), "moderate", "impressive", "successful", "unsuccessful", "hypothetical",
 "frozen", "melted", "acute", "instant", "amateur", "flat", "unprecedented", "uncouth", "unbecoming", "subpar", "violent", "unattractive", "edible", "sociable", "dangerous", 
-"fiscal", "invisible", "unexpected", "secret", "cool"]
+"fiscal", "invisible", "unexpected", "secret", "cool", "erect", "sexy", "appalling", "horrifying", "American", "European", "Asian", "African"]
 
 concepts = ["gusto", "fervor", "panache", "restraint", "sense of style", "wherewithall", "curiosity", "warrior's heart", "pride", "luck", "chastity", "charity", "joy", "wonder", 
-"passion", "delicacy", "peace", "understanding", "va-va-voom", "^ strut", "exaggerated swagger", "ingenuity", "self-control", "spirit", "innovation", "clarity", "je ne sais quoi",
-"love", "nerve", "hutzpah", "cacahuetes", "resolve", "verve", "boldness", "^ genius", "grit", "determination", "hunger", "rage", "nostalgia", "melancholy", "wistfulness",
+"passion", "delicacy", "peace", "understanding", "va-va-voom", "swagger", "ingenuity", "self-control", "spirit", "innovation", "clarity", "je ne sais quoi",
+"love", "nerve", "hutzpah", "cacahuetes", "resolve", "verve", "boldness", "genius", "grit", "determination", "hunger", "rage", "nostalgia", "melancholy", "wistfulness",
 "longing", "resilience", "wit", "faith", "honor", "candor", "serenity", "hope", "patience", "kindness", "cheer", "goodwill", "can-do attitude", "spirit", "moxie", "soul",
 "joie de vivre", "virtue", "courage", "fire", "selflessness", "pride", "glamour", "$", madeUpWord(False), "culture", "disdain", "apprehension", "hesitancy", "cowardice", 
-"evil", "coldness", "underhandedness", "subtlety", "visibility", "sausage", "pancakes", "stupor", "stones", "~", "*", "ambition", "fear", "shame", "desperation"]
+"evil", "coldness", "underhandedness", "subtlety", "visibility", "sausage", "pancakes", "stupor", "stones", "~", "*", "ambition", "fear", "shame", "desperation", "security"]
 
 ends = [" while @ was still president.", ", using QQ $ to chug a two-liter of liquid *.", " with the | of a ^ =.", " - how ^ is that?", 
 ", which, ^ly, broke the world record.", ", because that's what ^ | looks like.", ", cause money don't grow on " + getRand(parties) + ".", 
 " - however, this angered the envoy from +, starting World War &.", ", and that's a fact.", " with a | far beyond the norm.", " whilst fending off ^ ladies with a ^ spatula.",
-" as part of a ^ comedy routine.", ", starting a new dance craze on Tik Tok.", ", inspiring @ to paint a ^ picture of @.", ", inspiring @ to found _.",
+" as part of a ^ comedy routine.", ", starting a new dance craze on _'s video-sharing hub.", ", inspiring @ to paint a ^ picture of @.", ", inspiring @ to found _.",
 ", landing them in ^ water with +.", ", which @ then made a ^ joke about on _'s new social media platform.", ", which jumpstarted @'s | for +'s |.", 
 ", which makes @ feel like a ^ =.", ", which gave @ ~.", ", which has to be the most ^ way to lose weight.", ", so, ha.", " - thanks a lot, VV!", ". ;)", 
 ", which took a lot of |.", " to prove to QQ VV that they have ^ |.", ", in hopes that it would make @ notice QQ |.", ", which prompted @ to cancel them on Twitter.", 
-" - thank goodness!", " - the three words I'd use to describe this would be ^, ^, and ^!", " - what a ^ time to be ^!", " - what a ^ way to have been " + getRand(verbs) + "!", 
+" - thank goodness!", " - the three words I'd use to describe this would be ^, ^, and ^!", " - what a ^ time to be ^!", " - what a ^ way to have " + getRand(verbs) + "!", 
 " - what a ^ way to have been " + getRand(verbs) + "!", " - what a ^ way to have been " + getRand(verbs) + "!", " by sitting and thinking very hard about %%.",
 " by the $ of @.", " - now that shows some ^ |!", " - now that takes some |!", " - seems a bit ^ to me...", ", which is SO not ^.", ", giving everyone ~.",
 ", utilizing only %% and %%.", ", causing @ to break QQ $.", ", causing @ to instantly grow new $s.", ", after which @ got QQ $ pierced.", " - in other words, " + madeUpWord(False) + ".",
-", permanently eradicating ~.", ", which gave @ ~.", ", curing @'s ~.", ", which is how @ and @ met.", ", which was @'s entry into politics."]
+", permanently eradicating ~.", ", which gave @ ~.", ", curing @'s severe case of ~.", ", which is how @ and @ met.", ", which was @'s entry into politics.", ", earning QQ spot on the !!.",
+", which should fill you with |."]
 
 companies = ["Coca-Cola", "Monster Energy", "Frito-Lay", "Nestle", "Google", "Microsoft", "Minecraft", "JP Morgan", "Taco Bell", "Verizon", "US Cellular", "Cingular", 
-"VVCC Jeans, Inc.", "IBM", "Fatheads", "Fiji Water", "Vance Refrigeration", "Disney", "Fox News", "MSNBC", "Walmart", "IKEA", "Snuggie", "FlexTape", 
-"Piggly Wiggly", "Purple Flurp", "Facebook", "Twitter", "Doofenshmirtz Evil, Inc.", "Netflix", "Dunder Mifflin", "Apple", "WUPHF", "the Krusty Krab", "the Chum Bucket",
+"VVCC Jeans, Inc", "IBM", "Fatheads", "Fiji Water", "Vance Refrigeration", "Disney", "Fox News", "MSNBC", "Walmart", "IKEA", "Snuggie", "FlexTape", 
+"Piggly Wiggly", "Purple Flurp", "Facebook", "Twitter", "Doofenshmirtz Evil, Inc", "Netflix", "Dunder Mifflin", "Apple", "WUPHF", "the Krusty Krab", "the Chum Bucket",
 "Doritoes", "Target", "PETA", "Gamestop", "Dogecoin", "Youtube", "Naughty Dog", "CoolMath Games", "McDonald's", "Burger King", "Long John Silver's", 
 "Nintendo", "Sony", "Gfuel", "Gamer Goo", "Dunkin Donuts", "Raid: Shadow Legends", "Pixar", "Popeye's", "Papa John's", "Tik Tok", "Buy N' Large", "Activision", "DreamWorks",
-"Starbucks", "Raid: Shadow Legends", "Blizzard", "FizzBuzz, Inc.", "Los Pollos Hermanos", "Amazon", "SpaceX", "Tesla", "Tumblr", "MySpace", "Reddit", "BitConnect", "The Dentist",
+"Starbucks", "Raid: Shadow Legends", "Blizzard", "FizzBuzz, Inc", "Los Pollos Hermanos", "Amazon", "SpaceX", "Tesla", "Tumblr", "MySpace", "Reddit", "BitConnect", "The Dentist",
 "Cost Cutters", "Dr. Pepper", "Pepsi", "GameStop"]
 
-celebs = ["Dolly Parton", "Robert Pattinson", "the Geico =CC", "the mascot for the Pittsburg Steelers", "the = from Air Bud", "Keanu Reeves", "the Car =CC", 
-"Ben Shapiro", "PewDiePie", "Elvis", "Nickelback", "Guy Fieri", "Gordon Ramsay", "a =", "a ^ =", "a ^ =", "The ^CC Man", "a ^ piece of fruit", 
+celebs = ["Dolly Parton", "Robert Pattinson", "the Geico =CC", "the mascot for the !!", "the = from Air Bud", "Keanu Reeves", "the Car =CC", 
+"Ben Shapiro", "PewDiePie", "Elvis", "Nickelback", "Guy Fieri", "Gordon Ramsay", "a =", "a ^ =", "a ^ =", "The ^CC Man", "a ^ piece of fruit", "Obama",
 "Michael Scott", "Ghandi", "the Pope", "Jimmy Neutron", "Carl Wheezer", "the Pillsbury Dough Boy", "Jake Paul", "Logan Paul", "you", "your VVCC", "Jeff Dunham", 
 "Dane Cook", "George Washington", "Thomas Jefferson", "Abraham Lincoln", "Plato", "Aristotle", "Leonardo Da Vinci", "John Kennedy", "Isaac Newton", "Albert Einstein", 
 "Will Ferrel", "Ariana Grande", "Paul Revere", "Queen Elizabeth", "Christopher Columbus", "JK Rowling", "Pablo Picasso", "Cuddles", "Walt Disney", "Winston Churchill", 
 "Elon Musk", "Bill Gates", "Jeff Bezos", "Steve Irwin", "Billy Mays", "the ^ guy from Friends", "the ^ girl from The Office", "Chester Cheeto", "Reggie Fils-Aime",
 "Tony the =CC", "=CC Sam", "the Trix =CC", "John Mayer", "Elvis", "the Prince of |CC", "the Prince of *CC", "Mario", "Luigi", "Waluigi", "your favorite =", 
 "the Duke of Nuts", "Jake the =CC", "the Ice King", "Spongebob Squarepants", "QQ ^ VV", "Will Smith", "Miranda Cosgrove", "Drake and Josh", "the Burger King",
-"CatDog", "= =", "Arnold (from Hey Arnold)", "=CCMan", "The all-new Hyundai Sonata", "The ^CC $CC", "Joker (from Joker)", "Squidward", "Patrick",
-"Brendan Frasier", "Tommy Wiseau", "Kirby", "Bubsy", "Bigfoot", "Sonic the =CC", "Gurbanguly Berdimuhamedow", "Kim Jong Un", "Xi Jinping", "Moon Jae-in", 
+"CatDog", "= =", "Arnold (from Hey Arnold)", "=CCMan", "The all-new Hyundai Sonata", "The ^CC $CC", "Joker (from Joker)", "Squidward", "Patrick", "Hoobastank",
+"Brendan Frasier", "Tommy Wiseau", "Kirby", "Bubsy", "Bigfoot", "Sonic the =CC", "Gurbanguly Berdimuhamedow", "Kim Jong Un", "Xi Jinping", "Moon Jae-in", "Death",
 "Reggie Fils-Aime", "Yoshihide Suga", "Grandma", "Grandpa", "^CCMan", "Finn the =CC", "a _ employee", "Warren Buffet", "Billie Eilish", "Videogamedunkey", "Grover Cleveland", 
 "Thomas Edison", "Winnie the Pooh", "QuailMan", "Jeffery Bezos", "Vermin Supreme", "Chris Hemsworth", "Chevy Chase", "Dick Van Dyke", "Andy Griffith", "Bob Hope", 
 "Regis Philbin", "Dr. Phil", "Hulk Hogan", "Honey Boo-Boo", "Gordon Ramsay", "Bo Burnham", "Obamna", "Conan O'Brian", "Steve Carrell", "James Brown", "Michael Jackson",
-"Steve Harvey", "Tim Apple", "The One True =CC", "Peewee Herman", "@, the ^CC =CC", "me", "VVCC", "Ronald McDonald", "*CCMan", "George RR Martin", "George Bush"]
+"Steve Harvey", "Tim Apple", "The One True =CC", "Peewee Herman", '@ AKA "the ^CC =CC"', "me", "VVCC", "Ronald McDonald", "*CCMan", "George RR Martin", "George Bush"]
 
 places = ["^CC Jersey", "the ^CC States", "Europe", "Russia", "Asia", "Japan", "yo VV's house", "the sock drawer", "Madagascar", "Californ-I-A", "your soul", 
-"the corporate offices of _", "the ^CC House", "Yellowstone Park", "Italy", "the Pentagon", "Mt. Everest", "an underground city", "the dungeon", "a ^ city",
+"the corporate offices of _", "the ^CC House", "Yellowstone Park", "Italy", "the Pentagon", "Mount Everest", "an underground city", "the dungeon", "a ^ city",
 "China", "Fiji", "India", "Pyongyang", "Seoul", "one of the Koreas", "the states of ^CC and ^CC Dakota", "Hell", "^CC Virginia", "^CC Carolina", "Hell",
 "^CC York", "^CC Delhi", "Stonehenge", "Gramps' basement", "any given island in the Pacific Ocean", "the tip of the Statue of Liberty's torch", madeUpWord(True),
-"a ^ hill of termites", "the realm of the =CC Queen", "a store that only sells ^ pictures of @'s $", "#", "Disneyland", "Mt. Rushmore", "the Animal Kingdom",
+"a ^ hill of termites", "the realm of the =CC Queen", "$CCs-R-Us", "#", "Disneyland", "Mount Rushmore", "the Animal Kingdom",
 "Tokyo", "Beijing", "Athens", "Ancient Rome", "London", "Austrialia", "^CC Zealand", "Azerbaijan", "Heaven", "the University of +", "^CCLand", "^CC ^CCLand", "Flat Earth",
-"*CCLand", "=CCLand"]
+"*CCLand", "=CCLand", "_'s headquarters"]
 
 animals = ["lion", "cat", "dog", "squid", "mollusk", "clam", "zebra", "axolotl", "rhino", "tiger", "lamb", "octopus", "antelope", "fawn", "llama", "parrot", "whale", 
 "geoduck", "barnacle", "snail", "slug", "squirrel", "giraffe", "dingo", "wolf", "coyote", "hyena", "ocelot", "puma", "mountain lion", "fox", "polar bear", "grizzly bear", 
 "goldfish", "monkey", "spider monkey", "chimpanzee", "brown bear", "black bear", "lemur", "chihuahua", "flounder", "clownfish", "dolphin", "scallop", "sphinx", "griffin", 
 "dragon", "donkey", "unicorn", "yokai", "mouse", "rat", "pig", "cow", "bull", "dove", "shrew", "armadillo", "pangolin", "anteater", "snake", "viper", "cobra", "orangutan", 
-"rabbit", "bunny", "jackalope", "chimera", "cerberus", "manticore", "scorpion", "mosquito", "horse fly", "ladybug", "black widow", "brown recluse", "wolf spider", "human",
+"rabbit", "bunny", "jackalope", "chimera", "cerberus", "manticore", "scorpion", "mosquito", "horsefly", "ladybug", "black widow", "brown recluse", "wolf spider", "human",
 "dung beetle", "salamander", "firedrake", "wendigo", "wyvern", "sea lion", "pokemon", "goat", "cheetah", "animal", "worm", "lizard", "fish", "person", "hamster", "chick", "mushroom",
 "labrador", "pit bull", "schnauzer", "beetle", "rodent", "feline", "canine", "bovine", "grandaddy long legs", "weevil", "earwig", "silverfish", "android", "cyborg", "wizard", 
-"leopard", "elephant", "newt", "jellyfish", "mandrake", "sentient plant", "talking =", "panda", "lizard", "doberman", "beagle", "yorkie", "hare", "VV", "beetle", "tarantula", 
-"porpoise", "frog", "pit bull", "eldritch being", "dingo", "indeterminate bug", "hedgehog", "toucan", "turtle", "lizard", "toad", "tiger"]
+"leopard", "elephant", "newt", "jellyfish", "mandrake", "sentient plant", "talking =", "panda", "lizard", "doberman", "beagle", "yorkie", "jackrabbit", "VV", "beetle", "tarantula", 
+"porpoise", "frog", "pit bull", "eldritch being", "dingo", "indeterminate bug", "hedgehog", "toucan", "turtle", "lizard", "toad", "tiger", "roach", "insect", "arachnid", 
+"cockroach", "butterfly", "caterpillar", "dragonfly", "behemoth", "mole", "mantis", "monster", "moth", "reptile", "amphibian", "mammal", "bird", "flamingo", "penguin",
+"centipede", "devil", "demon", "angel", "eagle", "hawk", "falcon", "owl", "parrot", "peacock", "pigeon", "man", "woman"]
 
 parts = ["ear", "eyes", "nose", "earlobe", "right pinky toe", "patella", "&th eyelash from the right", "entire body", "&th nipple", "foot", "third foot", "top right incisor", 
-"tooth", "teeth", "elbow", "bellybutton", "fingernail", "beating heart", "brain", "xiphoid process", "tooth enamel", "skin", "armpit", "foot", "bottom leg", 
+"tooth", "teeth", "elbow", "bellybutton", "fingernail", "brain", "xiphoid process", "tooth enamel", "skin", "armpit", "foot", "bottom leg", 
 "spare rib", "cheek", "butt", "no-no square", "fingie", "upper lip", "glabella", "pituitary gland", "thyroid gland", "tear ducts", "epidermis", "nerve ending", "bunion", 
 "amygdala", "toe", "finger", "eye", "chest", "knee", "lower back", "upper back", "ab", "diaphragm", "tongue", "epiglottis", "vocal folds", "uvula", "stomach", "peep",
 "gut", "larynx", "esophagus", "pelvis", "tibia", "phalange", "skull", "head", "scapula", "spleen", "sacrum", "coccyx", "spine", "funny bone", "cerebral cortex", "brain stem", "neck",
 "mouth", "inner thigh", "urethra", "pancreas", "lung", "gallbladder", "appendix", "rectum", "hand", "chest hand", "limb", "beard", "foots", "sternum", "callous", "scalp", 
-"frenulum", "pie hole", "tush", "teat", "sausage", "ovaries", "nostril", "eardrum"]
+"frenulum", "pie hole", "tush", "teat", "sausage", "ovaries", "nostril", "eardrum", "tummy"]
 
 disease = ["$ cancer", "diabetes", "$ swelling", "$ destruction", "$ blockage", "$ parasites", "$ failure", "$ erosion", "$ disease", "$ infection", "AIDS", "claustrophobia", 
 "HIV", "MRSA", "food poisoning", "$ depression", "asthma", "anxiety", "alcoholism", "impulsive shopping", "darwinism", "halitosis", "gynecomastia", "gastroenteritis", 
 "anal fissures", "^ $ pain", "ugliness", "having a weird $", "= $", "pregnancy", "obesity", "sociopathy", "antidisestablishmentarianism", "pneumonoultramicroscopicsilicovolcanoconiosis",
-"gastroenteritis", "PMS", "athlete's foot", "complementarianism", "extra limbs", "kidney stones", "broken $", "^ $", "hotdog finger", "count-choculitis", 
+"gastroenteritis", "PMS", "athlete's foot", "complementarianism", "extra limbs", "kidney stones", "broken $", "^-$", "hotdog finger", "count-choculitis", 
 "spontaneous dental hydroplosion", "chronic ~", "swine flu", "literally every STI", "loss of $", "diminished |", "vitamin deficiency"]
 
 theirReplacements = ["their", "its", "his/her", "the", "a", "her", "his", "de", "@'s", "your", "my"]
@@ -206,17 +217,26 @@ foods = ["broccoli", "carrots", "cabbages", "cauliflower", "celery", "creamed co
 "cranberries", "strawberries", "blueberries", "raspberries", "blackberries", "grapes", "grapefruits", "kiwis", "lemons", "limes", "oranges", "plums", "pomegranates", "pumpkins", "hamburgers", 
 "hot dogs", "sandwiches", "sausages", "pepperonis", "salamis", "fried chicken", "collard greens", "lettuce", "pasta", "sushi", "fish", "gravy", "pork", "beef", "bacon", "steak",
 "alcohol", "lemonade", "cola", "soda", "coffee", "tea", "salsa", "refried beans", "curry", "chili", "chowder", "stew", "mashed potatoes", "tacos", "lo mein", "matcha", "almonds",
-"brussels sprouts", "milk", "anchovies", "avocados", "coconuts", "coconut milk", "coconut oil", "coconut water", "custard", "dressing", "egg whites", "nuts",
-"mustard", "ketchup", "mayonnaise", "olive oil", "pickles", "* juice", "fried =", "= oil", "= juice", "= sauce", "boiled =", "baked =", "cooked ="]
+"brussels sprouts", "milk", "anchovies", "avocados", "coconuts", "coconut milk", "coconut oil", "coconut water", "custard", "dressing", "egg whites", "nuts", "pudding",
+"mustard", "ketchup", "mayonnaise", "olive oil", "pickles", "* juice", "fried =", "= oil", "= juice", "= sauce", "boiled =", "baked =", "cooked =", "pancakes", "filet mignon",
+"eggs benedict", "beef wellington", "quail", "= grease", "= milk", "syrup", "= concentrate", "cream of *", "cream of =", "= eggs"]
+
+teams = ["Arizona Cardinals", "Atlanta Falcons", "Baltimore Ravens", "Buffalo Bills", "Carolina Panthers", "Chicago Bears", "Cincinnati Bengals", "Cleveland Browns", 
+"Dallas Cowboys", "Denver Broncos", "Detroit Lions", "Green Bay Packers", "Houston Texans", "Indianapolis Colts", "Jacksonville Jaguars", "Kansas City Chiefs",
+"Las Vegas Raiders", "Los Angeles Chargers", "Los Angeles Rams", "Miami Dolphins", "Minnesota Vikings", "New England Patriots", "New Orleans Saints", "New York Giants",
+"New York Jets", "Philadelphia Eagles", "Pittsburgh Steelers", "San Francisco 49ers", "Seattle Seahawks", "Tampa Bay Buccaneers", "Tennessee Titans", "Washington Football Team"
+]
 
 # ideas: quantities, occasions, colors
-# less necessary but still options: teams, sports
+# less necessary but still options: sports
 
 def returnFact():
     fact = getRand(begs) + " " + getRand(parties) + " " + getRand(verbs) + " " + getRand(parties) + getRand(ends)
+    #fact = "=CCLand" # test fact
     
     while (fact.find("_") != -1 or fact.find("#") != -1 or fact.find("@") != -1 or fact.find("&") != -1 or fact.find("+") != -1 or fact.find("^") != -1 or fact.find("|") != -1 
-    or fact.find("=") != -1 or fact.find("%%") != -1 or fact.find("$") != -1 or fact.find("QQ") != -1 or fact.find("VV") != -1)or fact.find("~") != -1 or fact.find("*") != -1:
+    or fact.find("=") != -1 or fact.find("%%") != -1 or fact.find("$") != -1 or fact.find("QQ") != -1 or fact.find("VV") != -1 or fact.find("~") != -1 or fact.find("*") != -1
+    or fact.find("!!") != -1):
         if fact.find("_") != -1:
             fact = fact.replace("_", getRand(companies), 1)
 
@@ -283,11 +303,18 @@ def returnFact():
                 fact = fact.replace("|", getRand(concepts), 1)
 
         if fact.find("QQ") != -1:
-            fact = fact.replace("QQ", getRand(theirReplacements), 1)
+            if fact.find("QQCC") != -1:
+                fact = fact.replace("QQCC", getRand(theirReplacements).title(), 1)
+            else:
+                fact = fact.replace("QQ", getRand(theirReplacements), 1)
 
         if fact.find("VV") != -1:
             if fact.find("VVCC") != -1:
                 fact = fact.replace("VVCC", getRand(family).title(), 1)
+                if fact.find("'S") != -1:
+                    fact = fact.replace("'S", "'s", 1)
+                if fact.find("VV") != -1:
+                    fact = fact.replace("VV", "VVCC", 1)
             else:
                 fact = fact.replace("VV", getRand(family), 1)
 
@@ -295,29 +322,26 @@ def returnFact():
             if fact.find("= =") != -1:
                 fact = fact.replace("= =", getRand(animals).title().replace(" ", "") + getRand(animals).title().replace(" ", ""))
             if fact.find("=CCMan") != -1:
-                fact = fact.replace("=CCMan", getRand(animals).title().replace(" ", "") + "Man")
+                replacement = getRand(animals)
+                if replacement.find("VV") != -1:
+                    replacement = replacement.replace("VV", "VVCC", 1)
+                if replacement.find("=") != -1:
+                    replacement = replacement.replace("=", "=CC", 1).replace(" ", "")
+                fact = fact.replace("=CCMan", replacement.title().replace(" ", "") + "Man")
+            if fact.find("=CCLand") != -1:
+                replacement = getRand(animals)
+                if replacement.find("VV") != -1:
+                    replacement = replacement.replace("VV", "VVCC", 1)
+                if replacement.find("=") != -1:
+                    replacement = replacement.replace("=", "=CC", 1).replace(" ", "")
+                fact = fact.replace("=CCLand", replacement.title().replace(" ", "").replace("'", "").replace("-", "") + "Land", 1)
             if fact.find("=CC") != -1:
                 replacement = getRand(animals).title()
                 if replacement.find("=") != -1:
-                    replacement.replace("=", "=CC")
-                fact = fact.replace("=CC", replacement, 1)
-            elif fact.find("=CCLand") != -1:
-                replacement = getRand(animals)
-                replacement = replacement[:-2] if replacement[-1] != "s" else replacement
-                if replacement.find("=") != -1:
-                    replacement = replacement.title().replace(" ", "").replace("'", "").replace("-", "")
                     replacement = replacement.replace("=", "=CC")
-                    fact = fact.replace("=CC", replacement, 1)
-                else:
-                    fact = fact.replace("=CCLand", replacement.title().replace(" ", "").replace("'", "").replace("-", "") + "Land", 1)
-            elif fact.find("=CC") != -1:
-                replacement = getRand(animals)
-                replacement = replacement[:-2] if replacement[-1] != "s" else replacement
-                if replacement.find("=") != -1:
-                    replacement = replacement.replace("=", "=CC").title()  
-                    fact = fact.replace("=CC", replacement, 1)
-                else:
-                    fact = fact.replace("=CC", replacement.title(), 1)
+                if (fact.find("Land") != -1 or fact.find("Man") != -1) and replacement.find(" ") != -1:
+                    replacement = replacement.replace(" ", "")
+                fact = fact.replace("=CC", replacement, 1)
             else:
                 fact = fact.replace("=", getRand(animals), 1)
 
@@ -330,6 +354,8 @@ def returnFact():
                 if replacement.find("^") != -1:
                     replacement = replacement.replace("^", "^CC").title()  
                     fact = fact.replace("$CC", replacement, 1)
+                if replacement.find("R-Us") != -1:
+                    fact = fact.replace("$CC", replacement.title().replace(" ", ""), 1)
                 else:
                     fact = fact.replace("$CC", replacement.title(), 1)
             else:
@@ -348,14 +374,23 @@ def returnFact():
                     replacement = replacement.title().replace(" ", "").replace("'", "").replace("-", "")
                     replacement = replacement.replace("*", "*CC")
                     fact = fact.replace("*CC", replacement, 1)
+                if replacement.find("=") != -1:
+                    replacement = replacement.replace("=", "=CC").replace(" ", "").replace("'", "").replace("-", "")
+                    fact = fact.replace("*CC", replacement, 1)
                 else:
                     fact = fact.replace("*CCMan", replacement.title().replace(" ", "").replace("'", "").replace("-", "") + "Man", 1)
             elif fact.find("*CCLand") != -1:
                 replacement = getRand(foods)
                 replacement = replacement[:-1] if replacement[-1] == "s" else replacement
                 if replacement.find("*") != -1:
-                    replacement = replacement.title().replace(" ", "").replace("'", "").replace("-", "")
+                    replacement = replacement.title()
+                    replacement = replacement.replace(" ", "").replace("'", "").replace("-", "")
                     replacement = replacement.replace("*", "*CC")
+                    fact = fact.replace("*CC", replacement, 1)
+                if replacement.find("=") != -1:
+                    replacement = replacement.title()
+                    replacement = replacement.replace(" ", "").replace("'", "").replace("-", "")
+                    replacement = replacement.replace("=", "=CC")  
                     fact = fact.replace("*CC", replacement, 1)
                 else:
                     fact = fact.replace("*CCLand", replacement.title().replace(" ", "").replace("'", "").replace("-", "") + "Land", 1)
@@ -365,16 +400,28 @@ def returnFact():
                 if replacement.find("*") != -1:
                     replacement = replacement.replace("*", "*CC").title()  
                     fact = fact.replace("*CC", replacement, 1)
+                if replacement.find("=") != -1:
+                    replacement = replacement.replace("=", "=CC").title()  
+                    fact = fact.replace("*CC", replacement, 1)
                 else:
                     fact = fact.replace("*CC", replacement.title(), 1)
             else:
                 fact = fact.replace("*", getRand(foods), 1)
+
+        if fact.find("!!") != -1:
+            fact = fact.replace("!!", getRand(teams), 1)
 
         if fact.find("Vv") != -1:
             fact = fact.replace("Vv", "VV", 1)
 
         if fact.find("Cc") != -1:
             fact = fact.replace("Cc", "CC", 1)
+
+        if fact.find("Vvcc") != -1:
+            fact = fact.replace("Vvcc", "VVCC", 1)
+
+        if fact.find("VVcc") != -1:
+            fact = fact.replace("VVcc", "VVCC", 1)
 
     if fact.find(" a ") != -1:
         aCount = fact.count(" a ")
@@ -407,7 +454,10 @@ def returnFact():
     if fact.find("yl") != -1 and fact.find("style") == -1 and fact.find("Disneyland") == -1 and fact.find("style") == -1:
         fact = fact.replace("yl", "il")
 
-    if fact.find("ys") != -1 and fact.find("Mays") == -1 and fact.find("physical") == -1 and fact.find("MySpace") == -1 and fact.find("donkeys") == -1:
+    if fact.find("yly") != -1:
+        fact = fact.replace("yly", "ily")
+
+    if fact.find("ys") != -1 and fact.find("Mays") == -1 and fact.find("physical") == -1 and fact.find("MySpace") == -1 and fact.find("donkeys") == -1 and fact.find("Cowboys") == -1:
         fact = fact.replace("ys", "ies")
 
     if fact.find("a the") != -1 and fact.find("Grandpa") == -1:
@@ -422,7 +472,7 @@ def returnFact():
     if fact.find("ss,") != -1 and fact.find("ess,") == -1:
         fact = fact.replace("ss,", "ses,")
 
-    if fact.find("hs") != -1 and fact.find("fuchsia") == -1 and fact.find("Fuchsia") == -1 and fact.find("thighs") == -1 and fact.find("Thighs") == -1 and fact.find("mouths") == -1 and fact.find("Mouths") == -1:
+    if fact.find("hs") != -1 and fact.find("fuchsia") == -1 and fact.find("Fuchsia") == -1 and fact.find("thighs") == -1 and fact.find("Thighs") == -1 and fact.find("mouths") == -1 and fact.find("Mouths") == -1 and fact.find("moths") == -1 and fact.find("Moths") == -1:
         fact = fact.replace("hs", "hes")
 
     if fact.find("lll") != -1:
@@ -443,23 +493,26 @@ def returnFact():
     if fact.find("les-") != -1:
         fact = fact.replace("les-", "less-")
 
-    if fact.find("Have you considered the fact that") != -1:
+    if fact.find("Have you considered the fact that") != -1 or fact.find("What if") != -1 or fact.find("Were you aware that") != -1:
         fact = fact.replace(".", "?")
 
-    if fact.find("been gave") != -1:
-        fact = fact.replace("been gave", "been given")
+    if fact.find("have gave") != -1:
+        fact = fact.replace("have gave", "have given")
 
-    if fact.find("been wrote") != -1:
-        fact = fact.replace("been wrote", "been written")
+    if fact.find("have wrote") != -1:
+        fact = fact.replace("have wrote", "have written")
 
-    if fact.find("been broke") != -1:
-        fact = fact.replace("been broke", "broken")
+    if fact.find("have broke") != -1:
+        fact = fact.replace("have broke", "have broken")
+
+    if fact.find("have saw") != -1:
+        fact = fact.replace("have saw", "have seen")
+
+    if fact.find("have did") != -1:
+        fact = fact.replace("have did", "have done")
 
     if fact.find("siss") != -1:
         fact = fact.replace("siss", "sisters")
-
-    if fact.find("chaoticly") != -1:
-        fact = fact.replace("chaoticly", "chaotically")
 
     if fact.find("truely") != -1:
         fact = fact.replace("truely", "truly")
@@ -472,6 +525,66 @@ def returnFact():
 
     if fact.find("Did you know?") != -1:
         fact = capitalize(fact, [3])
+    
+    if fact.find("'S") != -1:
+        fact = fact.replace("'S", "'s", 1)
+
+    if fact.find("me's") != -1 and fact.find("Aime's") == -1 and fact.find("Rome's") == -1 and fact.find("Supreme's") == -1:
+        fact = fact.replace("me's", "my")
+
+    if fact.find("you's") != -1:
+        fact = fact.replace("you's", "your")
+
+    if fact.find("icly ") != -1:
+        fact = fact.replace("icly ", "ically ")
+
+    if fact.find("berrie ") != -1:
+        fact = fact.replace("berrie ", "berry ")
+
+    if fact.find("berrieM") != -1:
+        fact = fact.replace("berrieM", "berryM")
+
+    if fact.find("berrieL") != -1:
+        fact = fact.replace("berrieL", "berryL")
+
+    if fact.find("'s's") != -1:
+        fact = fact.replace("'s's", "s'")
+
+    if fact.find("s was ") != -1:
+        fact = fact.replace("s was ", "s were ")
+
+    if fact.find("s was ") != -1:
+        fact = fact.replace("s was ", "s were ")
+
+    if fact.find("wifes") != -1:
+        fact = fact.replace("wifes", "wives")
+
+    if fact.find("? ") != -1 and fact.find("attention?") == -1 and fact.find(";)") == -1:
+        fact = fact.replace("? ", ". ")
+
+    if fact.find("???") != -1:
+        fact = fact.replace("???", "?")
+
+    if fact.find("atoe") != -1 and fact.find("atoes") == -1:
+        fact = fact.replace("atoe", "ato")
+
+    if fact.find("eache") != -1 and fact.find("eaches") == -1:
+        fact = fact.replace("eache", "each")
+
+    if fact.find("dishe") != -1 and fact.find("dishes") == -1:
+        fact = fact.replace("dishe", "dish")
+
+    if fact.find("stomaches") != -1:
+        fact = fact.replace("stomaches", "stomachs")
+
+    if fact.find("wiche") != -1 and fact.find("wiches") == -1:
+        fact = fact.replace("wiche", "wich")
+
+    if fact.find("Creamof") != -1:
+        fact = fact.replace("Creamof", "")
+
+    if fact.find("AlcoholLand") != -1:
+        fact = fact.replace("AlcoholLand", "AlcoHolland")
 
     return fact
 
