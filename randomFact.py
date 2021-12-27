@@ -106,11 +106,11 @@ begs = ["In other news,", "In light of today's events,", "Despite what you may h
 "Once upon a time,", "When you really think about it,", "Yesterday,", "Whenever @ looks ^, it's because", "In the year of Our Lord #,", "My pitch for a hit new TV show:",
 "In case you haven't heard yet,", "Through sheer | and |,", "If you ever have a ^ day, just remember", "In an act of |,", "^CCly, due to " + getRand(parties) + ", ",
 "If you squint and turn your head ^ly to the side, you'll see that", "Despite having ^ |,", "If a = or @ is attacking you, remember that", "Thanks to free speech,",
-"Wanna really get somebody's attention? Lay one of these on 'em:", "The German word " + madeUpWord(False) + " describes the situation where", 
+"Wanna really get somebody's attention? Lay one of these on 'em:", "The German word " + madeUpWord(False) + " describes the situation where", "@ has released the following statement:",
 "The hidden country of " + madeUpWord(True) + " is where", "To strike a balance between | and |,", "To fill your life with |,", "To fill your $ with |,",
 "To impart | into @'s $, declare that", "To make @ feel |,", "Were you aware that", "If you ever visit +, ask the locals about how", "It fills me with | to know that",
 "What if", "What they teach in schools now is that", "An unprecendented turn of events:", "When the !! game was canceled,", "This is the reason the !! lost to the !!:",
-"If the !! beat the !! today, then", "Due to an outbreak of ~,", "History would never be the same after the day that", "I know it sounds crazy, but",
+"If the !! beat the !! today, then", "Due to an outbreak of ~,", "History would never be the same after the day that", "I know it sounds crazy, but", "%% tells me that",
 "All existing evidence suggests that", "We hold this truth to be self-evident, that", "If you need to quickly leave a social gathering, get everyone's attention and say:", 
 "After weeks of deliberation, Congress finally passed a new law which is as follows:", "Awful band name suggestion:", "Our AI overlords wanted me to inform you that"]
 
@@ -153,7 +153,7 @@ ends = [" while @ was still president.", ", using QQ $ to chug a two-liter of li
 " by sitting and thinking very hard about %%.", " by the $ of @.", " - now that shows some ^ |!", " - now that takes some |!", " - seems a bit ^ to me...", ", which is SO not ^.", 
 ", giving everyone ~.", ", utilizing only %% and %%.", ", causing @ to break QQ $.", ", causing @ to instantly grow new $s.", ", after which @ got QQ $ pierced.", 
 " - in other words, " + madeUpWord(False) + ".", ", permanently eradicating ~.", ", which gave @ ~.", ", curing @'s severe case of ~.", ", which is how @ and @ met.", 
-", which marked @'s entry into politics.", ", earning QQ spot on the !!.", ", which should fill you with |.", ". --@"]
+", which marked @'s entry into politics.", ", earning QQ spot on the !!.", ", which should fill you with |.", ". --@", ", which is how @ contracted ~."]
 
 companies = ["Coca-Cola", "Monster Energy", "Frito-Lay", "Nestle", "Google", "Microsoft", "Minecraft", "JP Morgan", "Taco Bell", "Verizon", "US Cellular", "Cingular", 
 "VVCC Jeans, Inc", "IBM", "Fatheads", "Fiji Water", "Vance Refrigeration", "Disney", "Fox News", "MSNBC", "Walmart", "IKEA", "Snuggie", "FlexTape", 
@@ -165,7 +165,7 @@ companies = ["Coca-Cola", "Monster Energy", "Frito-Lay", "Nestle", "Google", "Mi
 
 celebs = ["Dolly Parton", "Robert Pattinson", "the Geico =CC", "the mascot for the !!", "the = from Air Bud", "Keanu Reeves", "the Car =CC", "Chris Pratt AKA Crisp Rat",
 "Ben Shapiro", "PewDiePie", "Elvis", "Nickelback", "Guy Fieri", "Gordon Ramsay", "a =", "a ^ =", "a ^ =", "The ^CC Man", "a ^ piece of fruit", "Jennifer Lawrence",
-"Michael Scott", "Ghandi", "the Pope", "Jimmy Neutron", "Carl Wheezer", "the Pillsbury Dough Boy", "Jake Paul", "Logan Paul", "you", "your VVCC", "Jeff Dunham", "Olivia Cockburn",
+"Michael Scott", "Ghandi", "the Pope", "Jimmy Neutron", "Carl Wheezer", "the Pillsbury Dough Boy", "Jake Paul", "Logan Paul", "you", "your VV", "Jeff Dunham", "Olivia Cockburn",
 "Dane Cook", "George Washington", "Thomas Jefferson", "Abraham Lincoln", "Plato", "Aristotle", "Leonardo Da Vinci", "John Kennedy", "Isaac Newton", "Albert Einstein", 
 "Will Ferrel", "Ariana Grande", "Paul Revere", "Queen Elizabeth", "Christopher Columbus", "JK Rowling", "Pablo Picasso", "Cuddles", "Walt Disney", "Winston Churchill", 
 "Elon Musk", "Bill Gates", "Jeff Bezos", "Steve Irwin", "Billy Mays", "the ^ guy from Friends", "the ^ girl from The Office", "Chester Cheeto", "Reggie Fils-Aime",
@@ -244,7 +244,7 @@ teams = ["Arizona Cardinals", "Atlanta Falcons", "Baltimore Ravens", "Buffalo Bi
 
 def returnFact():
     fact = getRand(begs) + " " + getRand(parties) + " " + getRand(verbs) + " " + getRand(parties) + getRand(ends)
-    #fact = '"the ^CC VVCCs"' # test fact
+    #fact = 'a *, a hypothetical *.' # test fact
     
     while (fact.find("_") != -1 or fact.find("#") != -1 or fact.find("@") != -1 or fact.find("&") != -1 or fact.find("+") != -1 or fact.find("^") != -1 or fact.find("|") != -1 
     or fact.find("=") != -1 or fact.find("%%") != -1 or fact.find("$") != -1 or fact.find("QQ") != -1 or fact.find("VV") != -1 or fact.find("~") != -1 or fact.find("*") != -1
@@ -456,6 +456,10 @@ def returnFact():
                     fact = fact.replace("*CC", replacement, 1)
                 else:
                     fact = fact.replace("*CC", replacement.title(), 1)
+            elif fact.find("a hypothetical *") != -1 or fact.find("a *") != -1:
+                replacement = getRand(foods)
+                replacement = replacement[:-1] if replacement[-1] == "s" else replacement
+                fact = fact.replace("*", replacement, 1)
             else:
                 fact = fact.replace("*", getRand(foods), 1)
 
@@ -507,6 +511,9 @@ def returnFact():
         if fact.find("=cc") != -1:
             fact = fact.replace("=cc", "=CC")
 
+        if fact.find(" an uni") != -1 or fact.find(" an use") != -1:
+            fact = fact.replace(" an u", " a u", 1)
+
     if fact.find(" a ") != -1:
         aCount = fact.count(" a ")
         searchFrom = 0
@@ -514,8 +521,7 @@ def returnFact():
             if (fact[fact.find(" a ", searchFrom) + 3] == "a" or fact[fact.find(" a ", searchFrom) + 3] == "e" or fact[fact.find(" a ", searchFrom) + 3] == "i" 
             or fact[fact.find(" a ", searchFrom) + 3] == "o" or fact[fact.find(" a ", searchFrom) + 3] == "u" or fact[fact.find(" a ", searchFrom) + 3] == "A" 
             or fact[fact.find(" a ", searchFrom) + 3] == "E" or fact[fact.find(" a ", searchFrom) + 3] == "I" or fact[fact.find(" a ", searchFrom) + 3] == "O" 
-            or fact[fact.find(" a ", searchFrom) + 3] == "U") and not ((fact[fact.find(" a ", searchFrom) + 4] == "s" and fact[fact.find(" a ", searchFrom) + 5] == "e")
-            or (fact[fact.find(" a ", searchFrom) + 4] == "n" and fact[fact.find(" a ", searchFrom) + 5] == "i")):
+            or fact[fact.find(" a ", searchFrom) + 3] == "U"):
                 fact = fact[0:searchFrom] + fact[searchFrom:].replace(" a ", " an ", 1)
                 aCount -= 1
                 searchFrom = fact.find(" an ", searchFrom) + 3
@@ -551,16 +557,22 @@ def returnFact():
         fact = fact.replace("a the", "a")
 
     if fact.find("ss ") != -1 and fact.find("glass ") == -1 and fact.find("ess ") == -1 and fact.find("loss ") == -1:
-        fact = fact.replace("ss ", "ses ")
+        fact = fact.replace("ss ", "s ")
 
-    if fact.find("ss.") != -1 and fact.find("ess.") == -1 and fact.find("eyess.") == -1:
-        fact = fact.replace("ss.", "ses.")
+    if fact.find("ss.") != -1 and fact.find("ess.") == -1:
+        fact = fact.replace("ss.", "s.")
 
     if fact.find("ss,") != -1 and fact.find("ess,") == -1:
-        fact = fact.replace("ss,", "ses,")
+        fact = fact.replace("ss,", "s,")
 
-    if fact.find('ss"') != -1 and fact.find('ess,"') == -1:
-        fact = fact.replace('ss"', 'ses"')
+    if fact.find('ss"') != -1 and fact.find('ess"') == -1:
+        fact = fact.replace('ss"', 's"')
+
+    if fact.find('ss-') != -1 and fact.find('ess-') == -1:
+        fact = fact.replace('ss-', 's-')
+
+    if fact.find('yess') != -1:
+        fact = fact.replace('yess', 'yes')
 
     if fact.find("hs") != -1 and fact.find("thighs") == -1 and fact.find("Thighs") == -1 and fact.find("mouths") == -1 and fact.find("Mouths") == -1 and fact.find("moths") == -1 and fact.find("Moths") == -1:
         fact = fact.replace("hs", "hes")
@@ -652,7 +664,7 @@ def returnFact():
     if fact.find("icly ") != -1 and fact.find("chicly") == -1:
         fact = fact.replace("icly ", "ically ")
 
-    if fact.find("berrie ") != -1 or fact.find("berrie, ") != -1:
+    if fact.find("berrie ") != -1 or fact.find("berrie, ") != -1 or fact.find("berrie.") != -1:
         fact = fact.replace("berrie", "berry")
 
     if fact.find("berrieM") != -1:
@@ -798,6 +810,36 @@ def returnFact():
         newFact = fact.split(" ")
         newFact[0] = newFact[0].capitalize()
         fact = " ".join(newFact)
+
+    if fact.find('A a') != -1:
+        fact = fact.replace('A a', 'An a')
+
+    if fact.find('A e') != -1:
+        fact = fact.replace('A e', 'An e')
+
+    if fact.find('A i') != -1:
+        fact = fact.replace('A i', 'An i')
+
+    if fact.find('A o') != -1:
+        fact = fact.replace('A o', 'An o')
+
+    if fact.find('A A') != -1:
+        fact = fact.replace('A A', 'An A')
+
+    if fact.find('A E') != -1:
+        fact = fact.replace('A E', 'An E')
+
+    if fact.find('A I') != -1:
+        fact = fact.replace('A I', 'An I')
+
+    if fact.find('A O') != -1:
+        fact = fact.replace('A O', 'An O')
+
+    if fact.find('A u') != -1 and fact.find('uni') != -1 and fact.find('use') != -1:
+        fact = fact.replace('A u', 'An u')
+
+    if fact.find('A U') != -1 and fact.find('Uni') != -1 and fact.find('Use') != -1:
+        fact = fact.replace('A U', 'An U')
 
     return fact
 
