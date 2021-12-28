@@ -25,17 +25,19 @@ def madeUpWord(c):
     "ker", "ble", "ret", "but", "orn", "pel", "ton", "ex", "neef", "glut", "vri", "sta", "neb", "mud", "sted", "preen", "op", "pusk", "mit", "rosc", "ey", "flong", "delp", "per",
     "tod", "deg", "nan", "bre", "pley", "stel", "chag", "zeet", "bot", "norb", "blet", "ling", "tion", "twog", "wit", "milg", "gleem", "ster", "vred", "wask", "ley", "dang", 
     "dled", "yep", "yod", "flit", "cow", "slam", "stle", "sten", "onc", "ology", "bia", "fred", "nkey", "ma", "no", "yes", "ey", "chew", "low", "fled", "donk", "ot", "man", "wo", 
-    "lal", "len", "lod", "meed", "naf", "zax", "fort", "unt", "al", "eth", "eld", "mun", "smor", "smel", "sming", "er", "acker", "wed", "wink", "two", "one", "mask", "bus", "rod", 
+    "lal", "len", "lod", "meed", "naf", "zax", "fort", "unt", "al", "eth", "eld", "mu'n", "smor", "smel", "sming", "er", "acker", "wed", "wink", "two", "one", "mask", "b'us", "rod", 
     "fled", "night", "day", "ben", "tom", "snod", "went", "stad", "bug", "tord", "bink", "lont", "swed", "cheed", "huld", "wher", "snal", "vud", "nast", "gel", "boot", "nan", "mex", 
     "pli", "swog", "gik", "vair", "whe", "sal", "suk", "ket", "kuv", "nub", "neen", "pel", "pud", "wunk", "chob", "flan", "crent", "mug", "dere", "fwee", "ople", "alt", "art", 
-    "awe", "uk", "bare", "n't", "queg", "pot", "plud", "fare", "far", "mok", "mek", "mink", "bost", "mort", "hech", "yoy", "yun", "yer", "yix", "bof", "zif", "nort", "bauf", "sran", 
+    "awe", "uk", "bare", "n't", "queg", "pot", "plud", "fare", "far", "mok", "mek", "mink", "bost", "mort", "hech", "y'oy", "yun", "yer", "yix", "bof", "zif", "nort", "bauf", "sran", 
     "bume", "bay", "vust", "venk", "fav", "naf", "chie", "int", "ial", "irt", "ikle", "bres", "weet", "orp", "blem", "theel", "thusn", "thip", "thay", "klow", "murn", "shae", "fler",
-    "bya", "slo", "chee", "nel", "oxna", "berni", "blau", "fie", "clae", "bakle", "voni", "swo", "bee", "mada", "modo", "meeker", "baert", "ski", "cue", "kae", "zena", "moomo", "momo",
+    "bya", "slo", "chee", "nel", "oxna", "berni", "blau", "fie", "clae", "bakle", "voni", "swo", "bee", "mada", "mo'do", "meeker", "baert", "ski", "cue", "kae", "zena", "moomo", "momo",
     "chacha", "bingo", "tata", "fera", "voomoo", "slappy", "chundy", "boost", "naka", "badi", "voz", "minko", "bada", "nikler", "fedma", "seldu", "wudma", "dindy", "mek", "soo", "freg",
-    "vee", "kla", "bu", "zoo", "fla", "show", "bunkna", "wip", "pelni", "zunksha", "chwee", "snad", "glin", "bup", "cod", "snif", "de", "chi", "gun", "po", "whop", "snooby", "borch", "fosk",
-    "tway", "shuk", "nax", "sub", "misk", "chap", "land", "ton", "waya", "asel", "fuer", "gaen", "fasha", "bubby", "besma", "golti", "bornsnap", "pumper", "xanathu", "gukky",
-    "forma", "gugmunger", "westler", "pango", "beesnog", "hollas", "ackaboob", "tit", "boob", "weewee", "snorp", "flexor", "ublubber", "kacky", "elemen", "yuckma", "kalora", 
-    "fabby", "underous"]
+    "vee", "kla", "bu", "zoo", "fla", "show", "bunkna", "wi'p", "pelni", "zunksha", "chwee", "snad", "glin", "bup", "cod", "snif", "de", "chi", "gun", "po", "whop", "snooby", "borch", "fosk",
+    "'tway", "shuk", "nax", "sub", "misk", "chap", "land", "ton", "wa'ya", "asel", "fuer", "gaen", "fasha", "bubby", "besma", "golti", "bornsnap", "pumper", "xanathu", "gukky",
+    "forma", "gugmunger", "w'estler", "pango", "beesnog", "hollas", "ackaboob", "tit", "boob", "weewee", "snorp", "flexor", "ublubber", "kacky", "elemen", "yuckma", "kalora", 
+    "fabby", "underous", "nopal", "aliah", "morway", "sosig", "meme", "westerly", "abeeg", "haster", "bonapple", "googin", "mangerly", "bopis", "wawa", "dogin", "hooba", "cooki",
+    "zass", "gunga", "apapa", "bonob", "shmo", "gawk", "taxes", "stanky", "euouae", "aeiou", "glunger", "swammy", "chungy", "a'na", "gref'chi", "b'opway", "phobia", "astia", 
+    "blub", "philia", "'ton", "sneek", "chotchni", "ccio", "piis"]
 
     while i < numGoes:
         word += getRand(wordParts)
@@ -98,10 +100,10 @@ parties = ["a = wearing false teeth", "the President of +", "the most ^ haircut 
 "someone who looks vaguely like @", "*", "^ *", "a mountain of *", "^ gossip", "memes from #", "a ^ baby", "+", "animals", "plants", "dirt", "an active volcano",
 "butt", "immortality", "|", "=s", "= enthusiasts", "your $", "the $ of a =", " a = with & extra $s", "^ pants", "QQ VV wearing a @ costume", "QQ VV", "a ^ case of ~",
 "@'s VV's favorite VV", "your VV riding a =", "^ chicken nuggets", madeUpWord(False), "a ^ PR campaign", "~", "the asteroid belt", "@'s pet =", "the sun", "the moon",
-'a bar trivia team called "the ^CC $CC"', "'the facilities'", "our AI overlords", "a hypothetical *", "a hypothetical ="]
+'a bar trivia team called "the ^CC $CC"', "'the facilities'", "our AI overlords", "a hypothetical *", "a hypothetical =", "Planet of the =CCs"]
 
 begs = ["In other news,", "In light of today's events,", "Despite what you may have heard,", "QQCC VV looked me right in the $ and said:", "After drinking & gallons of liquid *,",
-"Having been born in the year #,", "Despite a lifelong battle with ~,", "Picture this in your mind for a moment:", "Fun fact:", "Did you know?",
+"Having been born in the year #,", "Despite a lifelong battle with ~,", "Picture this in your mind for a moment:", "Fun fact:", "Did you know?", "| is cancelled today, due to",
 "Have you considered the fact that", "My favorite childhood memory is when", "What's ^ is that mainstream media would have you believe", "After eating & pounds of *,",
 "Once upon a time,", "When you really think about it,", "Yesterday,", "Whenever @ looks ^, it's because", "In the year of Our Lord #,", "My pitch for a hit new TV show:",
 "In case you haven't heard yet,", "Through sheer | and |,", "If you ever have a ^ day, just remember", "In an act of |,", "^CCly, due to " + getRand(parties) + ", ",
@@ -110,7 +112,7 @@ begs = ["In other news,", "In light of today's events,", "Despite what you may h
 "The hidden country of " + madeUpWord(True) + " is where", "To strike a balance between | and |,", "To fill your life with |,", "To fill your $ with |,",
 "To impart | into @'s $, declare that", "To make @ feel |,", "Were you aware that", "If you ever visit +, ask the locals about how", "It fills me with | to know that",
 "What if", "What they teach in schools now is that", "An unprecendented turn of events:", "When the !! game was canceled,", "This is the reason the !! lost to the !!:",
-"If the !! beat the !! today, then", "Due to an outbreak of ~,", "History would never be the same after the day that", "I know it sounds crazy, but", "%% tells me that",
+"If the !! beats the !! today, it'll be due to", "Due to an outbreak of ~,", "History would never be the same after the day that", "I know it sounds crazy, but", "%% tells me that",
 "All existing evidence suggests that", "We hold this truth to be self-evident, that", "If you need to quickly leave a social gathering, get everyone's attention and say:", 
 "After weeks of deliberation, Congress finally passed a new law which is as follows:", "Awful band name suggestion:", "Our AI overlords wanted me to inform you that"]
 
@@ -132,9 +134,10 @@ adjectives = ["dumb", "ugly", "brown", "campy", "proverbial", "obtuse", "arrogan
 "candy", "iron", "bronzen", "flaxen", "golden", "rock-hard", "titanium", madeUpWord(False), "moderate", "impressive", "successful", "unsuccessful", "hypothetical", "insufficient",
 "frozen", "melted", "acute", "instant", "amateur", "flat", "unprecedented", "uncouth", "unbecoming", "subpar", "violent", "unattractive", "edible", "sociable", "dangerous", 
 "fiscal", "invisible", "unexpected", "secret", "cool", "erect", "sexy", "appalling", "horrifying", "contagious", "profound", "colorful", "universal", "unidentifiable", "blue",
-"green", "yellow", "purple", "painful", "unpleasant", "unsightly", "foul", "permanent", "desperate"]
+"green", "yellow", "purple", "painful", "unpleasant", "unsightly", "foul", "permanent", "desperate", "impotent", "unprofessional", "omnipresent", "soaring", "ethereal",
+"exquisite", "elegant", "dark"]
 
-concepts = ["gusto", "fervor", "panache", "restraint", "sense of style", "wherewithall", "curiosity", "warrior's heart", "pride", "luck", "chastity", "charity", "joy", "wonder", 
+concepts = ["gusto", "fervor", "panache", "restraint", "sense of style", "wherewithall", "curiosity", "pride", "luck", "chastity", "charity", "joy", "wonder", 
 "passion", "delicacy", "peace", "understanding", "va-va-voom", "swagger", "ingenuity", "self-control", "spirit", "innovation", "clarity", "je ne sais quoi", "gumption", "||",
 "love", "nerve", "hutzpah", "cacahuetes", "resolve", "verve", "boldness", "genius", "grit", "determination", "hunger", "rage", "nostalgia", "melancholy", "wistfulness",
 "longing", "resilience", "wit", "faith", "honor", "candor", "serenity", "hope", "patience", "kindness", "cheer", "goodwill", "can-do attitude", "spirit", "moxie", "soul",
@@ -160,32 +163,34 @@ companies = ["Coca-Cola", "Monster Energy", "Frito-Lay", "Nestle", "Google", "Mi
 "Piggly Wiggly", "Purple Flurp", "Facebook", "Twitter", "Doofenshmirtz Evil, Inc", "Netflix", "Dunder Mifflin", "Apple", "WUPHF", "the Krusty Krab", "the Chum Bucket",
 "Doritoes", "Target", "PETA", "Gamestop", "Dogecoin", "Youtube", "Naughty Dog", "CoolMath Games", "McDonald's", "Burger King", "Long John Silver's", 
 "Nintendo", "Sony", "Gfuel", "Gamer Goo", "Dunkin Donuts", "Raid: Shadow Legends", "Pixar", "Popeye's", "Papa John's", "Tik Tok", "Buy N' Large", "Activision", "DreamWorks",
-"Starbucks", "Raid: Shadow Legends", "Blizzard", "FizzBuzz, Inc", "Los Pollos Hermanos", "Amazon", "SpaceX", "Tesla", "Tumblr", "MySpace", "Reddit", "BitConnect", "The Dentist",
-"Cost Cutters", "Dr. Pepper", "Pepsi", "GameStop"]
+"Starbucks", "Raid: Shadow Legends", "Blizzard", "FizzBuzz Inc", "Los Pollos Hermanos", "Amazon", "SpaceX", "Tesla", "Tumblr", "MySpace", "Reddit", "BitConnect", "The Dentist",
+"Cost Cutters", "Dr. Pepper", "Pepsi", "GameStop", "|CC Inc"]
 
 celebs = ["Dolly Parton", "Robert Pattinson", "the Geico =CC", "the mascot for the !!", "the = from Air Bud", "Keanu Reeves", "the Car =CC", "Chris Pratt AKA Crisp Rat",
 "Ben Shapiro", "PewDiePie", "Elvis", "Nickelback", "Guy Fieri", "Gordon Ramsay", "a =", "a ^ =", "a ^ =", "The ^CC Man", "a ^ piece of fruit", "Jennifer Lawrence",
 "Michael Scott", "Ghandi", "the Pope", "Jimmy Neutron", "Carl Wheezer", "the Pillsbury Dough Boy", "Jake Paul", "Logan Paul", "you", "your VV", "Jeff Dunham", "Olivia Cockburn",
 "Dane Cook", "George Washington", "Thomas Jefferson", "Abraham Lincoln", "Plato", "Aristotle", "Leonardo Da Vinci", "John Kennedy", "Isaac Newton", "Albert Einstein", 
 "Will Ferrel", "Ariana Grande", "Paul Revere", "Queen Elizabeth", "Christopher Columbus", "JK Rowling", "Pablo Picasso", "Cuddles", "Walt Disney", "Winston Churchill", 
-"Elon Musk", "Bill Gates", "Jeff Bezos", "Steve Irwin", "Billy Mays", "the ^ guy from Friends", "the ^ girl from The Office", "Chester Cheeto", "Reggie Fils-Aime",
+"Elon Musk", "Bill Gates", "Jeff Bezos", "Steve Irwin", "Billy Mays", "the ^ guy from Friends", "the ^ girl from The Office", "Chester Cheeto", "Reggie Fils-Aime", "John Doe",
 "Tony the =CC", "=CC Sam", "the Trix =CC", "John Mayer", "Elvis", "the Prince of |CC", "the Prince of *CC", "Mario", "Luigi", "Waluigi", "your favorite =", "Benedict Cumberbatch",
-"the Duke of *CC", "Jake the =CC", "the Ice King", "Spongebob Squarepants", "QQ ^ VV", "Will Smith", "Miranda Cosgrove", "Drake and Josh", "the Burger King", 
-"CatDog", "= =", "Arnold (from Hey Arnold)", "=CCMan", "The all-new Hyundai Sonata", "The ^CC $CC", "Joker (from Joker)", "Squidward", "Patrick", "Hoobastank",
-"Brendan Frasier", "Tommy Wiseau", "Kirby", "Bubsy", "Bigfoot", "Sonic the =CC", "Gurbanguly Berdimuhamedow", "Kim Jong Un", "Xi Jinping", "Moon Jae-in", "Death",
+"the Duke of *CC", "Jake the =CC", "the Ice King", "Spongebob Squarepants", "QQ ^ VV", "Will Smith", "Miranda Cosgrove", "Drake and Josh", "the Burger King", "Doug",
+"CatDog", "= =", "Arnold (from Hey Arnold)", "=CCMan", "The all-new Hyundai Sonata", "The ^CC $CC", "Joker (from Joker)", "Squidward", "Patrick", "Hoobastank", "Harold",
+"Brendan Frasier", "Tommy Wiseau", "Kirby", "Bubsy", "Bigfoot", "Sonic the =CC", "Gurbanguly Berdimuhamedow", "Kim Jong Un", "Xi Jinping", "Moon Jae-in", "Death", "John Cena",
 "Reggie Fils-Aime", "Yoshihide Suga", "Grandma", "Grandpa", "^CCMan", "Finn the =CC", "a _ employee", "Warren Buffet", "Billie Eilish", "Videogamedunkey", "Grover Cleveland", 
 "Thomas Edison", "Winnie the Pooh", "QuailMan", "Jeffery Bezos", "Vermin Supreme", "Chris Hemsworth", "Chevy Chase", "Dick Van Dyke", "Andy Griffith", "Bob Hope", 
 "Regis Philbin", "Dr. Phil", "Hulk Hogan", "Honey Boo-Boo", "Gordon Ramsay", "Bo Burnham", "Obamna", "Conan O'Brian", "Steve Carrell", "James Brown", "Michael Jackson",
 "Steve Harvey", "Tim Apple", "The One True =CC", "Peewee Herman", '@ AKA "the ^CC =CC"', "me", "VVCC", "Rongle McDongle", "*CCMan", "George RR Martin", "George Bush",
-"Charles Entertainment Cheese", "Larry the *CC", "Bob the *CC", "Gex", "Glover", "Donkey Kong", "Bowser", "Dark Souls", "@'s new lover (@)"]
+"Charles Entertainment Cheese", "Larry the *CC", "Bob the *CC", "Gex", "Glover", "Donkey Kong", "Bowser", "Dark Souls", "@'s new lover (@)", "Ornstein and Smough",
+"Lord Gwyn", "the Gaping Dragon", "Cranky Kong", "Funky Kong", "Aldia, Scholar of the First Sin", "Manus, Father of the Abyss", "Knight Artorias", "the Firekeeper"]
 
 places = ["^CC Jersey", "the ^CC States", "Europe", "Russia", "Asia", "Japan", "yo VV's house", "the sock drawer", "Madagascar", "Californ-I-A", "your soul", 
-"the corporate offices of _", "the ^CC House", "Yellowstone Park", "Italy", "the Pentagon", "Mount Everest", "an underground city", "the dungeon", "a ^ city",
+"the corporate offices of _", "the ^CC House", "Yellowstone Park", "Italy", "the Pentagon", "Mount Everest", "an underground city", "the ^ dungeon", "a ^ city",
 "China", "Fiji", "India", "Pyongyang", "Seoul", "one of the Koreas", "the states of ^CC and ^CC Dakota", "Hell", "^CC Virginia", "^CC Carolina", "Hell", "the year #",
 "^CC York", "^CC Delhi", "Stonehenge", "VV's basement", "the Pacific Ocean", "the Statue of Liberty", madeUpWord(True), "the mouth of a =", "Delfino Plaza", "the 90s",
 "a ^ hill of termites", "the realm of the =CC Queen", "$CCs-R-Us", "#", "Disneyland", "Mount Rushmore", "the =CC Kingdom", "^CC Mexico", "the @ estate", "@'s house",
 "Tokyo", "Beijing", "Athens", "Ancient Rome", "London", "Austrialia", "^CC Zealand", "Azerbaijan", "Heaven", "the University of +", "^CCLand", "^CC-^CCLand", "Flat Earth",
-"*CCLand", "=CCLand", "_'s headquarters"]
+"*CCLand", "=CCLand", "_'s headquarters", "Anor Londo", "Drangleic", "Londor", "the Abyss", "the ^CC Abyss", "New Londo", "Planet Namek", "the ^CC Planet",
+"Planet ^CC's &th moon", "Planet of the =CCs", "Firelink Shrine", "the Catacombs", "the =CC Temple", "=CC Shrine", "@'s personal aircraft", "the |CC Dimension"]
 
 animals = ["lion", "cat", "dog", "squid", "mollusk", "clam", "zebra", "axolotl", "rhino", "tiger", "lamb", "octopus", "antelope", "fawn", "llama", "parrot", "whale", 
 "geoduck", "barnacle", "snail", "slug", "squirrel", "giraffe", "dingo", "wolf", "coyote", "hyena", "ocelot", "puma", "mountain lion", "fox", "polar bear", "grizzly bear", 
@@ -198,7 +203,7 @@ animals = ["lion", "cat", "dog", "squid", "mollusk", "clam", "zebra", "axolotl",
 "porpoise", "frog", "pit bull", "eldritch horror", "dingo", "indeterminate bug", "hedgehog", "toucan", "turtle", "lizard", "toad", "tiger", "roach", "insect", "arachnid", 
 "cockroach", "butterfly", "caterpillar", "dragonfly", "behemoth", "mole", "mantis", "monster", "moth", "reptile", "amphibian", "mammal", "bird", "flamingo", "penguin",
 "centipede", "devil", "demon", "angel", "eagle", "hawk", "falcon", "owl", "parrot", "peacock", "pigeon", "man", "woman", "bard", "rogue", "paladin", "necromancer", "valkyrie", 
-"jester", "king", "technocrat", "oligarch", "dictator", "thief", "archer", "berserker", "viking"]
+"jester", "king", "technocrat", "oligarch", "dictator", "thief", "archer", "berserker", "viking", "spellsword", "alien", "hyena"]
 
 parts = ["ear", "eyes", "nose", "earlobe", "right pinky toe", "patella", "&th eyelash from the right", "entire body", "&th nipple", "foot", "third foot", "top right incisor", 
 "tooth", "teeth", "elbow", "bellybutton", "fingernail", "brain", "xiphoid process", "tooth enamel", "skin", "armpit", "foot", "bottom leg", 
@@ -206,13 +211,14 @@ parts = ["ear", "eyes", "nose", "earlobe", "right pinky toe", "patella", "&th ey
 "amygdala", "toe", "finger", "eye", "chest", "knee", "lower back", "upper back", "ab", "diaphragm", "tongue", "epiglottis", "vocal folds", "uvula", "stomach", "peep",
 "gut", "larynx", "esophagus", "pelvis", "tibia", "phalange", "skull", "head", "scapula", "spleen", "sacrum", "coccyx", "spine", "funny bone", "cerebral cortex", "brain stem", "neck",
 "mouth", "inner thigh", "urethra", "pancreas", "lung", "gallbladder", "appendix", "rectum", "hand", "chest hand", "limb", "beard", "sternum", "callous", "scalp", 
-"frenulum", "pie hole", "tush", "teat", "sausage", "ovaries", "nostril", "eardrum", "tummy", "mind", "&th $"]
+"frenulum", "pie hole", "tush", "teat", "sausage", "ovary", "nostril", "eardrum", "tummy", "mind", "&th $"]
 
 disease = ["$ cancer", "diabetes", "$ swelling", "$ destruction", "$ blockage", "$ parasites", "$ failure", "$ erosion", "$ disease", "$ infection", "claustrophobia", 
 "MRSA", "food poisoning", "depression", "asthma", "anxiety", "alcoholism", "impulsive shopping", "darwinism", "halitosis", "gynecomastia", "gastroenteritis", 
 "anal fissures", "^ $ pain", "ugliness", "a really weird $", "= $", "pregnancy", "obesity", "sociopathy", "antidisestablishmentarianism", "pneumonoultramicroscopicsilicovolcanoconiosis",
 "gastroenteritis", "PMS", "athlete's foot", "complementarianism", "extra limbs", "kidney stones", "broken $", "^-$", "hotdog finger", "count-choculitis", "no longer being alive", 
-"spontaneous dental hydroplosion", "chronic ~", "swine flu", "literally every STI", "loss of $", "diminished |", "vitamin deficiency", "egalitarianism"]
+"spontaneous dental hydroplosion", "chronic ~", "swine flu", "literally every STI", "loss of $", "diminished |", "vitamin deficiency", "egalitarianism", "dwarfism", 
+"|-deficiency", "=phobia", "baby $", "rapidly-aging $"]
 
 theirReplacements = ["their", "its", "his/her", "the", "a", "her", "his", "de", "@'s", "your", "my", "thine", "y'all's", "VV's", "our", "somebody's", "a random"]
 
@@ -550,7 +556,7 @@ def returnFact():
     if fact.find("yly") != -1:
         fact = fact.replace("yly", "ily")
 
-    if fact.find("ys") != -1 and fact.find("Mays") == -1 and fact.find("hysical") == -1 and fact.find("MySpace") == -1 and fact.find("onkeys") == -1 and fact.find("Cowboys") == -1 and fact.find("oneys") == -1:
+    if fact.find("ys") != -1 and fact.find("Mays") == -1 and fact.find("hysical") == -1 and fact.find("MySpace") == -1 and fact.find("onkeys") == -1 and fact.find("Cowboys") == -1 and fact.find("oneys") == -1 and fact.find("Abyss") == -1:
         fact = fact.replace("ys", "ies")
 
     if fact.find("a the") != -1 and fact.find("Grandpa") == -1:
@@ -829,7 +835,7 @@ def returnFact():
     if fact.find('A E') != -1:
         fact = fact.replace('A E', 'An E')
 
-    if fact.find('A I') != -1:
+    if fact.find('A I') != -1 and fact.find('IKEA') == -1:
         fact = fact.replace('A I', 'An I')
 
     if fact.find('A O') != -1:
