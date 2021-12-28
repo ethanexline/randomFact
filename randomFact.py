@@ -1,4 +1,5 @@
 from random import randint
+import re
 
 def randYear():
     year = randint(-5000, 3000)
@@ -48,21 +49,6 @@ def madeUpWord(c):
     else:
         return word
 
-def capitalize(fact, ind):
-    split_s = fact.split()
-    returnString = ""
-
-    for i in ind:
-        try:
-            split_s[i] = split_s[i].title()
-        except IndexError:
-            print(f"Sorry, index is not in range! ({i})")
-
-    for word in split_s:
-        returnString += word + " "
-        
-    return returnString
-
 verbs = ["got", "chuggled", "fell in love with the idea of", "slurped", "locked eyes with", "consumed", "concieved", "started a ^ revolution around the idea of", "^ly chewed on",
 "won", "hired", "claimed", "started a standing ovation for", "delivered the keynote speech at a conference devoted to", "started a religion that worships", "punched the | out of",
 "made a GoFundMe for", "starred in a commercial advertising", "applied ^ pressure to", "ate a ^ meal consisting exclusively of", "held ^ eye contact with", "acquired",
@@ -86,7 +72,7 @@ verbs = ["got", "chuggled", "fell in love with the idea of", "slurped", "locked 
 "publically denounced", "called out @ over QQ prejudice towards", 'debuted QQ new movie called "%%", starring', "did voice acting for a game where you play as",
 'starred in the new sitcom "%%" alongside', "donated QQ $ to", "showed QQ | to", "made QQ world-famous * for", "wrote a ^ blog post about", "wrote a * song about",
 'gave a resounding "??" to the idea of', 'said "??" to', 'gave a "??" when asked about', 'feels pretty "??" about', "tenderly held", "shed salty, ^ tears over", 
-"mourned the loss of", "won a year's supply of", "pledged to never run out of", "developed a new paradigm around", "changed QQ outlook upon", "scraped out the last of a jar of",
+"mourned the loss of", "won a year's supply of", "pledged to never run out of", "developed a new paradigm around", "changed QQ outlook upon", "scraped out the last bit of a jar of",
 "took a big spoonful of", "trusted the | of", "took ^ advice from", "created a new branch of philosophy based on", "couldn't belive the | of", "couldn't comprehend", 
 "found a ^ passion for", "aspired to embody"]
 
@@ -95,32 +81,33 @@ parties = ["a = wearing false teeth", "the President of +", "the most ^ haircut 
 "& push-ups", "a ^, ^ bodybuilder", "a = disguised as @", "a ^ly ^ Halloween costume", "the bathroom", "^ soup", "@'s new $s", "^ *", "a highly ^ strain of ~",
  "a ^CC =CC Champion", "the annual _ dance-off", "Dracula (but if he was from +)", "a ^ly ^ handshake", "an extra set of $s", "the coach of the !!", "a * dish with = meat",
 "^ly ^ *", "your ^ dentist", "@'s accountant", "a mirror that makes you look ^ly ^", "gorgonzola cheese", "the CEO of _", "liquid *", "Obama's last name",
-"the entire South Pole", "a stairway to +", "the reason you were born", "a ^ resignation letter", "a ^ly ^ almond", "a tree", "The World's Largest *CC", "money",
-"barf", "^, ^ *", "a war between =s and =s", "a ^ly ^ corn dog", "a = with a $ that's just too ^", "a = with a =", "a = with too much |", "a = with a ^ $",
+"the entire South Pole", "a stairway to +", "the reason you were born", "a ^ resignation letter", "a ^ly ^ almond", "a tree", "The World's Largest *CC", "money", 
+"^, ^ *", "a war between =s and =s", "a ^ly ^ corn dog", "a = with a $ that's just too ^", "a = with a =", "a = with too much |", "a = with a ^ $",
 "the element of surprise", "a slip of the $", "hard, ^ drugs", "a banana that needs to be peeled & times", "* and *", "a perfect doppelganger for @", "=s' rights",
 "the =CC President", "= enthusiasts", "attendees of a $ convention", "the stink eye", "the surface of the sun", "your VV's *", "@'s *", "a ='s $", "a ='s *",
-"_-branded swag", "_'s holiday bash", "@", "@'s secret $", "@'s $", "#", "a program that teaches =s to speak +-ese", "@'s raison d'etre", "the !!", "an outbreak of ~",
+"_-branded swag", "_'s holiday bash", "@", "@'s secret $", "@'s $", "#", "a software product for =s", "@'s raison d'etre", "the !!", "an outbreak of ~", 
 "one of those small cheeses in wax", "toast", "two =s square-knotted together", "= cruelty", "&th degree murder", "organized crime", "the NYPD", "waaay too much *",
 "someone who looks vaguely like @", "*", "^ *", "a mountain of *", "^ gossip", "memes from #", "a ^ baby", "+", "animals", "plants", "dirt", "an active volcano",
 "butt", "immortality", "|", "=s", "= enthusiasts", "your $", "the $ of a =", " a = with & extra $s", "^ pants", "QQ VV wearing a @ costume", "QQ VV", "a ^ case of ~",
 "@'s VV's favorite VV", "your VV riding a =", "^ chicken nuggets", madeUpWord(False), "a ^ PR campaign", "~", "the asteroid belt", "@'s pet =", "the sun", "the moon",
-'a bar trivia team called "the ^CC $CC"', "'the facilities'", "our AI overlords", "a hypothetical *", "a hypothetical =", "Planet of the =CCs", 'the phrase "??"']
+'a bar trivia team called "the ^CC $CC"', "'the facilities'", "our AI overlords", "a hypothetical *", "a hypothetical =", "the Planet of the =CCs", 'the phrase "??"']
 
 begs = ["In other news,", "In light of today's events,", "Despite what you may have heard,", "QQCC VV looked me right in the $ and said:", "After drinking & gallons of liquid *,",
-"Having been born in the year #,", "Despite a lifelong battle with ~,", "Picture this in your mind for a moment:", "Fun fact:", "Did you know?", "| is cancelled today, due to",
-"Have you considered the fact that", "My favorite childhood memory is when", "What's ^ is that mainstream media would have you believe", "After eating & pounds of *,",
-"Once upon a time,", "When you really think about it,", "Yesterday,", "Whenever @ looks ^, it's because", "In the year of Our Lord #,", "My pitch for a hit new TV show:",
-"In case you haven't heard yet,", "Through sheer | and |,", "If you ever have a ^ day, just remember", "In an act of |,", "^CCly, due to " + getRand(parties) + ", ",
-"If you squint and turn your head ^ly to the side, you'll see that", "Despite having ^ |,", "If a = or @ is attacking you, remember that", "Thanks to free speech,",
-"Wanna really get somebody's attention? Lay one of these on 'em:", "The German word " + madeUpWord(False) + " describes the situation where", "@ has released the following statement:",
-"The hidden country of " + madeUpWord(True) + " is where", "To strike a balance between | and |,", "To fill your life with |,", "To fill your $ with |,",
-"To impart | into @'s $, declare that", "To make @ feel |,", "Were you aware that", "If you ever visit +, ask the locals about how", "It fills me with | to know that",
-"What if", "What they teach in schools now is that", "An unprecendented turn of events:", "When the !! game was canceled,", "This is the reason the !! lost to the !!:",
-"If the !! beats the !! today, it'll be because", "Due to an outbreak of ~,", "History would never be the same after the day that", "I know it sounds crazy, but", "%% tells me that",
-"All existing evidence suggests that", "We hold this truth to be self-evident, that", "If you need to quickly leave a social gathering, get everyone's attention and say:", 
-"After weeks of deliberation, Congress finally passed a new law which is as follows:", "Awful band name suggestion:", "Our AI overlords wanted me to inform you that",
-"We regret to inform you that", "A ^ book premiers today which will reveal the story behind how", "There is hope for humanity as long as", "??, hope for humanity lost;",
-"?? -", "??;", "??,", "??...", "??!", "???"]
+"Having been born in the year #,", "Despite a lifelong battle with ~,", "Picture this in your mind for a moment:", "Fun fact:", "Did you know?", 
+"| is cancelled today, due to the fact that", "Have you considered the fact that", "My favorite childhood memory is when", "What's ^ is that mainstream media would have you believe", 
+"After eating & pounds of *,", "Once upon a time,", "When you really think about it,", "Yesterday,", "Whenever @ looks ^, it's because", "In the year of Our Lord #,", 
+"My pitch for a hit new TV show:", "In case you haven't heard yet,", "Through sheer | and |,", "If you ever have a ^ day, just remember", "In an act of |,", 
+"^CCly, due to %%,", "If you squint and turn your head ^ly to the side, you'll see that", "Despite having ^ |,", "If a = or @ is attacking you, remember that", 
+"Thanks to free speech,", "Wanna really get somebody's attention? Lay one of these on 'em:", "The German word " + madeUpWord(False) + " describes the situation where", 
+"@ has released the following statement:", "The hidden country of " + madeUpWord(True) + " is where", "To strike a balance between | and |,", "To fill your life with |,", 
+"To fill your $ with |,", "To impart | into @'s $, declare that", "To make @ feel |,", "Were you aware that", "If you ever visit +, ask the locals about how", 
+"It fills me with | to know that", "What if", "What they teach in schools now is that", "An unprecendented turn of events:", "When the !! game was canceled,", 
+"This is the reason the !! lost to the !!:", "If the !! beats the !! today, it'll be because", "Due to an outbreak of ~,", "History would never be the same after the day that", 
+"I know it sounds ^, but", "%% tells me that", "All existing evidence suggests that", "We hold this truth to be self-evident, that",
+"If you need to quickly leave a social gathering, get everyone's attention and say:", "After weeks of deliberation, Congress finally passed a new law which states the following:", 
+"Awful band name suggestion:", "Our AI overlords wanted me to inform you that", "We regret to inform you that", "A ^ book premiers today which will reveal the story behind how", 
+"There is hope for humanity as long as", "??, hope for humanity lost;", "?? -", "??;", "??,", "??...", "??!", "???", "The secret message on the back of the Constitution:",
+"Hope for humanity restored:"]
 
 adjectives = ["dumb", "ugly", "brown", "campy", "proverbial", "obtuse", "arrogant", "swollen", "frightening", "hungry", "diseased", "naked", "squirming", "^-$'d", "surprising",
 "short", "rank", "malodorous", "cold", "long", "wide", "clammy", "strong", "stirring", "classy", "high-brow", "fat", "overweight", "wooden", "verdant", "al dente", "chewy", "fudgy",
@@ -141,36 +128,39 @@ adjectives = ["dumb", "ugly", "brown", "campy", "proverbial", "obtuse", "arrogan
 "frozen", "melted", "acute", "instant", "amateur", "flat", "unprecedented", "uncouth", "unbecoming", "subpar", "violent", "unattractive", "edible", "sociable", "dangerous", 
 "fiscal", "invisible", "unexpected", "secret", "cool", "erect", "sexy", "appalling", "horrifying", "contagious", "profound", "colorful", "universal", "unidentifiable", "blue",
 "green", "yellow", "purple", "painful", "unpleasant", "unsightly", "foul", "permanent", "desperate", "impotent", "unprofessional", "omnipresent", "soaring", "ethereal",
-"exquisite", "elegant", "dark", "rude"]
+"exquisite", "elegant", "dark", "rude", "insane", "crazy"]
 
-concepts = ["gusto", "fervor", "panache", "restraint", "sense of style", "wherewithall", "curiosity", "pride", "luck", "chastity", "charity", "joy", "wonder", 
+concepts = ["gusto", "fervor", "panache", "restraint", "style", "wherewithall", "curiosity", "pride", "luck", "chastity", "charity", "joy", "wonder", 
 "passion", "delicacy", "peace", "understanding", "va-va-voom", "swagger", "ingenuity", "self-control", "spirit", "innovation", "clarity", "je ne sais quoi", "gumption", "||",
 "love", "nerve", "hutzpah", "cacahuetes", "resolve", "verve", "boldness", "genius", "grit", "determination", "hunger", "rage", "nostalgia", "melancholy", "wistfulness",
 "longing", "resilience", "wit", "faith", "honor", "candor", "serenity", "hope", "patience", "kindness", "cheer", "goodwill", "can-do attitude", "spirit", "moxie", "soul",
 "joie de vivre", "virtue", "courage", "fire", "selflessness", "pride", "glamour", "$", madeUpWord(False), "culture", "disdain", "apprehension", "hesitancy", "cowardice", 
 "evil", "coldness", "underhandedness", "subtlety", "visibility", "sausage", "pancakes", "stupor", "~", "*", "ambition", "fear", "shame", "desperation", "security", "dignity",
-"fidelity", "humility", "honesty", "humor", "horror", "ego", "guilt", "kindness", "gentleness", "despair", "consternation"]
+"fidelity", "humility", "honesty", "humor", "horror", "ego", "guilt", "kindness", "gentleness", "despair", "consternation", "regret"]
 
 ends = [" while @ was still president.", ", using QQ $ to chug a two-liter of liquid *.", " with the | of a ^ =.", " - how ^ is that?", ", demonstrating ^ |.",
 ", which, ^ly, broke the world record.", ", because that's what ^ | looks like.", ", cause money don't grow on " + getRand(parties) + ".", ", showing no |.",
 " - however, this angered the envoy from +, starting World War &.", ", and that's a fact.", " with a | far beyond the norm.", " whilst fending off ^ ladies with a ^ spatula.",
 " as part of a ^ comedy routine.", ", starting a new dance craze on _'s video-sharing hub.", ", inspiring @ to paint a ^ picture of @.", ", inspiring @ to found _.",
 ", landing them in ^ water with +.", ", which @ then made a ^ joke about on _'s new social media platform.", ", which jumpstarted @'s | for +'s |.", "... ??CC.", ", ??CC!",
-", which makes @ feel like a ^ =.", ", which gave @ ~.", ", which has to be the most ^ way to lose weight.", ", so, ha.", " - thanks a lot, VV!", ". ;)", "... ??CC!"
+", which makes @ feel like a ^ =.", ", which gave @ ~.", ", which has to be the most ^ way to lose weight.", ", so, ha.", " - thanks a lot, VV!", ". ;)", "... ??CC!",
 ", which took a lot of |.", " to prove to QQ VV that they have ^ |.", ", in hopes that it would make @ notice QQ |.", ", which prompted @ to cancel them on Twitter.", 
 " - the three words I'd use to describe this would be ^, ^, and ^!", " - what a ^ time to be ^!", " - what a ^ way to have " + getRand(verbs) + "!",
 " by sitting and thinking very hard about %%.", " by the $ of @.", " - now that shows some ^ |!", " - now that takes some |!", " - seems a bit ^ to me...", ", which is SO not ^.", 
-", giving everyone ~.", ", utilizing only %% and %%.", ", causing @ to break QQ $.", ", causing @ to instantly grow new $s.", ", after which @ got QQ $ pierced.", " - ??."
+", giving everyone ~.", ", utilizing only %% and %%.", ", causing @ to break QQ $.", ", causing @ to instantly grow a new $.", ", after which @ got QQ $ pierced.", " - ??.",
 " - in other words, " + madeUpWord(False) + ".", ", permanently eradicating ~.", ", which gave @ ~.", ", curing @'s severe case of ~.", ", which is how @ and @ met.", 
-", which marked @'s entry into politics.", ", earning QQ spot on the !!.", ", which should fill you with |.", ". --@", ", which is how @ contracted ~.", " - ??!"]
+", which marked @'s entry into politics.", ", earning QQ spot on the !!.", ", which should fill you with |.", ". --@", ", which is how @ contracted ~.", " - ??!",
+", after which QQ $ fell off.", ", which is probably QQ best work.", ", which is a real slap in the $.", ' - well, "??" to you too!', " - ??, ??.", " - ??, ??!"]
 
 companies = ["Coca-Cola", "Monster Energy", "Frito-Lay", "Nestle", "Google", "Microsoft", "Minecraft", "JP Morgan", "Taco Bell", "Verizon", "US Cellular", "Cingular", 
 "VVCC Jeans, Inc", "IBM", "Fatheads", "Fiji Water", "Vance Refrigeration", "Disney", "Fox News", "MSNBC", "Walmart", "IKEA", "Snuggie", "FlexTape", 
 "Piggly Wiggly", "Purple Flurp", "Facebook", "Twitter", "Doofenshmirtz Evil, Inc", "Netflix", "Dunder Mifflin", "Apple", "WUPHF", "the Krusty Krab", "the Chum Bucket",
 "Doritoes", "Target", "PETA", "Gamestop", "Dogecoin", "Youtube", "Naughty Dog", "CoolMath Games", "McDonald's", "Burger King", "Long John Silver's", 
-"Nintendo", "Sony", "Gfuel", "Gamer Goo", "Dunkin Donuts", "Raid: Shadow Legends", "Pixar", "Popeye's", "Papa John's", "Tik Tok", "Buy N' Large", "Activision", "DreamWorks",
+"Nintendo", "Sony", "Gfuel", "Gamer Goo", "Dunkin Donuts", "Raid: Shadow Legends", "Pixar", "Popeye's", "Papa John's", "Tik Tok", "Buy 'n Large", "Activision", "DreamWorks",
 "Starbucks", "Raid: Shadow Legends", "Blizzard", "FizzBuzz Inc", "Los Pollos Hermanos", "Amazon", "SpaceX", "Tesla", "Tumblr", "MySpace", "Reddit", "BitConnect", "The Dentist",
-"Cost Cutters", "Dr. Pepper", "Pepsi", "GameStop", "|CC Inc", "$CCs-R-Us", "=CCs-R-Us"]
+"Cost Cutters", "Dr. Pepper", "Pepsi", "GameStop", "|CC Inc", "$CCs-R-Us", "=CCs-R-Us", "Chuck-E-Cheese", "Candy Crush", "Angry Birds", "Staples", "OfficeMax", "PETA", "the CDC",
+"Instagram", "Netflix", "Snapchat", "Spotify", "Vine", "Twitch", "Hulu", "Unilever", "Perdue Pharma", "BetterHelp", "the CIA", "the FBI", "the Department of Justice",
+"the Department of Defense", "the NSA"]
 
 celebs = ["Dolly Parton", "Robert Pattinson", "the Geico =CC", "the mascot for the !!", "the = from Air Bud", "Keanu Reeves", "the Car =CC", "Chris Pratt AKA Crisp Rat",
 "Ben Shapiro", "PewDiePie", "Elvis", "Nickelback", "Guy Fieri", "Gordon Ramsay", "a =", "a ^ =", "a ^ =", "The ^CC Man", "a ^ piece of fruit", "Jennifer Lawrence",
@@ -187,7 +177,8 @@ celebs = ["Dolly Parton", "Robert Pattinson", "the Geico =CC", "the mascot for t
 "Regis Philbin", "Dr. Phil", "Hulk Hogan", "Honey Boo-Boo", "Gordon Ramsay", "Bo Burnham", "Obamna", "Conan O'Brian", "Steve Carrell", "James Brown", "Michael Jackson",
 "Steve Harvey", "Tim Apple", "The One True =CC", "Peewee Herman", '@ AKA "the ^CC =CC"', "me", "VVCC", "Rongle McDongle", "*CCMan", "George RR Martin", "George Bush",
 "Charles Entertainment Cheese", "Larry the *CC", "Bob the *CC", "Gex", "Glover", "Donkey Kong", "Bowser", "Dark Souls", "@'s new lover (@)", "Ornstein and Smough",
-"Lord Gwyn", "the Gaping Dragon", "Cranky Kong", "Funky Kong", "Aldia, Scholar of the First Sin", "Manus, Father of the Abyss", "Knight Artorias", "the Firekeeper"]
+"Lord Gwyn", "the Gaping Dragon", "Cranky Kong", "Funky Kong", "Aldia, Scholar of the First Sin", "Manus, Father of the Abyss", "Knight Artorias", "the Firekeeper",
+"Martin Shkreli", "Adele", "John Krasinski", "Justin Bieber", "Brian Peppers"]
 
 places = ["^CC Jersey", "the ^CC States", "Europe", "Russia", "Asia", "Japan", "yo VV's house", "the sock drawer", "Madagascar", "Californ-I-A", "your soul", 
 "the corporate offices of _", "the ^CC House", "Yellowstone Park", "Italy", "the Pentagon", "Mount Everest", "an underground city", "the ^ dungeon", "a ^ city",
@@ -243,7 +234,7 @@ foods = ["broccoli", "carrots", "cabbages", "cauliflower", "celery", "creamed co
 "mustard", "ketchup", "mayonnaise", "olive oil", "pickles", "* juice", "fried =", "= oil", "= juice", "= sauce", "boiled =", "baked =", "cooked =", "pancakes", "filet mignon",
 "eggs benedict", "beef wellington", "quail", "= grease", "= milk", "syrup", "= concentrate", "cream of *", "cream of =", "= eggs", "pringles", "oreos", "doritos", "mountain dew",
 "chocolate", "endives", "parsley", "marjoram", "basil", "cinnamon", "coriander", "dill", "fennel", "pickled *", "pickled =", "* vinegar", "= vinegar", "* syrup", "= syrup", 
-"= meat", "dr. pepper"]
+"= meat", "dr. pepper", "fried *", "deep-fried * ", "deep-fried =", "* meat", "= cheese", "* oil", "barf", "puke", "biscuits"]
 
 teams = ["Arizona Cardinals", "Atlanta Falcons", "Baltimore Ravens", "Buffalo Bills", "Carolina Panthers", "Chicago Bears", "Cincinnati Bengals", "Cleveland Browns", 
 "Dallas Cowboys", "Denver Broncos", "Detroit Lions", "Green Bay Packers", "Houston Texans", "Indianapolis Colts", "Jacksonville Jaguars", "Kansas City Chiefs",
@@ -254,14 +245,14 @@ interjection = ["OK", "alright", "cool", "whatever", "great", "perfect", "who'd 
 "shoot", "how ^", "that's too bad", "how sad", "uh oh", "for pete's sake", "for crying out loud", "tough *", "how frustrating", "how embarrassing", "hmm", "what a show of |",
 "never seen such |", "takes my | away", "bless QQ heart", "watch out", "preposterous", "wonderful", "for *'s sake", "tarnation", "consarnit", "^", "nice", "how dare @", 
 "what |", "welp", "oh well", "gadzooks", "eureka", "aw man", "forsooth", "alas", "amen", "how could this be", "it can't be true", madeUpWord(False), "golly", "yay", "I don't care",
-"crikey", "exclamation", "for |'s sake", "what a ="]
+"crikey", "exclamation", "for |'s sake", "what a =", "double drat", "so", "haha", "cringe", "don't get me started"]
 
 # ideas: quantities, occasions, colors
-# less necessary but still options: sports
+# less necessary but still options: sports, languages, nationalities, countries?, learning subjects
 
 def returnFact():
     fact = getRand(begs) + " " + getRand(parties) + " " + getRand(verbs) + " " + getRand(parties) + getRand(ends)
-    #fact = 'a *, a hypothetical *.' # test fact
+    #fact = 'the Abyss,' # test fact
     
     while (fact.find("_") != -1 or fact.find("#") != -1 or fact.find("@") != -1 or fact.find("&") != -1 or fact.find("+") != -1 or fact.find("^") != -1 or fact.find("|") != -1 
     or fact.find("=") != -1 or fact.find("%%") != -1 or fact.find("$") != -1 or fact.find("QQ") != -1 or fact.find("VV") != -1 or fact.find("~") != -1 or fact.find("*") != -1
@@ -373,6 +364,9 @@ def returnFact():
                         else:
                             replacement = replacement.replace("VV", "VVCC")
                             fact = fact.replace("VVCC", replacement, 1)
+                    elif fact.find("Planet of the ") != -1:
+                        replacement = replacement.title()
+                        fact = fact.replace("VVCC", replacement, 1)
                     else:
                         if fact.find('"the ') != -1:
                             fact = fact.replace("VVCC", replacement.title(), 1)
@@ -420,7 +414,7 @@ def returnFact():
 
         if fact.find("$") != -1:
             replacement = getRand(parts)
-            if (fact.find("-$'d") != -1 or fact.find("-$CC'd")) and replacement.find(" ") != -1:
+            if (fact.find("-$'d") != -1 or fact.find("-$CC'd") != -1) and replacement.find(" ") != -1:
                 replacement = replacement.replace(" ", "-", 1)
             if fact.find("$CC") != -1:
                 if replacement.find("^") != -1:
@@ -581,13 +575,13 @@ def returnFact():
     if fact.find("a the") != -1 and fact.find("Grandpa") == -1:
         fact = fact.replace("a the", "a")
 
-    if fact.find("ss ") != -1 and fact.find("glass ") == -1 and fact.find("ess ") == -1 and fact.find("loss ") == -1:
+    if fact.find("ss ") != -1 and fact.find("glass ") == -1 and fact.find("ess ") == -1 and fact.find("loss ") == -1 and fact.find("Abyss") == -1:
         fact = fact.replace("ss ", "s ")
 
     if fact.find("ss.") != -1 and fact.find("ess.") == -1:
         fact = fact.replace("ss.", "s.")
 
-    if fact.find("ss,") != -1 and fact.find("ess,") == -1:
+    if fact.find("ss,") != -1 and fact.find("ess,") == -1 and fact.find("Abyss,") == -1:
         fact = fact.replace("ss,", "s,")
 
     if fact.find('ss"') != -1 and fact.find('ess"') == -1:
@@ -673,9 +667,6 @@ def returnFact():
 
     if fact.find("liquid liquid") != -1:
         fact = fact.replace("liquid liquid", "liquid")
-
-    if fact.find("Did you know?") != -1:
-        fact = capitalize(fact, [3])
     
     if fact.find("'S") != -1:
         fact = fact.replace("'S", "'s", 1)
@@ -698,23 +689,44 @@ def returnFact():
     if fact.find("berrieL") != -1:
         fact = fact.replace("berrieL", "berryL")
 
+    if fact.find("ies syrup") != -1:
+        fact = fact.replace("ies syrup", "y syrup")
+
+    if fact.find("ies vinegar") != -1:
+        fact = fact.replace("ies vinegar", "y vinegar")
+
+    if fact.find("ies juice") != -1:
+        fact = fact.replace("ies juice", "y juice")
+
+    if fact.find("ies concentrate") != -1:
+        fact = fact.replace("ies concentrate", "y concentrate")
+
+    if fact.find("ies meat") != -1:
+        fact = fact.replace("ies meat", "y meat")
+
+    if fact.find("ies oil") != -1:
+        fact = fact.replace("ies oil", "y oil")
+
+    if fact.find("ys oil") != -1:
+        fact = fact.replace("ys oil", "y oil")
+
+    if fact.find("oil oil") != -1:
+        fact = fact.replace("oil oil", "oil")
+
     if fact.find("'s's") != -1:
         fact = fact.replace("'s's", "s'")
 
     if fact.find("s was ") != -1:
         fact = fact.replace("s was ", "s were ")
 
-    if fact.find("s was ") != -1:
-        fact = fact.replace("s was ", "s were ")
+    if fact.find("you was ") != -1:
+        fact = fact.replace("you was ", "you were ")
 
     if fact.find("wifes") != -1 or fact.find("Wifes") != -1:
         fact = fact.replace("ifes", "ives")
 
     if fact.find("? ") != -1 and fact.find("attention?") == -1 and fact.find(";)") == -1 and fact.find("know?") == -1 and fact.find(" --") == -1:
         fact = fact.replace("? ", ". ")
-
-    if fact.find("???") != -1:
-        fact = fact.replace("???", "?")
 
     if fact.find("atoe") != -1 and fact.find("atoes") == -1:
         fact = fact.replace("atoe", "ato")
@@ -828,16 +840,18 @@ def returnFact():
     if fact.find('"a O') != -1:
         fact = fact.replace('"a O', '"an O')
 
-    if fact.find('"a u') != -1 and fact.find('uni') != -1 and fact.find('use') != -1:
+    if fact.find('"a u') != -1 and fact.find('uni') == -1 and fact.find('use') == -1:
         fact = fact.replace('"a u', '"an u')
 
-    if fact.find('"a U') != -1 and fact.find('Uni') != -1 and fact.find('Use') != -1:
+    if fact.find('"a U') != -1 and fact.find('Uni') == -1 and fact.find('Use') == -1:
         fact = fact.replace('"a U', '"an U')
 
     if not fact[0].isupper():
         newFact = fact.split(" ")
         newFact[0] = newFact[0].capitalize()
         fact = " ".join(newFact)
+
+    fact = re.sub("(^|[.?!])\s*([a-zA-Z])", lambda p: p.group(0).upper(), fact)
 
     if fact.find('A a') != -1:
         fact = fact.replace('A a', 'An a')
