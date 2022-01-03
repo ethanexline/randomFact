@@ -33,7 +33,7 @@ parties = ["a = wearing false teeth", "the President of +", "the most ^ haircut 
  "a ^CC =CC Champion", "the annual _ dance-off", "Dracula (but if he was from +)", "a ^ly ^ handshake", "an extra set of $s", "the coach of the !!", "a * dish with = meat",
 "^ly ^ *", "your ^ dentist", "@'s accountant", "a mirror that makes you look ^ly ^", "gorgonzola cheese", "the CEO of _", "liquid *", "Obama's last name",
 "the entire South Pole", "a stairway to +", "the reason you were born", "a ^ resignation letter", "a ^ly ^ almond", "a tree", "The World's Largest *CC", "money", 
-"^, ^ *", "a war between =s and =s", "a ^ly ^ corn dog", "a = with a $ that's just too ^", "a = with a =", "a = with too much |", "a = with a ^ $",
+"^, ^ *", "a war between =s and =s", "a ^ly ^ corn dog", "a = with a $ that's just too ^", "a = with a =", "a = with too much |", "a = with a ^ $", "The World's Smallest *CC",
 "the element of surprise", "a slip of the $", "hard, ^ drugs", "a banana that needs to be peeled & times", "* and *", "a perfect doppelganger for @", "=s' rights",
 "the =CC President", "= enthusiasts", "attendees of a $ convention", "the stink eye", "the surface of the sun", "your VV's *", "@'s *", "a ='s $", "a ='s *",
 "_-branded swag", "_'s holiday bash", "@", "@'s secret $", "@'s $", "#", "a software product for =s", "@'s raison d'etre", "the !!", "an outbreak of ~", 
@@ -59,7 +59,7 @@ begs = ["In other news,", "In light of today's events,", "Despite what you may h
 "If you need to quickly leave a social gathering, get everyone's attention and say:", "After weeks of deliberation, Congress finally passed a new law which states the following:", 
 "Awful band name suggestion:", "Our AI overlords wanted me to inform you that", "We regret to inform you that", "A ^ book premiers today which will reveal the story behind how", 
 "There is hope for humanity as long as", "??, hope for humanity lost;", "?? -", "??;", "??,", "??...", "??!", "???", "The secret message on the back of the Constitution:",
-"Hope for humanity restored:"]
+"Hope for humanity restored:", "Because of @'s ^ |,", "In a display of ^ |,"]
 
 adjectives = ["dumb", "ugly", "brown", "campy", "proverbial", "obtuse", "arrogant", "swollen", "frightening", "hungry", "diseased", "naked", "squirming", "^-$'d", "surprising",
 "short", "rank", "malodorous", "cold", "long", "wide", "clammy", "strong", "stirring", "classy", "high-brow", "fat", "overweight", "wooden", "verdant", "al dente", "chewy", "fudgy",
@@ -80,7 +80,7 @@ adjectives = ["dumb", "ugly", "brown", "campy", "proverbial", "obtuse", "arrogan
 "frozen", "melted", "acute", "instant", "amateur", "flat", "unprecedented", "uncouth", "unbecoming", "subpar", "violent", "unattractive", "edible", "sociable", "dangerous", 
 "fiscal", "invisible", "unexpected", "secret", "cool", "erect", "sexy", "appalling", "horrifying", "contagious", "profound", "colorful", "universal", "unidentifiable", "blue",
 "green", "yellow", "purple", "painful", "unpleasant", "unsightly", "foul", "permanent", "desperate", "impotent", "unprofessional", "omnipresent", "soaring", "ethereal",
-"exquisite", "elegant", "dark", "rude", "insane", "crazy"]
+"exquisite", "elegant", "dark", "rude", "insane", "crazy", "vegan", "*-free"]
 
 concepts = ["gusto", "fervor", "panache", "restraint", "style", "wherewithall", "curiosity", "pride", "luck", "chastity", "charity", "joy", "wonder", 
 "passion", "delicacy", "peace", "understanding", "va-va-voom", "swagger", "ingenuity", "self-control", "spirit", "innovation", "clarity", "je ne sais quoi", "gumption", "||",
@@ -187,7 +187,8 @@ foods = ["broccoli", "carrots", "cabbages", "cauliflower", "celery", "creamed co
 "eggs benedict", "beef wellington", "quail", "= grease", "= milk", "syrup", "= concentrate", "cream of *", "cream of =", "= eggs", "pringles", "oreos", "doritos", "mountain dew",
 "chocolate", "endives", "parsley", "marjoram", "basil", "cinnamon", "coriander", "dill", "fennel", "pickled *", "pickled =", "* vinegar", "= vinegar", "* syrup", "= syrup", 
 "= meat", "Dr. pepper", "fried *", "deep-fried *", "deep-fried =", "* meat", "= cheese", "* oil", "barf", "puke", "biscuits", "= soup", "= gravy", "* soup", "* gravy", "= tacos",
-"* grease", "* eggs", "* sauce", "* milk", "* tea", "cumin", "anise", "paprika", "bananas", "dragonfruit", "= pie", "* pie"]
+"* grease", "* eggs", "* sauce", "* milk", "* tea", "cumin", "anise", "paprika", "bananas", "dragonfruit", "= pie", "* pie", "vegan =", "vegan *", "^ cheese", "* cheese",
+"* paste", "= paste", "boiled *"]
 
 teams = ["Arizona Cardinals", "Atlanta Falcons", "Baltimore Ravens", "Buffalo Bills", "Carolina Panthers", "Chicago Bears", "Cincinnati Bengals", "Cleveland Browns", 
 "Dallas Cowboys", "Denver Broncos", "Detroit Lions", "Green Bay Packers", "Houston Texans", "Indianapolis Colts", "Jacksonville Jaguars", "Kansas City Chiefs",
