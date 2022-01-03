@@ -25,24 +25,24 @@ verbs = ["got", "chuggled", "fell in love with the idea of", "slurped", "locked 
 'gave a resounding "??" to the idea of', 'said "??" to', 'gave a "??" when asked about', 'feels pretty "??" about', "tenderly held", "shed salty, ^ tears over", 
 "mourned the loss of", "won a year's supply of", "pledged to never run out of", "developed a new paradigm around", "changed QQ outlook upon", "scraped out the last bit of a jar of",
 "took a big spoonful of", "trusted the | of", "took ^ advice from", "created a new branch of philosophy based on", "couldn't belive the | of", "couldn't comprehend", 
-"found a ^ passion for", "aspired to embody"]
+"found a ^ passion for", "aspired to embody", "harbored a ^ | for", "thought constantly about", "was inspired by the | of", "had QQ $ stolen by", "had QQ closest brush with"]
 
 parties = ["a = wearing false teeth", "the President of +", "the most ^ haircut of all time", "your $ (but & inches in length)", "a =", "Flat Earth Theory",
 "nuclear war", "white people", "^ people", "^ stool", "a = that " + utility.getRand(verbs) + " @", "the CFO of _", 'a new street gang called "the ^CC VVCCs"', '"the ^CC VVCCs"',
 "& push-ups", "a ^, ^ bodybuilder", "a = disguised as @", "a ^ly ^ Halloween costume", "the bathroom", "^ soup", "@'s new $s", "^ *", "a highly ^ strain of ~",
  "a ^CC =CC Champion", "the annual _ dance-off", "Dracula (but if he was from +)", "a ^ly ^ handshake", "an extra set of $s", "the coach of the !!", "a * dish with = meat",
-"^ly ^ *", "your ^ dentist", "@'s accountant", "a mirror that makes you look ^ly ^", "gorgonzola cheese", "the CEO of _", "liquid *", "Obama's last name",
+"^ly ^ *", "your ^ dentist", "@'s accountant", "a mirror that makes you look ^ly ^", "gorgonzola cheese", "the CEO of _", "liquid *", "Obama's last name", "The World's Largest =CC",
 "the entire South Pole", "a stairway to +", "the reason you were born", "a ^ resignation letter", "a ^ly ^ almond", "a tree", "The World's Largest *CC", "money", 
 "^, ^ *", "a war between =s and =s", "a ^ly ^ corn dog", "a = with a $ that's just too ^", "a = with a =", "a = with too much |", "a = with a ^ $", "The World's Smallest *CC",
 "the element of surprise", "a slip of the $", "hard, ^ drugs", "a banana that needs to be peeled & times", "* and *", "a perfect doppelganger for @", "=s' rights",
 "the =CC President", "= enthusiasts", "attendees of a $ convention", "the stink eye", "the surface of the sun", "your VV's *", "@'s *", "a ='s $", "a ='s *",
-"_-branded swag", "_'s holiday bash", "@", "@'s secret $", "@'s $", "#", "a software product for =s", "@'s raison d'etre", "the !!", "an outbreak of ~", 
+"_-branded swag", "_'s holiday bash", "@", "@'s secret $", "@'s $", "#", "a software product for =s", "@'s raison d'etre", "the !!", "an outbreak of ~", "The World's Smallest =CC",
 "one of those small cheeses in wax", "toast", "two =s square-knotted together", "= cruelty", "&th degree murder", "organized crime", "the NYPD", "waaay too much *",
 "someone who looks vaguely like @", "*", "^ *", "a mountain of *", "^ gossip", "memes from #", "a ^ baby", "+", "animals", "plants", "dirt", "an active volcano",
 "butt", "immortality", "|", "=s", "= enthusiasts", "your $", "the $ of a =", " a = with & extra $s", "^ pants", "QQ VV wearing a @ costume", "QQ VV", "a ^ case of ~",
 "@'s VV's favorite VV", "your VV riding a =", "^ chicken nuggets", utility.madeUpWord(False), "a ^ PR campaign", "~", "the asteroid belt", "@'s pet =", "the sun", "the moon",
 'a bar trivia team called "the ^CC $CC"', "'the facilities'", "our AI overlords", "a hypothetical *", "a hypothetical =", "the Planet of the =CCs", 'the phrase "??"',
-"a bag of ^ =s", "a can of * that expired in #", ]
+"a bag of ^ =s", "a can of * that expired in #", "a ^ |"]
 
 begs = ["In other news,", "In light of today's events,", "Despite what you may have heard,", "QQCC VV looked me right in the $ and said:", "After drinking & gallons of liquid *,",
 "Having been born in the year #,", "Despite a lifelong battle with ~,", "Picture this in your mind for a moment:", "Fun fact:", "Did you know?", 
@@ -80,7 +80,7 @@ adjectives = ["dumb", "ugly", "brown", "campy", "proverbial", "obtuse", "arrogan
 "frozen", "melted", "acute", "instant", "amateur", "flat", "unprecedented", "uncouth", "unbecoming", "subpar", "violent", "unattractive", "edible", "sociable", "dangerous", 
 "fiscal", "invisible", "unexpected", "secret", "cool", "erect", "sexy", "appalling", "horrifying", "contagious", "profound", "colorful", "universal", "unidentifiable", "blue",
 "green", "yellow", "purple", "painful", "unpleasant", "unsightly", "foul", "permanent", "desperate", "impotent", "unprofessional", "omnipresent", "soaring", "ethereal",
-"exquisite", "elegant", "dark", "rude", "insane", "crazy", "vegan", "*-free"]
+"exquisite", "elegant", "dark", "rude", "insane", "crazy", "vegan", "*-free", "greasy", "choice"]
 
 concepts = ["gusto", "fervor", "panache", "restraint", "style", "wherewithall", "curiosity", "pride", "luck", "chastity", "charity", "joy", "wonder", 
 "passion", "delicacy", "peace", "understanding", "va-va-voom", "swagger", "ingenuity", "self-control", "spirit", "innovation", "clarity", "je ne sais quoi", "gumption", "||",
