@@ -4,11 +4,13 @@ import utility
 
 def returnFact():
     fact = utility.getRand(lists.begs) + " " + utility.getRand(lists.parties) + " " + utility.getRand(lists.verbs) + " " + utility.getRand(lists.parties) + utility.getRand(lists.ends)
-    #fact = "* gravy, * sauce, * syrup, * concentrate, *CCMan, *CCLand, the World's Smallest *CC." # test fact
-    
+    #fact = "* gravy, * sauce, * syrup, * concentrate, *CCMan, *CCLand, the World's Smallest *CC." # juicy test fact
+    #fact  = "When you really think about it, a war between spider monkeys and anteaters loved to hate our step-brother wearing a ^ guy from Friends costume, which should fill you with inner thigh"
     while (fact.find("_") != -1 or fact.find("#") != -1 or fact.find("@") != -1 or fact.find("&") != -1 or fact.find("+") != -1 or fact.find("^") != -1 or fact.find("|") != -1 
     or fact.find("=") != -1 or fact.find("%%") != -1 or fact.find("$") != -1 or fact.find("QQ") != -1 or fact.find("VV") != -1 or fact.find("~") != -1 or fact.find("*") != -1
     or fact.find("!!") != -1 or fact.find("??") != -1):
+        if fact.find("CCCC") != -1:
+            fact = fact.replace("CCCC", "CC")
         if fact.find("_") != -1:
             fact = fact.replace("_", utility.getRand(lists.companies), 1)
 
@@ -88,8 +90,26 @@ def returnFact():
                 fact = fact.replace("^", utility.getRand(lists.adjectives), 1)
 
         if fact.find("|") != -1:
+            replacement = utility.getRand(lists.concepts)
             if fact.find("|CC") != -1:
-                fact = fact.replace("|CC", utility.getRand(lists.concepts).capitalize(), 1)
+                replacement = replacement.title()
+                if replacement.find("^") != -1:
+                    replacement = replacement.replace("^", "^CC")
+                if replacement.find("*") != -1:
+                    replacement = replacement.replace("*", "*CC")
+                if replacement.find("$") != -1:
+                    replacement = replacement.replace("$", "$CC")
+                if replacement.find("|") != -1:
+                    replacement = replacement.replace("|", "|CC")
+                if replacement.find("=") != -1:
+                    replacement = replacement.replace("=", "=CC")
+                if replacement.find("Vv") != -1:
+                    replacement = replacement.replace("Vv", "VVCC")
+                if replacement.find("Qq") != -1:
+                    replacement = replacement.replace("Qq", "QQCC")
+                if replacement.find("%%") != -1:
+                    replacement = replacement.replace("%%", "%%CC")
+                fact = fact.replace("|CC", replacement, 1)
             else:
                 fact = fact.replace("|", utility.getRand(lists.concepts), 1)
 
@@ -167,7 +187,28 @@ def returnFact():
                 fact = fact.replace("=", utility.getRand(lists.animals), 1)
 
         if fact.find("%%") != -1:
-            fact = fact.replace("%%", utility.getRand(lists.parties), 1)
+            replacement = utility.getRand(lists.parties)
+            if fact.find("%%CC") != -1:
+                replacement = replacement.title()
+                if replacement.find("^") != -1:
+                    replacement = replacement.replace("^", "^CC")
+                if replacement.find("*") != -1:
+                    replacement = replacement.replace("*", "*CC")
+                if replacement.find("$") != -1:
+                    replacement = replacement.replace("$", "$CC")
+                if replacement.find("|") != -1:
+                    replacement = replacement.replace("|", "|CC")
+                if replacement.find("=") != -1:
+                    replacement = replacement.replace("=", "=CC")
+                if replacement.find("Vv") != -1:
+                    replacement = replacement.replace("Vv", "VVCC")
+                if replacement.find("Qq") != -1:
+                    replacement = replacement.replace("Qq", "QQCC")
+                if replacement.find("%%") != -1:
+                    replacement = replacement.replace("%%", "%%CC")
+                fact = fact.replace("%%CC", replacement, 1)
+            else:
+                fact = fact.replace("%%", replacement, 1)
 
         if fact.find("$") != -1:
             replacement = utility.getRand(lists.parts)
@@ -185,7 +226,24 @@ def returnFact():
                 fact = fact.replace("$", utility.getRand(lists.parts), 1)
 
         if fact.find("~") != -1:
-            fact = fact.replace("~", utility.getRand(lists.disease), 1)
+            replacement = utility.getRand(lists.disease)
+            if fact.find("~CC") != -1:
+                replacement = replacement.title()
+                if replacement.find("^") != -1:
+                    replacement = replacement.replace("^", "^CC")
+                if replacement.find("*") != -1:
+                    replacement = replacement.replace("*", "*CC")
+                if replacement.find("$") != -1:
+                    replacement = replacement.replace("$", "$CC")
+                if replacement.find("|") != -1:
+                    replacement = replacement.replace("|", "|CC")
+                if replacement.find("=") != -1:
+                    replacement = replacement.replace("=", "=CC")
+                if replacement.find("Qq") != -1:
+                    replacement = replacement.replace("Qq", "QQCC")
+                fact.replace("~CC", replacement, 1)
+            else:
+                fact = fact.replace("~", utility.getRand(lists.disease), 1)
 
         if fact.find("*") != -1:
             if fact.find("Man") != -1 and fact[fact.find("Man") - 1] == "C":
@@ -200,7 +258,7 @@ def returnFact():
                     fact = fact.replace("*CC", replacement, 1)
                 elif replacement.find("^ ") != -1:
                     replacement = replacement.replace(" ", "").replace("'", "").replace("-", "").replace(".", "")
-                    replacement = replacement.replace("^ ", "^CC")
+                    replacement = replacement.replace("^", "^CC")
                     fact = fact.replace("*CC", replacement, 1)
                 else:
                     fact = fact.replace("*CCMan", replacement.replace(" ", "").replace("'", "").replace("-", "").replace(".", "") + "Man", 1)
@@ -220,7 +278,7 @@ def returnFact():
                 elif replacement.find("^ ") != -1:
                     replacement = replacement.replace(" ", "").replace("'", "").replace("-", "").replace(".", "")
                     replacement = replacement.replace("^Cc ", "^CC")
-                    replacement = replacement.replace("^ ", "^CC")  
+                    replacement = replacement.replace("^", "^CC")  
                     fact = fact.replace("*CC", replacement, 1)
                 else:
                     fact = fact.replace("*CCLand", replacement.replace(" ", "").replace("'", "").replace("-", "").replace(".", "") + "Land", 1)
@@ -265,7 +323,20 @@ def returnFact():
 
         if fact.find("??") != -1:
             if fact.find("??CC") != -1:
-                fact = fact.replace("??CC", utility.getRand(lists.interjection).capitalize(), 1)
+                replacement = replacement.title()
+                if replacement.find("^") != -1:
+                    replacement = replacement.replace("^", "^CC")
+                if replacement.find("*") != -1:
+                    replacement = replacement.replace("*", "*CC")
+                if replacement.find("$") != -1:
+                    replacement = replacement.replace("$", "$CC")
+                if replacement.find("|") != -1:
+                    replacement = replacement.replace("|", "|CC")
+                if replacement.find("=") != -1:
+                    replacement = replacement.replace("=", "=CC")
+                if replacement.find("Qq") != -1:
+                    replacement = replacement.replace("Qq", "QQCC")
+                fact = fact.replace("??CC", replacement, 1)
             else:
                 fact = fact.replace("??", utility.getRand(lists.interjection), 1)
 
@@ -314,9 +385,6 @@ def returnFact():
         if fact.find("=cc") != -1:
             fact = fact.replace("=cc", "=CC")
 
-        if fact.find(" an uni") != -1 or fact.find(" an use") != -1:
-            fact = fact.replace(" an u", " a u", 1)
-
     if fact.find(" a ") != -1:
         aCount = fact.count(" a ")
         searchFrom = 0
@@ -331,6 +399,14 @@ def returnFact():
             else:
                 aCount -= 1
                 searchFrom = fact.find(" a ", searchFrom) + 3
+
+
+
+    if fact.find(" an uni") != -1 or fact.find(" an use") != -1:
+        fact = fact.replace(" an u", " a u")
+
+    if fact.find(" an Uni") != -1 or fact.find(" an Use") != -1:
+        fact = fact.replace(" an U", " a U")
 
     if fact.find(" ,") != -1:
         fact = fact.replace(" ,", ",")
@@ -461,7 +537,7 @@ def returnFact():
     if fact.find("you's") != -1:
         fact = fact.replace("you's", "your")
 
-    if fact.find("icly ") != -1 and fact.find("chicly") == -1:
+    if fact.find("icly ") != -1 and fact.find("chicly") == -1 and fact.find("publicly") == -1:
         fact = fact.replace("icly ", "ically ")
 
     if fact.find("Creamof") != -1:
@@ -538,6 +614,72 @@ def returnFact():
 
     if fact.find("CreamOfCreamOf") != -1:
         fact = fact.replace("CreamOfCreamOf", "CreamOf")
+
+    if fact.find("Concentrate Concentrate") != -1:
+        fact = fact.replace("Concentrate Concentrate", "Concentrate")
+
+    if fact.find("Butter Butter") != -1:
+        fact = fact.replace("Butter Butter", "Butter")
+
+    if fact.find("Cheese Cheese") != -1:
+        fact = fact.replace("Cheese Cheese", "Cheese")
+
+    if fact.find("Vinegar Vinegar") != -1:
+        fact = fact.replace("Vinegar Vinegar", "Vinegar")
+
+    if fact.find("Juice Juice") != -1:
+        fact = fact.replace("Juice Juice", "Juice")
+
+    if fact.find("Sauce Sauce") != -1:
+        fact = fact.replace("Sauce Sauce", "Sauce")
+
+    if fact.find("Syrup Syrup") != -1:
+        fact = fact.replace("Syrup Syrup", "Syrup")
+
+    if fact.find("Grease Grease") != -1:
+        fact = fact.replace("Grease Grease", "Grease")
+
+    if fact.find("Meat Meat") != -1:
+        fact = fact.replace("Meat Meat", "Meat")
+
+    if fact.find("Paste Paste") != -1:
+        fact = fact.replace("Paste Paste", "Paste")
+
+    if fact.find("Gravy Gravy") != -1:
+        fact = fact.replace("Gravy Gravy", "Gravy")
+
+    if fact.find("Soup Soup") != -1:
+        fact = fact.replace("Soup Soup", "Soup")
+
+    if fact.find("Milk Milk") != -1:
+        fact = fact.replace("Milk Milk", "Milk")
+
+    if fact.find("Eggs Eggs") != -1:
+        fact = fact.replace("Eggs Eggs", "Eggs")
+
+    if fact.find("Fried Fried") != -1:
+        fact = fact.replace("Fried Fried", "Fried")
+
+    if fact.find("Vegan Vegan") != -1:
+        fact = fact.replace("Vegan Vegan", "Vegan")
+
+    if fact.find("Pickled Pickled") != -1:
+        fact = fact.replace("Pickled Pickled", "Pickled")
+
+    if fact.find("Boiled Boiled") != -1:
+        fact = fact.replace("Boiled Boiled", "Boiled")
+
+    if fact.find("Oil Oil") != -1:
+        fact = fact.replace("Oil Oil", "Oil")
+
+    if fact.find("Tea Tea") != -1:
+        fact = fact.replace("Tea Tea", "Tea")
+
+    if fact.find("Pie Pie") != -1:
+        fact = fact.replace("Pie Pie", "Pie")
+
+    if fact.find("Deep-Fried Deep-Fried") != -1:
+        fact = fact.replace("Deep-Fried Deep-Fried", "Deep-Fried")
 
     if fact.find("concentrate concentrate") != -1:
         fact = fact.replace("concentrate concentrate", "concentrate")
