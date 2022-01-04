@@ -429,19 +429,19 @@ def returnFact():
     if fact.find("yly") != -1:
         fact = fact.replace("yly", "ily")
 
-    if fact.find("ys") != -1 and fact.find("Mays") == -1 and fact.find("hysical") == -1 and fact.find("MySpace") == -1 and fact.find("onkeys") == -1 and fact.find("Cowboys") == -1 and fact.find("oneys") == -1 and fact.find("Abyss") == -1:
+    if fact.find("ys") != -1 and fact.find("Mays") == -1 and fact.find("hysical") == -1 and fact.find("MySpace") == -1 and fact.find("onkeys") == -1 and fact.find("Cowboys") == -1 and fact.find("oneys") == -1:
         fact = fact.replace("ys", "ies")
 
     if fact.find("a the") != -1 and fact.find("Grandpa") == -1:
         fact = fact.replace("a the", "a")
 
-    if fact.find("ss ") != -1 and fact.find("glass ") == -1 and fact.find("ess ") == -1 and fact.find("loss ") == -1 and fact.find("Abyss") == -1:
+    if fact.find("ss ") != -1 and fact.find("glass ") == -1 and fact.find("ess ") == -1 and fact.find("loss ") == -1:
         fact = fact.replace("ss ", "s ")
 
     if fact.find("ss.") != -1 and fact.find("ess.") == -1:
         fact = fact.replace("ss.", "s.")
 
-    if fact.find("ss,") != -1 and fact.find("ess,") == -1 and fact.find("Abyss,") == -1:
+    if fact.find("ss,") != -1 and fact.find("ess,") == -1:
         fact = fact.replace("ss,", "s,")
 
     if fact.find('ss"') != -1 and fact.find('ess"') == -1:
@@ -473,6 +473,9 @@ def returnFact():
 
     if fact.find("s-y") != -1 or fact.find("s-flavored") != -1:
         fact = fact.replace("s-", "-")
+
+    if fact.find("Abys") != -1 and fact.find("Abyss") == -1:
+        fact = fact.replace("Abys", "Abyss")
 
     if fact.find("s juice") != -1:
         fact = fact.replace("s juice", " juice")
@@ -539,6 +542,18 @@ def returnFact():
 
     if fact.find("icly ") != -1 and fact.find("chicly") == -1 and fact.find("publicly") == -1:
         fact = fact.replace("icly ", "ically ")
+
+    if fact.find("a proletariat") != -1:
+        fact = fact.replace("a proletariat", "the proletariat")
+
+    if fact.find("a Proletariat") != -1:
+        fact = fact.replace("a Proletariat", "the Proletariat")
+
+    if fact.find("a proletariat") != -1:
+        fact = fact.replace("a bourgeoisie", "the bourgeoisie")
+
+    if fact.find("a Bourgeoisie") != -1:
+        fact = fact.replace("a Bourgeoisie", "the Bourgeoisie")
 
     if fact.find("Creamof") != -1:
         fact = fact.replace("Creamof", "CreamOf")

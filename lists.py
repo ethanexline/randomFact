@@ -88,7 +88,8 @@ concepts = ["gusto", "fervor", "panache", "restraint", "style", "wherewithall", 
 "longing", "resilience", "wit", "faith", "honor", "candor", "serenity", "hope", "patience", "kindness", "cheer", "goodwill", "can-do attitude", "spirit", "moxie", "soul",
 "joie de vivre", "virtue", "courage", "fire", "selflessness", "pride", "glamour", "$", utility.madeUpWord(False), "culture", "disdain", "apprehension", "hesitancy", "cowardice", 
 "evil", "coldness", "underhandedness", "subtlety", "visibility", "sausage", "pancakes", "stupor", "~", "*", "ambition", "fear", "shame", "desperation", "security", "dignity",
-"fidelity", "humility", "honesty", "humor", "horror", "ego", "guilt", "kindness", "gentleness", "despair", "consternation", "regret", "remorse"]
+"fidelity", "humility", "honesty", "humor", "horror", "ego", "guilt", "kindness", "gentleness", "despair", "consternation", "regret", "remorse", "science", "math", "geometry",
+"physics", "arithmetic", "trigenometry", "chemistry", "somatics", "logic", "ethics", "philosophy", "psychology", "sociology"]
 
 ends = [" while @ was still president.", ", using QQ $ to chug a two-liter of liquid *.", " with the | of a ^ =.", " - how ^ is that?", ", demonstrating ^ |.",
 ", which, ^ly, broke the world record.", ", because that's what ^ | looks like.", ", cause money don't grow on " + utility.getRand(parties) + ".", ", showing no |.",
@@ -130,7 +131,7 @@ celebs = ["Dolly Parton", "Robert Pattinson", "the Geico =CC", "the mascot for t
 "Steve Harvey", "Tim Apple", "The One True =CC", "Peewee Herman", '@ AKA "the ^CC =CC"', "me", "Rongle McDongle", "*CCMan", "George RR Martin", "George Bush",
 "Charles Entertainment Cheese", "Larry the *CC", "Bob the *CC", "Gex", "Glover", "Donkey Kong", "Bowser", "Dark Souls", "@'s new lover (@)", "Ornstein and Smough",
 "Lord Gwyn", "the Gaping Dragon", "Cranky Kong", "Funky Kong", "Aldia, Scholar of the First Sin", "Manus, Father of the Abyss", "Knight Artorias", "the Firekeeper",
-"Martin Shkreli", "Adele", "John Krasinski", "Justin Bieber", "Brian Peppers"]
+"Martin Shkreli", "Adele", "John Krasinski", "Justin Bieber", "Brian Peppers", "Moses"]
 
 places = ["^CC Jersey", "the ^CC States", "Europe", "Russia", "Asia", "Japan", "yo VV's house", "the sock drawer", "Madagascar", "Californ-I-A", "your soul", 
 "the corporate offices of _", "the ^CC House", "Yellowstone Park", "Italy", "the Pentagon", "Mount Everest", "an underground city", "the ^ dungeon", "a ^ city",
@@ -192,7 +193,7 @@ foods = ["broccoli", "carrots", "cabbages", "cauliflower", "celery", "creamed co
 "chocolate", "endives", "parsley", "marjoram", "basil", "cinnamon", "coriander", "dill", "fennel", "pickled *", "pickled =", "* vinegar", "= vinegar", "* syrup", "= syrup", 
 "= meat", "Dr. pepper", "fried *", "deep-fried *", "deep-fried =", "* meat", "= cheese", "* oil", "barf", "puke", "biscuits", "= soup", "= gravy", "* soup", "* gravy", "= tacos",
 "* grease", "* eggs", "* sauce", "* milk", "* tea", "cumin", "anise", "paprika", "bananas", "dragonfruit", "= pie", "* pie", "vegan = meat", "vegan *", "^ cheese", "* cheese",
-"* paste", "= paste", "boiled *"]
+"* paste", "= paste", "boiled *", "arugala", "artichokes", "asparagus",  "beans", "beets"]
 
 teams = ["Arizona Cardinals", "Atlanta Falcons", "Baltimore Ravens", "Buffalo Bills", "Carolina Panthers", "Chicago Bears", "Cincinnati Bengals", "Cleveland Browns", 
 "Dallas Cowboys", "Denver Broncos", "Detroit Lions", "Green Bay Packers", "Houston Texans", "Indianapolis Colts", "Jacksonville Jaguars", "Kansas City Chiefs",
