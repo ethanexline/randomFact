@@ -429,7 +429,7 @@ def returnFact():
     if fact.find("yly") != -1:
         fact = fact.replace("yly", "ily")
 
-    if fact.find("ys") != -1 and fact.find("Mays") == -1 and fact.find("hysical") == -1 and fact.find("MySpace") == -1 and fact.find("onkeys") == -1 and fact.find("Cowboys") == -1 and fact.find("oneys") == -1:
+    if fact.find("ys") != -1 and fact.find("Mays") == -1 and fact.find("hysical") == -1 and fact.find("MySpace") == -1 and fact.find("onkeys") == -1 and fact.find("Cowboys") == -1 and fact.find("oneys") == -1 and fact.find("Abyss") == -1:
         fact = fact.replace("ys", "ies")
 
     if fact.find("a the") != -1 and fact.find("Grandpa") == -1:
