@@ -10,7 +10,7 @@ def randYear():
         return str(year)
 
 def randNum():
-    num = randint(-100, 100)
+    num = randint(0, 100)
     return str(num)
 
 def getRand(group):
@@ -45,6 +45,6 @@ def madeUpWord(c):
         i += 1
 
     if c:
-        return word.title()
+        return word.capitalize()
     else:
         return word
