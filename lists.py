@@ -90,7 +90,8 @@ concepts = ["gusto", "fervor", "panache", "restraint", "style", "wherewithall", 
 "joie de vivre", "virtue", "courage", "fire", "selflessness", "pride", "glamour", "$", utility.madeUpWord(False), "culture", "disdain", "apprehension", "hesitancy", "cowardice", 
 "evil", "coldness", "underhandedness", "subtlety", "visibility", "sausage", "pancakes", "stupor", "~", "ambition", "fear", "shame", "desperation", "security", "dignity",
 "fidelity", "humility", "honesty", "humor", "horror", "ego", "guilt", "kindness", "gentleness", "despair", "consternation", "regret", "remorse", "science", "math", "geometry",
-"physics", "arithmetic", "trigenometry", "chemistry", "somatics", "logic", "ethics", "philosophy", "psychology", "sociology", "mercy", "grace", "compassion"]
+"physics", "arithmetic", "trigenometry", "chemistry", "somatics", "logic", "ethics", "philosophy", "psychology", "sociology", "mercy", "grace", "compassion", "politics", 
+"economics", "semantics"]
 
 ends = [" while @ was still president.", ", using QQ $ to chug a two-liter of liquid *.", " with the | of a ^ =.", " - how ^ is that?", ", demonstrating ^ |.",
 ", which, ^ly, broke the world record.", ", because that\'s what ^ | looks like.", ", cause money don\'t grow on %%.", ", showing no |.",
@@ -103,7 +104,7 @@ ends = [" while @ was still president.", ", using QQ $ to chug a two-liter of li
 " by sitting and thinking very hard about %%.", " by the $ of @.", " - now that shows some ^ |!", " - now that takes some |!", " - seems a bit ^ to me...", ", which is SO not ^.", 
 ", giving everyone ~.", ", utilizing only %% and %%.", ", causing @ to break QQ $.", ", causing @ to instantly grow a new $.", ", after which @ got QQ $ pierced.", " - ??.",
 " - in other words, " + utility.madeUpWord(False) + ".", ", permanently eradicating ~.", ", which gave @ ~.", ", curing @'s severe case of ~.", ", which is how @ and @ met.", 
-", which marked @'s entry into politics.", ", which should fill you with |.", ". --@", ", which is how @ contracted ~.", " - ??!", " - ???",
+", which sparked @'s interest in |.", ", which should fill you with |.", ". --@", ", which is how @ contracted ~.", " - ??!", " - ???",
 ", after which QQ $ fell off.", ", which is probably QQ best work.", ", which is a real slap in the $.", ' - well, "??" to you too!', " - ??, ??.", " - ??, ??!",
 ", which happens to be the backstory for my new character, *CCMan.", " - but what about !!!?", ", which, for !!!, was ^ly ^."]
 
@@ -130,7 +131,7 @@ celebs = ["Dolly Parton", "Robert Pattinson", "the Geico =CC", "the = from Air B
 "Reggie Fils-Aime", "Yoshihide Suga", "Grandma", "Grandpa", "^CCMan", "Finn the =CC", "a _ employee", "Warren Buffet", "Billie Eilish", "Videogamedunkey", "Grover Cleveland", 
 "Thomas Edison", "Winnie the Pooh", "QuailMan", "Jeffery Bezos", "Vermin Supreme", "Chris Hemsworth", "Chevy Chase", "Dick Van Dyke", "Andy Griffith", "Bob Hope", 
 "Regis Philbin", "Dr. Phil", "Hulk Hogan", "Honey Boo-Boo", "Gordon Ramsay", "Bo Burnham", "Obamna", "Conan O'Brian", "Steve Carrell", "James Brown", "Michael Jackson",
-"Steve Harvey", "Tim Apple", "The One True =CC", "Peewee Herman", '@ AKA "the ^CC =CC"', "me", "Rongle McDongle", "*CCMan", "George RR Martin", "George Bush",
+"Steve Harvey", "Tim Apple", "The One True =CC", "Peewee Herman", '@ AKA \"the ^CC =CC\"', "me", "Rongle McDongle", "*CCMan", "George RR Martin", "George Bush",
 "Charles Entertainment Cheese", "Larry the *CC", "Bob the *CC", "Gex", "Glover", "Donkey Kong", "Bowser", "Dark Souls", "@'s new lover (@)", "Ornstein and Smough",
 "Lord Gwyn", "the Gaping Dragon", "Cranky Kong", "Funky Kong", "Aldia, Scholar of the First Sin", "Manus, Father of the Abyss", "Knight Artorias", "the Firekeeper",
 "Martin Shkreli", "Adele", "John Krasinski", "Justin Bieber", "Brian Peppers", "Moses"]
@@ -208,7 +209,8 @@ interjection = ["OK", "alright", "cool", "whatever", "great", "perfect", "who\'d
 "shoot", "how ^", "that's too bad", "how sad", "uh oh", "for pete''s sake", "for crying out loud", "tough *", "how frustrating", "how embarrassing", "hmm", "what a show of |",
 "never seen such |", "takes my | away", "bless QQ heart", "watch out", "preposterous", "wonderful", "for *'s sake", "tarnation", "consarnit", "^", "nice", "how dare @", 
 "what |", "welp", "oh well", "gadzooks", "eureka", "aw man", "forsooth", "alas", "amen", "how could this be", "it can't be true", utility.madeUpWord(False), "golly", "yay", "!! don\'t care",
-"crikey", "exclamation", "for |\'s sake", "what a =", "double drat", "so", "haha", "cringe", "don/'t get me started", "well slap my $ and call me a VV", "well, ??", "sorry"]
+"crikey", "exclamation", "for |\'s sake", "what a =", "double drat", "so", "haha", "cringe", "don/'t get me started", "well slap my $ and call me a VV", "well, ??", "sorry",
+"hallelujah"]
 
 # ideas: quantities, occasions, colors
 # less necessary but still options: sports, languages, nationalities, countries?, cities?
