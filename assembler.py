@@ -115,14 +115,14 @@ def returnFact():
 
         if fact.find("QQ") != -1:
             if fact.find("QQCC") != -1:
-                replacement = utility.getRand(lists.theirReplacements)
+                replacement = utility.getRand(lists.possessives)
                 if replacement.find("VV") != -1:
                     replacement = replacement.replace("VV", "VVCC", 1)
                     fact = fact.replace("QQCC", replacement, 1)
                 else:
                     fact = fact.replace("QQCC", replacement.capitalize(), 1)
             else:
-                fact = fact.replace("QQ", utility.getRand(lists.theirReplacements), 1)
+                fact = fact.replace("QQ", utility.getRand(lists.possessives), 1)
 
         if fact.find("VV") != -1:
             if fact.find("VVCC") != -1:
@@ -339,6 +339,12 @@ def returnFact():
             else:
                 fact = fact.replace("??", utility.getRand(lists.interjection), 1)
 
+        if fact.find("!!") != -1:
+            if fact.find("!!!") != -1:
+                fact = fact.replace("!!!", utility.getRand(lists.pronounsObject), 1)
+            else:
+                fact = fact.replace("!!", utility.getRand(lists.pronounsSubject), 1)
+
         if fact.find("Vv") != -1:
             fact = fact.replace("Vv", "VVCC")
 
@@ -434,6 +440,9 @@ def returnFact():
 
     if fact.find("sss") != -1:
         fact = fact.replace("sss", "sses")
+
+    if fact.find("muss") != -1:
+        fact = fact.replace("muss", "muses")
 
     # if fact.find("ss ") != -1 and fact.find("glass ") == -1 and fact.find("ess ") == -1 and fact.find("loss ") == -1:
     #     fact = fact.replace("ss ", "s ")
