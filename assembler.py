@@ -5,10 +5,10 @@ import utility
 def returnFact():
     fact = utility.getRand(lists.begs) + " " + utility.getRand(lists.parties) + " " + utility.getRand(lists.verbs) + " " + utility.getRand(lists.parties) + utility.getRand(lists.ends)
     #fact = "* gravy, * sauce, * syrup, * concentrate, *CCMan, *CCLand, the World's Smallest *CC." # juicy test fact
-    #fact  = "We regret to inform you that old marjoram gave a \"weewee\" when asked about an exhaustingly swollen Halloween costume - what a foul time to be unsuccessful!"
+    #fact  = "If !! got out once in a while, !!'d know that"
     while (fact.find("_") != -1 or fact.find("#") != -1 or fact.find("@") != -1 or fact.find("&") != -1 or fact.find("+") != -1 or fact.find("^") != -1 or fact.find("|") != -1 
     or fact.find("=") != -1 or fact.find("%%") != -1 or fact.find("$") != -1 or fact.find("QQ") != -1 or fact.find("VV") != -1 or fact.find("~") != -1 or fact.find("*") != -1
-    or fact.find("??") != -1):
+    or fact.find("??") != -1 or fact.find("!!") != -1 or fact.find("!!!") != -1):
         if fact.find("CCCC") != -1:
             fact = fact.replace("CCCC", "CC")
         if fact.find("_") != -1:
@@ -341,9 +341,9 @@ def returnFact():
 
         if fact.find("!!") != -1:
             if fact.find("!!!") != -1:
-                fact = fact.replace("!!!", utility.getRand(lists.pronounsObject), 1)
+                fact = fact.replace("!!!", utility.getRand(lists.pronounsObject))
             else:
-                fact = fact.replace("!!", utility.getRand(lists.pronounsSubject), 1)
+                fact = fact.replace("!!", utility.getRand(lists.pronounsSubject))
 
         if fact.find("Vv") != -1:
             fact = fact.replace("Vv", "VVCC")
@@ -412,11 +412,17 @@ def returnFact():
                 aCount -= 1
                 searchFrom = fact.find(" a ", searchFrom) + 3
 
-    if (fact.find(" an uni") != -1 and fact.find(" an unidentifiable") == -1) or fact.find(" an use") != -1:
-        fact = fact.replace(" an u", " a u")
+    if (fact.find(" an uni") != -1 and fact.find(" an unidentifiable") == -1):
+        fact = fact.replace(" an uni", " a uni")
 
-    if (fact.find(" an Uni") != -1 and fact.find(" an Unidentifiable") == -1) or fact.find(" an Use") != -1:
-        fact = fact.replace(" an U", " a U")
+    if fact.find(" an use") != -1:
+        fact = fact.replace(" an use", " a use")
+
+    if (fact.find(" an Uni") != -1 and fact.find(" an Unidentifiable") == -1):
+        fact = fact.replace(" an Uni", " a Uni")
+
+    if fact.find(" an Use") != -1:
+        fact = fact.replace(" an Use", " a Use")
 
     if fact.find(" ,") != -1:
         fact = fact.replace(" ,", ",")
@@ -511,7 +517,7 @@ def returnFact():
     if fact.find("les-than") != -1:
         fact = fact.replace("les-than", "less-than")
 
-    if fact.find("Have you considered the fact that") != -1 or fact.find("What if") != -1 or fact.find("Were you aware that") != -1:
+    if (fact.find("Have you considered the fact that") != -1 or fact.find("What if") != -1 or fact.find("Were you aware that") != -1) and fact.find("...") == -1:
         fact = fact.replace(".", "?")
 
     if fact.find("have gave") != -1:
@@ -547,8 +553,17 @@ def returnFact():
     if fact.find("have hired") != -1:
         fact = fact.replace("have hired", "have been hired")
 
+    if fact.find("have threw") != -1:
+        fact = fact.replace("have threw", "have thrown")
+
+    if fact.find("roletariats") != -1:
+        fact = fact.replace("roletariats", "roletariat")
+
     if fact.find("siss") != -1:
         fact = fact.replace("siss", "sisters")
+
+    if fact.find("S ") != -1:
+        fact = fact.replace("S ", "s ")
 
     if fact.find("ruely") != -1:
         fact = fact.replace("ruely", "ruly")
@@ -966,21 +981,25 @@ def returnFact():
     if fact.find('A O') != -1:
         fact = fact.replace('A O', 'An O')
 
-    if fact.find('A u') != -1 and fact.find('uni') != -1 and fact.find('use') != -1:
-        fact = fact.replace('A u', 'An u')
+    if fact.find("Us Cellular") != -1:
+        fact = fact.replace("Us Cellular", "US Cellular")
 
-    if fact.find('A U') != -1 and fact.find('Uni') != -1 and fact.find('Use') != -1:
-        fact = fact.replace('A U', 'An U')
+    if fact[:4].find('A u') != -1 and fact[:8].find('uni') == -1 and fact[:8].find('use') == -1:
+        fact = fact.replace('A u', 'An u', 1)
+
+    if fact[:4].find('A U') != -1 and fact[:8].find('Uni') == -1 and fact[:8].find('Use') == -1:
+        fact = fact.replace('A U', 'An U', 1)
 
     return fact
 
-print()
-print()
-print()
-print()
-print()
-print()
-print()
-print()
+# testing
+# print()
+# print()
+# print()
+# print()
+# print()
+# print()
+# print()
+# print()
 
-print(returnFact())
+# print(returnFact())

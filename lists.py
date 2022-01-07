@@ -21,7 +21,7 @@ verbs = ["got", "chuggled", "fell in love with the idea of", "slurped", "locked 
 "began a club that focuses on", "conquered QQ intense fear of", "felt a pang of | while mourning the loss of", "peeled the plastic off of a fresh container of",
 "threw a hissy fit over", "completely ran out of", "mulled over the idea of", "considered the consequences of endorsing", "gambled away QQ entire supply of", 
 "publically denounced", "called out @ over QQ prejudice towards", 'debuted QQ new movie called \"%%CC\", starring', "did voice acting for a game where you play as",
-'starred in the new sitcom \"%%CC\" alongside', "donated QQ $ to", "showed QQ | to", "made QQ world-famous * for", "wrote a ^ blog post about", "wrote a * song about",
+'starred in the new sitcom \"%%CC\" alongside', "donated QQ $ to", "showed QQ | to", "made QQ world-famous * for", "wrote a ^ blog post about", "wrote a ^ song about",
 'gave a resounding \"??\" to the idea of', 'said \"??\" to', 'gave a \"??\" when asked about', 'feels pretty \"??\" about', "tenderly held", "shed salty, ^ tears over", 
 "mourned the loss of", "won a year's supply of", "pledged to never run out of", "developed a new paradigm around", "changed QQ outlook upon", "scraped out the last bit of a jar of",
 "took a big spoonful of", "trusted the | of", "took ^ advice from", "created a new branch of philosophy based on", "couldn\'t belive the | of", "couldn\'t comprehend", 
@@ -33,7 +33,7 @@ parties = ["a = wearing false teeth", "the President of +", "the most ^ haircut 
 "& push-ups", "a ^, ^ bodybuilder", "a = disguised as @", "a ^ly ^ Halloween costume", "the bathroom", "^ soup", "@\'s new $s", "^ *", "a highly ^ strain of ~",
  "a ^CC =CC Champion", "the annual _ dance-off", "Dracula (but if he was from +)", "a ^ly ^ handshake", "an extra set of $s", "a * dish with = meat",
 "^ly ^ *", "your ^ dentist", "@\'s accountant", "a mirror that makes you look ^ly ^", "gorgonzola cheese", "the CEO of _", "liquid *", "Obama\'s last name", "The World\'s Largest =CC",
-"the entire South Pole", "a stairway to +", "the reason you were born", "a ^ resignation letter", "a ^ly ^ almond", "a tree", "The World\'s Largest *CC", "money", 
+"the entire South Pole", "a stairway to +", "the reason you were born", "a ^ly ^ almond", "a tree", "The World\'s Largest *CC", "money", 
 "^, ^ *", "a war between =s and =s", "a ^ly ^ corn dog", "a = with a $ that\'s just too ^", "a = with a =", "a = with too much |", "a = with a ^ $", "The World\'s Smallest *CC",
 "the element of surprise", "a slip of the $", "hard, ^ drugs", "a banana that needs to be peeled & times", "* and *", "a perfect doppelganger for @", "=s\' rights",
 "the =CC President", "= enthusiasts", "attendees of a $ convention", "the stink eye", "the surface of the sun", "your VV\'s *", "@\'s *", "a =\'s $", "a =\'s *",
@@ -53,11 +53,11 @@ begs = ["In other news,", "In light of today\'s events,", "Despite what you may 
 "^ly, due to %%,", "If you squint and turn your head ^ly to the side, you\'ll see that", "Despite having ^ |,", "If a = or @ is attacking you, remember that", 
 "Thanks to free speech,", "Wanna really get somebody\'s attention? Lay one of these on \'em:", 'The German word \"' + utility.madeUpWord(False) + '\" describes the situation where', 
 "@ has released the following statement:", "The hidden country of " + utility.madeUpWord(True) + " is where", "To strike a balance between | and |,", "To fill your life with |,", 
-"To fill your $ with |,", "To impart | into @\'s $, declare that", "To make @ feel |,", "Were you aware that", "If you ever visit +, ask the locals about how", 
-"It fills me with | to know that", "What if", "What !! teach in schools now is that", "An unprecendented turn of events:", 
+"To fill your $ with |,", "To impart | into @\'s $, declare that", "To fill @ with |,", "Were you aware that", "If you ever visit +, ask the locals about how", 
+"It fills me with | to know that", "What if", "What !! teach in schools now is that", "An unprecendented turn of events:", "If !! got out once in a white, !!'dd know that",
 "Due to an outbreak of ~,", "History would never be the same after the day that", "Due to %% and QQ *,", "Before !! " + utility.getRand(verbs) + " %%,",
 "I know it sounds ^, but", "%% tells me that", "All existing evidence suggests that", "We hold this truth to be self-evident, that",
-"If you need to quickly leave a social gathering, get everyone\'s attention and say:", "After weeks of deliberation, Congress finally passed a new law which states the following:", 
+"If you need to quickly leave a social gathering, get everyone\'s attention and say:", "Congress met today to discuss the issue of how", "All today's kids only worry about how",
 "Awful band name suggestion:", "Our AI overlords wanted me to inform you that", "We regret to inform you that", "A ^ book premiers today which will reveal the story behind how", 
 "There is hope for humanity as long as", "??, hope for humanity lost;", "?? -", "??;", "??,", "??...", "??!", "???", "The secret message on the back of the Constitution:",
 "Hope for humanity restored:", "Because of @\'s ^ |,", "In a display of ^ |,", "Since I just contracted a ^ case of ~,"]
@@ -81,7 +81,8 @@ adjectives = ["dumb", "ugly", "brown", "campy", "proverbial", "obtuse", "arrogan
 "frozen", "melted", "acute", "instant", "amateur", "flat", "unprecedented", "uncouth", "unbecoming", "subpar", "violent", "unattractive", "edible", "sociable", "dangerous", 
 "fiscal", "invisible", "unexpected", "secret", "cool", "erect", "sexy", "appalling", "horrifying", "contagious", "profound", "colorful", "universal", "unidentifiable", "blue",
 "green", "yellow", "purple", "painful", "unpleasant", "unsightly", "foul", "permanent", "desperate", "impotent", "unprofessional", "omnipresent", "soaring", "ethereal",
-"exquisite", "elegant", "dark", "rude", "insane", "crazy", "vegan", "*-free", "greasy", "choice", "random", "buxom"]
+"exquisite", "elegant", "dark", "rude", "insane", "crazy", "vegan", "*-free", "greasy", "choice", "random", "buxom", "sad", "angry", "furious", "load-bearing", "morose", 
+"gleeful"]
 
 concepts = ["gusto", "fervor", "panache", "restraint", "style", "wherewithall", "curiosity", "pride", "luck", "chastity", "charity", "joy", "wonder", "dread", "terror",
 "passion", "delicacy", "peace", "understanding", "va-va-voom", "swagger", "ingenuity", "self-control", "spirit", "innovation", "clarity", "je ne sais quoi", "gumption", "||",
@@ -91,7 +92,7 @@ concepts = ["gusto", "fervor", "panache", "restraint", "style", "wherewithall", 
 "evil", "coldness", "underhandedness", "subtlety", "visibility", "sausage", "pancakes", "stupor", "~", "ambition", "fear", "shame", "desperation", "security", "dignity",
 "fidelity", "humility", "honesty", "humor", "horror", "ego", "guilt", "kindness", "gentleness", "despair", "consternation", "regret", "remorse", "science", "math", "geometry",
 "physics", "arithmetic", "trigenometry", "chemistry", "somatics", "logic", "ethics", "philosophy", "psychology", "sociology", "mercy", "grace", "compassion", "politics", 
-"economics", "semantics"]
+"economics", "semantics", "sadness", "grief", "sorrow", "despair", "heat", "ice", "anger", "purpose", "*"]
 
 ends = [" while @ was still president.", ", using QQ $ to chug a two-liter of liquid *.", " with the | of a ^ =.", " - how ^ is that?", ", demonstrating ^ |.",
 ", which, ^ly, broke the world record.", ", because that\'s what ^ | looks like.", ", cause money don\'t grow on %%.", ", showing no |.",
@@ -118,7 +119,7 @@ companies = ["Coca-Cola", "Monster Energy", "Frito-Lay", "Nestle", "Google", "Mi
 "Instagram", "Netflix", "Snapchat", "Spotify", "Vine", "Twitch", "Hulu", "Unilever", "Perdue Pharma", "BetterHelp", "the CIA", "the FBI", "the Department of Justice",
 "the Department of Defense", "the NSA", "the FDA", "the CDC", "the US Government", utility.madeUpWord(True) + " Corp"]
 
-celebs = ["Dolly Parton", "Robert Pattinson", "the Geico =CC", "the = from Air Bud", "Keanu Reeves", "the Car =CC", "Chris Pratt AKA Crisp Rat",
+celebs = ["Dolly Parton", "Robert Pattinson", "the Geico =CC", "the = from Air Bud", "Keanu Reeves", "the Car =CC", "Crisp Rat",
 "Ben Shapiro", "PewDiePie", "Elvis", "Nickelback", "Guy Fieri", "Gordon Ramsay", "a =", "a ^ =", "a ^ =", "The ^CC Man", "a ^ piece of fruit", "Jennifer Lawrence",
 "Michael Scott", "Ghandi", "the Pope", "Jimmy Neutron", "Carl Wheezer", "the Pillsbury Dough Boy", "Jake Paul", "Logan Paul", "you", "your VV", "Jeff Dunham", "Olivia Cockburn",
 "Dane Cook", "George Washington", "Thomas Jefferson", "Abraham Lincoln", "Plato", "Aristotle", "Leonardo Da Vinci", "John Kennedy", "Isaac Newton", "Albert Einstein", 
@@ -143,7 +144,7 @@ places = ["^CC Jersey", "the ^CC States", "Europe", "Russia", "Asia", "Japan", "
 "a ^ hill of termites", "the realm of the =CC Queen", "$CCs-R-Us", "#", "Disneyland", "Mount Rushmore", "the =CC Kingdom", "^CC Mexico", "the @ estate", "@'s house", "=CCs-R-Us",
 "Tokyo", "Beijing", "Athens", "Ancient Rome", "London", "Austrialia", "^CC Zealand", "Azerbaijan", "Heaven", "the University of +", "^CCLand", "^CC-^CCLand", "Flat Earth",
 "*CCLand", "=CCLand", "_'s headquarters", "Anor Londo", "Drangleic", "Londor", "the Abyss", "the ^CC Abyss", "New Londo", "Planet Namek", "the ^CC Planet", "QQ @ shrine",
-"Planet ^CC's &th moon", "Planet of the =CCs", "Firelink Shrine", "the Catacombs", "the =CC Temple", "the =CC Shrine", "@'s personal aircraft", "the |CC Dimension",
+"Planet ^CC's &th moon", "the Planet of the =CCs", "Firelink Shrine", "the Catacombs", "the =CC Temple", "the =CC Shrine", "@'s personal aircraft", "the |CC Dimension",
 "Majula", "Kong Island", "Krem Quay", "Schitt's Creek"]
 
 animals = ["lion", "cat", "dog", "squid", "mollusk", "clam", "zebra", "axolotl", "rhino", "tiger", "lamb", "octopus", "antelope", "fawn", "llama", "parrot", "whale", 
@@ -182,14 +183,14 @@ disease = ["$ cancer", "diabetes", "$ swelling", "$ destruction", "$ blockage", 
 possessives = ["their", "its", "his/her", "the", "a", "her", "his", "de", "@'s", "your", "my", "y'all's", "VV's", "our", "somebody's", "a ^", "a random", "thy", 
 "yo VV's", "yo"]
 
-pronounsSubject = ["they", "it", "he/she", "she", "he", "dat", "@", "you", "I", "y'all", "VV", "we", "somebody", "%%", "thou", "yo VV", "ya"]
+pronounsSubject = ["they", "it", "he/she", "she", "he", "dey", "@", "you", "I", "y'all", "VV", "we", "somebody", "%%", "thou", "yo VV", "ya"]
 
-pronounsObject = ["them", "it", "him/her", "her", "him", "dat", "@", "you", "me", "y'all", "VV", "us", "those", "%%", "thee", "yo VV"]
+pronounsObject = ["them", "it", "him/her", "her", "him", "dem", "@", "you", "me", "y'all", "VV", "us", "those", "%%", "thee", "yo VV"]
 
 family = ["mom", "gramma", "grampa", "gramps", "grampie", "momma", "daddio", "g-dizzle", "brother", "sister", "mother", "dad", "stepdad", "step-sister", "step-brother", "stepmom", 
 "cousin", "great-great-great VV", "uncle", "aunt", "daddy", "mommy", "gruncle", "daughter", "son", "niece", "nephew", "&th cousin, & times removed", "father", "b-pizzle",
 "VV's VV's VV's great VV's great step-VV", "husband", "wife", "&th husband", "&th wife", "family", "sis", "honey", "sweetie", "baby", "teenage child", "sugar", "cousin",
-"disgruntled employee", "great VV", "step-VV", "friend", "homie", "pal", "sugar momma", "sugar daddy", "baby daddy"]
+"disgruntled employee", "great VV", "step-VV", "friend", "homie", "sugar momma", "sugar daddy", "baby daddy"]
 
 foods = ["broccoli", "carrots", "cabbages", "cauliflower", "celery", "creamed corn", "cucumbers", "eggplants", "garlic", "ginger", "green beans", "kale", "lettuce", "mushrooms", "water",
 "burritos", "brownies", "cake", "vegetables", "fruit", "apples", "pears", "peaches", "peppers", "pineapples", "pizza", "potatoes", "radishes", "rice", "salad", "soup", "tomatoes",
@@ -203,14 +204,14 @@ foods = ["broccoli", "carrots", "cabbages", "cauliflower", "celery", "creamed co
 "chocolate", "endives", "parsley", "marjoram", "basil", "cinnamon", "coriander", "dill", "fennel", "pickled *", "pickled =", "* vinegar", "= vinegar", "* syrup", "= syrup", 
 "= meat", "Dr. pepper", "fried *", "deep-fried *", "deep-fried =", "* meat", "= cheese", "* oil", "barf", "puke", "biscuits", "= soup", "= gravy", "* soup", "* gravy", "= tacos",
 "* grease", "* eggs", "* sauce", "* milk", "* tea", "cumin", "anise", "paprika", "bananas", "dragonfruit", "= pie", "* pie", "vegan = meat", "vegan *", "^ cheese", "* cheese",
-"* paste", "= paste", "boiled *", "arugala", "artichokes", "asparagus",  "beans", "beets", "happy meals", "= entrails", "= broth"]
+"* paste", "= paste", "boiled *", "arugala", "artichokes", "asparagus",  "beans", "beets", "happy meals", "= entrails", "= broth", "hummus", "chickpeas"]
 
 interjection = ["OK", "alright", "cool", "whatever", "great", "perfect", "who\'d have thought", "yikes", "ouch", "thank goodness", "awkward", "awesome", "sheesh", "darn it all", 
-"shoot", "how ^", "that's too bad", "how sad", "uh oh", "for pete''s sake", "for crying out loud", "tough *", "how frustrating", "how embarrassing", "hmm", "what a show of |",
+"shoot", "how ^", "that's too bad", "how sad", "uh oh", "for pete\'s sake", "for crying out loud", "tough *", "how frustrating", "how embarrassing", "hmm", "what a show of |",
 "never seen such |", "takes my | away", "bless QQ heart", "watch out", "preposterous", "wonderful", "for *'s sake", "tarnation", "consarnit", "^", "nice", "how dare @", 
 "what |", "welp", "oh well", "gadzooks", "eureka", "aw man", "forsooth", "alas", "amen", "how could this be", "it can't be true", utility.madeUpWord(False), "golly", "yay", "!! don\'t care",
 "crikey", "exclamation", "for |\'s sake", "what a =", "double drat", "so", "haha", "cringe", "don/'t get me started", "well slap my $ and call me a VV", "well, ??", "sorry",
-"hallelujah"]
+"hallelujah", "my my", "oh my", "holy =", "holy *", "really", "oh yeah", "uh-huh"]
 
 # ideas: quantities, occasions, colors
 # less necessary but still options: sports, languages, nationalities, countries?, cities?
