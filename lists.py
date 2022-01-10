@@ -43,7 +43,8 @@ parties = ["a = wearing false teeth", "the President of +", "the most ^ haircut 
 "butt", "immortality", "|", "=s", "= enthusiasts", "your $", "the $ of a =", " a = with & extra $s", "^ pants", "QQ VV wearing a @ costume", "QQ VV", "a ^ case of ~",
 "@\'s VV\'s favorite VV", "your VV riding a =", "^ chicken nuggets", utility.madeUpWord(False), "a ^ PR campaign", "~", "the asteroid belt", "@\'s pet =", "the sun", "the moon",
 'a bar trivia team called \"the ^CC $CC\"', "\'the facilities\'", "our AI overlords", "a hypothetical *", "a hypothetical =", "the Planet of the =CCs", 'the phrase \"??\"',
-"a bag of ^ =s", "a can of * that expired in #", "a ^ |", 'the hit show \"%%CC\"', 'the new movie \"%%CC\"', "Donkey Kong Country 2", "my body"]
+"a bag of ^ =s", "a can of * that expired in #", "a ^ |", 'the hit show \"%%CC\"', 'the new movie \"%%CC\"', "Donkey Kong Country 2", "my body", "your ^ doctor", 
+"a plastic surgeon specializing in $s", "a vet specializing in =s", "a $ surgeon"]
 
 begs = ["In other news,", "In light of today\'s events,", "Despite what you may have heard,", "QQ VV looked me right in the $ and said:", "After drinking & gallons of liquid *,",
 "Having been born in the year #,", "Despite a lifelong battle with ~,", "Picture this in your mind for a moment:", "Fun fact:", "Did you know?", 
@@ -54,7 +55,7 @@ begs = ["In other news,", "In light of today\'s events,", "Despite what you may 
 "Thanks to free speech,", "Wanna really get somebody\'s attention? Lay one of these on \'em:", 'The German word \"' + utility.madeUpWord(False) + '\" describes the situation where', 
 "@ has released the following statement:", "The hidden country of " + utility.madeUpWord(True) + " is where", "To strike a balance between | and |,", "To fill your life with |,", 
 "To fill your $ with |,", "To impart | into @\'s $, declare that", "To fill @ with |,", "Were you aware that", "If you ever visit +, ask the locals about how", 
-"It fills me with | to know that", "What if", "What !! teach in schools now is that", "An unprecendented turn of events:", "If !! got out once in a white, !!'dd know that",
+"It fills me with | to know that", "What if", "What !! teach in schools now is that", "An unprecendented turn of events:", "If !! got out once in a white, !!'d know that",
 "Due to an outbreak of ~,", "History would never be the same after the day that", "Due to %% and QQ *,", "Before !! " + utility.getRand(verbs) + " %%,",
 "I know it sounds ^, but", "%% tells me that", "All existing evidence suggests that", "We hold this truth to be self-evident, that",
 "If you need to quickly leave a social gathering, get everyone\'s attention and say:", "Congress met today to discuss the issue of how", "All today's kids only worry about how",
@@ -69,7 +70,7 @@ adjectives = ["dumb", "ugly", "brown", "campy", "proverbial", "obtuse", "arrogan
 "overzealoused", "slow", "burnt", "venomous", "uplifting", "beautiful", "juicy", "wet", "damp", "moist", "uncomfortable", "unhealthy", "long-winded", "unfair", "racist", 
 "annoying", "pugnacious", "stabbing", "voluptuous", "candid", "quiet", "thin", "skinny", "thick", "dull", "insipid", "twisted", "knarled", "stinky", "sweet", "accidental",
 "pompous", "fancy", "well-dressed", "sharp", "red", "bent", "pointed", "heavy", "tense", "intense", "lurid", "mild", "mild-mannered", "terrible", "horrible", "heinous", "passionate",
-"cruel", "bumpy", "lumpy", "angry", "livid", "unnerving", "disgusting", "creamy", "woody", "peppery", "piquant", "fashionable", "prudent", "unflattering", "tricky",
+"cruel", "bumpy", "lumpy", "angry", "livid", "unnerving", "disgusting", "creamy", "woody", "peppery", "piquant", "fashionable", "prudent", "unflattering", "tricky", "more-than-^",
 "efficient", "complementary", "fortitudinous", "hard", "stiff", "tart", "sour", "acidic", "viscous", "^ly ^",  "demanding", "draining", "clever", "peanut-buttery", "verbose",
 "exhausting", "well-behaved", "cute", "stunted", "bad", "good", "great", "boring", "less-than-^", "cringeworthy", "nerdy", "racy", "new", "interesting", "useful", "good",
 "elaborate", "live", "cultured", "slightly ^", "overly ^", "not-so-^", "crispy", "crunchy", "pure", "medium-sized", "furtive", "poor", "milquetoast", "pensive", "suave",
@@ -81,7 +82,7 @@ adjectives = ["dumb", "ugly", "brown", "campy", "proverbial", "obtuse", "arrogan
 "frozen", "melted", "acute", "instant", "amateur", "flat", "unprecedented", "uncouth", "unbecoming", "subpar", "violent", "unattractive", "edible", "sociable", "dangerous", 
 "fiscal", "invisible", "unexpected", "secret", "cool", "erect", "sexy", "appalling", "horrifying", "contagious", "profound", "colorful", "universal", "unidentifiable", "blue",
 "green", "yellow", "purple", "painful", "unpleasant", "unsightly", "foul", "permanent", "desperate", "impotent", "unprofessional", "omnipresent", "soaring", "ethereal",
-"exquisite", "elegant", "dark", "rude", "insane", "crazy", "vegan", "*-free", "greasy", "choice", "random", "buxom", "sad", "angry", "furious", "load-bearing", "morose", 
+"exquisite", "elegant", "dark", "rude", "insane", "crazy", "vegan", "*---free", "greasy", "choice", "random", "buxom", "sad", "angry", "furious", "load-bearing", "morose", 
 "gleeful"]
 
 concepts = ["gusto", "fervor", "panache", "restraint", "style", "wherewithall", "curiosity", "pride", "luck", "chastity", "charity", "joy", "wonder", "dread", "terror",
@@ -100,7 +101,7 @@ ends = [" while @ was still president.", ", using QQ $ to chug a two-liter of li
 " as part of a ^ comedy routine.", ", starting a new dance craze on _\'s video-sharing hub.", ", inspiring @ to paint a ^ picture of @.", ", inspiring @ to found _.",
 ", landing !!! in ^ water with +.", ", which @ then made a ^ joke about on _'s new social media platform.", ", which jumpstarted @\'s | for +\'s |.", "... ??.", ", ??!",
 ", making @ feel like a ^ =.", ", which gave @ ~.", ", which has to be the most ^ way to lose weight.", " - thanks a lot, VV!", ". ;)", "... ??!",
-", which took a lot of |.", " to prove to QQ VV that !! have ^ |.", ", in hopes that it would make @ notice QQ |.", ", which prompted @ to have \'em cancelled.", 
+", which took a lot of |.", " to prove to QQ VV that !! have ^ |.", ", in hopes that it would make @ notice QQ |.", ", which prompted @ to have !!! cancelled.", 
 " - the three words I'd use to describe this would be ^, ^, and ^!", " - what a ^ time to be ^!", " - what a ^ way to have " + utility.getRand(verbs) + "!",
 " by sitting and thinking very hard about %%.", " by the $ of @.", " - now that shows some ^ |!", " - now that takes some |!", " - seems a bit ^ to me...", ", which is SO not ^.", 
 ", giving everyone ~.", ", utilizing only %% and %%.", ", causing @ to break QQ $.", ", causing @ to instantly grow a new $.", ", after which @ got QQ $ pierced.", " - ??.",
@@ -135,7 +136,8 @@ celebs = ["Dolly Parton", "Robert Pattinson", "the Geico =CC", "the = from Air B
 "Steve Harvey", "Tim Apple", "The One True =CC", "Peewee Herman", '@ AKA \"the ^CC =CC\"', "me", "Rongle McDongle", "*CCMan", "George RR Martin", "George Bush",
 "Charles Entertainment Cheese", "Larry the *CC", "Bob the *CC", "Gex", "Glover", "Donkey Kong", "Bowser", "Dark Souls", "@'s new lover (@)", "Ornstein and Smough",
 "Lord Gwyn", "the Gaping Dragon", "Cranky Kong", "Funky Kong", "Aldia, Scholar of the First Sin", "Manus, Father of the Abyss", "Knight Artorias", "the Firekeeper",
-"Martin Shkreli", "Adele", "John Krasinski", "Justin Bieber", "Brian Peppers", "Moses"]
+"Martin Shkreli", "Adele", "John Krasinski", "Justin Bieber", "Brian Peppers", "Moses", "Richard Nixon", "Bill Clinton", "Ronald Reagan", "George Bush", "Andrew Jackson", 
+"Andre the Giant"]
 
 places = ["^CC Jersey", "the ^CC States", "Europe", "Russia", "Asia", "Japan", "yo VV's house", "the sock drawer", "Madagascar", "Californ-I-A", "your soul", 
 "the corporate offices of _", "the ^CC House", "Yellowstone Park", "Italy", "the Pentagon", "Mount Everest", "an underground city", "the ^ dungeon", "a ^ city",
@@ -154,7 +156,7 @@ animals = ["lion", "cat", "dog", "squid", "mollusk", "clam", "zebra", "axolotl",
 "rabbit", "bunny", "jackalope", "chimera", "cerberus", "manticore", "scorpion", "mosquito", "horsefly", "ladybug", "black widow", "brown recluse", "wolf spider", "human",
 "dung beetle", "salamander", "firedrake", "wendigo", "wyvern", "sea lion", "pokemon", "goat", "cheetah", "animal", "worm", "lizard", "fish", "person", "hamster", "chick", "mushroom",
 "labrador", "pit bull", "schnauzer", "beetle", "rodent", "feline", "canine", "bovine", "grandaddy long legs", "weevil", "earwig", "silverfish", "android", "cyborg", "wizard", 
-"leopard", "elephant", "newt", "jellyfish", "mandrake", "sentient plant", "talking =", "panda", "lizard", "doberman", "beagle", "yorkie", "jackrabbit", "VV", "tarantula", 
+"leopard", "elephant", "newt", "jellyfish", "mandrake", "sentient plant", "talking =", "panda", "lizard", "doberman", "beagle", "yorkie", "jackrabbit", "tarantula", 
 "porpoise", "frog", "pit bull", "eldritch horror", "dingo", "indeterminate bug", "hedgehog", "toucan", "turtle", "lizard", "toad", "tiger", "roach", "insect", "arachnid", 
 "cockroach", "butterfly", "caterpillar", "dragonfly", "behemoth", "mole", "mantis", "monster", "moth", "reptile", "amphibian", "mammal", "bird", "flamingo", "penguin", "baby",
 "centipede", "devil", "demon", "angel", "eagle", "hawk", "falcon", "owl", "parrot", "peacock", "pigeon", "man", "woman", "bard", "rogue", "paladin", "necromancer", "valkyrie", 
@@ -178,14 +180,14 @@ disease = ["$ cancer", "diabetes", "$ swelling", "$ destruction", "$ blockage", 
 "anal fissures", "^ $ pain", "ugliness", "a really weird $", "= $", "pregnancy", "obesity", "sociopathy", "antidisestablishmentarianism", "pneumonoultramicroscopicsilicovolcanoconiosis",
 "gastroenteritis", "PMS", "athlete's foot", "complementarianism", "extra limbs", "kidney stones", "broken $", "^-$", "hotdog finger", "count-choculitis", "no longer being alive", 
 "spontaneous dental hydroplosion", "chronic ~", "swine flu", "literally every STI", "loss of $", "diminished |", "vitamin deficiency", "egalitarianism", "dwarfism", 
-"|-deficiency", "=phobia", "baby $", "rapidly-aging $", "a * allergy", "too much *", "^-*"]
+"|-deficiency", "=phobia", "baby $", "rapidly-aging $", "a * allergy", "too much *", "^-*", "$ pus"]
 
 possessives = ["their", "its", "his/her", "the", "a", "her", "his", "de", "@'s", "your", "my", "y'all's", "VV's", "our", "somebody's", "a ^", "a random", "thy", 
 "yo VV's", "yo"]
 
 pronounsSubject = ["they", "it", "he/she", "she", "he", "dey", "@", "you", "I", "y'all", "VV", "we", "somebody", "%%", "thou", "yo VV", "ya"]
 
-pronounsObject = ["them", "it", "him/her", "her", "him", "dem", "@", "you", "me", "y'all", "VV", "us", "those", "%%", "thee", "yo VV"]
+pronounsObject = ["them", "it", "him/her", "her", "him", "dem", "@", "you", "me", "y'all", "VV", "us", "those", "%%", "thee", "yo VV", "'em"]
 
 family = ["mom", "gramma", "grampa", "gramps", "grampie", "momma", "daddio", "g-dizzle", "brother", "sister", "mother", "dad", "stepdad", "step-sister", "step-brother", "stepmom", 
 "cousin", "great-great-great VV", "uncle", "aunt", "daddy", "mommy", "gruncle", "daughter", "son", "niece", "nephew", "&th cousin, & times removed", "father", "b-pizzle",
@@ -204,7 +206,7 @@ foods = ["broccoli", "carrots", "cabbages", "cauliflower", "celery", "creamed co
 "chocolate", "endives", "parsley", "marjoram", "basil", "cinnamon", "coriander", "dill", "fennel", "pickled *", "pickled =", "* vinegar", "= vinegar", "* syrup", "= syrup", 
 "= meat", "Dr. pepper", "fried *", "deep-fried *", "deep-fried =", "* meat", "= cheese", "* oil", "barf", "puke", "biscuits", "= soup", "= gravy", "* soup", "* gravy", "= tacos",
 "* grease", "* eggs", "* sauce", "* milk", "* tea", "cumin", "anise", "paprika", "bananas", "dragonfruit", "= pie", "* pie", "vegan = meat", "vegan *", "^ cheese", "* cheese",
-"* paste", "= paste", "boiled *", "arugala", "artichokes", "asparagus",  "beans", "beets", "happy meals", "= entrails", "= broth", "hummus", "chickpeas"]
+"* paste", "= paste", "boiled *", "arugula", "artichokes", "asparagus",  "beans", "beets", "happy meals", "= entrails", "= broth", "hummus", "chickpeas"]
 
 interjection = ["OK", "alright", "cool", "whatever", "great", "perfect", "who\'d have thought", "yikes", "ouch", "thank goodness", "awkward", "awesome", "sheesh", "darn it all", 
 "shoot", "how ^", "that's too bad", "how sad", "uh oh", "for pete\'s sake", "for crying out loud", "tough *", "how frustrating", "how embarrassing", "hmm", "what a show of |",
