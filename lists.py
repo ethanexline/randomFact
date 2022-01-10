@@ -44,7 +44,7 @@ parties = ["a = wearing false teeth", "the President of +", "the most ^ haircut 
 "@\'s VV\'s favorite VV", "your VV riding a =", "^ chicken nuggets", utility.madeUpWord(False), "a ^ PR campaign", "~", "the asteroid belt", "@\'s pet =", "the sun", "the moon",
 'a bar trivia team called \"the ^CC $CC\"', "\'the facilities\'", "our AI overlords", "a hypothetical *", "a hypothetical =", "the Planet of the =CCs", 'the phrase \"??\"',
 "a bag of ^ =s", "a can of * that expired in #", "a ^ |", 'the hit show \"%%CC\"', 'the new movie \"%%CC\"', "Donkey Kong Country 2", "my body", "your ^ doctor", 
-"a plastic surgeon specializing in $s", "a vet specializing in =s", "a $ surgeon"]
+"a plastic surgeon specializing in $s", "a vet specializing in =s", "a $ surgeon", "mankind", "humanity", "the space-time continuum"]
 
 begs = ["In other news,", "In light of today\'s events,", "Despite what you may have heard,", "QQ VV looked me right in the $ and said:", "After drinking & gallons of liquid *,",
 "Having been born in the year #,", "Despite a lifelong battle with ~,", "Picture this in your mind for a moment:", "Fun fact:", "Did you know?", 
@@ -52,28 +52,28 @@ begs = ["In other news,", "In light of today\'s events,", "Despite what you may 
 "After eating & pounds of *,", "Once upon a time,", "When you really think about it,", "Yesterday,", "Whenever @ looks ^, it\'s because", "In the year of Our Lord #,", 
 "My pitch for a hit new TV show:", "In case you haven\'t heard yet,", "Through sheer | and |,", "If you ever have a ^ day, just remember", "In an act of |,", 
 "^ly, due to %%,", "If you squint and turn your head ^ly to the side, you\'ll see that", "Despite having ^ |,", "If a = or @ is attacking you, remember that", 
-"Thanks to free speech,", "Wanna really get somebody\'s attention? Lay one of these on \'em:", 'The German word \"' + utility.madeUpWord(False) + '\" describes the situation where', 
+"Thanks to free speech,", "Wanna really get QQ attention? Lay one of these on !!!:", 'The German word \"' + utility.madeUpWord(False) + '\" describes the situation where', 
 "@ has released the following statement:", "The hidden country of " + utility.madeUpWord(True) + " is where", "To strike a balance between | and |,", "To fill your life with |,", 
 "To fill your $ with |,", "To impart | into @\'s $, declare that", "To fill @ with |,", "Were you aware that", "If you ever visit +, ask the locals about how", 
-"It fills me with | to know that", "What if", "What !! teach in schools now is that", "An unprecendented turn of events:", "If !! got out once in a white, !!'d know that",
+"It fills me with | to know that", "What if", "What !! teach in schools now is that", "An unprecendented turn of events:", "If !! got out once in a while, !!'d know that",
 "Due to an outbreak of ~,", "History would never be the same after the day that", "Due to %% and QQ *,", "Before !! " + utility.getRand(verbs) + " %%,",
-"I know it sounds ^, but", "%% tells me that", "All existing evidence suggests that", "We hold this truth to be self-evident, that",
-"If you need to quickly leave a social gathering, get everyone\'s attention and say:", "Congress met today to discuss the issue of how", "All today's kids only worry about how",
-"Awful band name suggestion:", "Our AI overlords wanted me to inform you that", "We regret to inform you that", "A ^ book premiers today which will reveal the story behind how", 
-"There is hope for humanity as long as", "??, hope for humanity lost;", "?? -", "??;", "??,", "??...", "??!", "???", "The secret message on the back of the Constitution:",
+"I know it sounds ^, but", "%% tells me that", "All existing evidence suggests that", "We hold this truth to be self-evident, that", "Today's kids can\'t stop talking about how",
+"If !! want to get kicked out of +, !! should say that", "Congress met today to discuss the issue of how", "Today's kids only worry about how",
+"^ band name suggestion:", "Our AI overlords wanted me to inform you that", "We regret to inform you that", "A ^ book premiers today which will reveal the story behind how", 
+"There is hope for %% as long as", "??, hope for humanity lost;", "?? -", "??;", "??,", "??...", "??!", "???", "The secret message on the back of the Constitution:",
 "Hope for humanity restored:", "Because of @\'s ^ |,", "In a display of ^ |,", "Since I just contracted a ^ case of ~,"]
 
-adjectives = ["dumb", "ugly", "brown", "campy", "proverbial", "obtuse", "arrogant", "swollen", "frightening", "hungry", "diseased", "naked", "squirming", "^-$\'d", "surprising",
+adjectives = ["dumb", "ugly", "brown", "campy", "proverbial", "obtuse", "arrogant", "swollen", "frightening", "hungry", "diseased", "naked", "squirming", "^---$\'d", "surprising",
 "short", "rank", "malodorous", "cold", "long", "wide", "clammy", "strong", "stirring", "classy", "high-brow", "fat", "overweight", "wooden", "verdant", "al dente", "chewy", "fudgy",
-"pink", "local", "sweaty", "dry", "freeze-dried", "heroic", "suspicious", "explosive", "chunky", "*-flavored", "finely-aged", "expired", "evil", "chaotic", "black", "white", 
+"pink", "local", "sweaty", "dry", "freeze-dried", "heroic", "suspicious", "explosive", "chunky", "*---flavored", "finely-aged", "expired", "evil", "chaotic", "black", "white", 
 "chocolatey", "fast", "intimidating", "drowning", "bland", "problematic", "rootin\' tootin\'", "blessed", "savage", "room-temperature", "underwhelming", "incompetent",
 "overzealoused", "slow", "burnt", "venomous", "uplifting", "beautiful", "juicy", "wet", "damp", "moist", "uncomfortable", "unhealthy", "long-winded", "unfair", "racist", 
 "annoying", "pugnacious", "stabbing", "voluptuous", "candid", "quiet", "thin", "skinny", "thick", "dull", "insipid", "twisted", "knarled", "stinky", "sweet", "accidental",
 "pompous", "fancy", "well-dressed", "sharp", "red", "bent", "pointed", "heavy", "tense", "intense", "lurid", "mild", "mild-mannered", "terrible", "horrible", "heinous", "passionate",
-"cruel", "bumpy", "lumpy", "angry", "livid", "unnerving", "disgusting", "creamy", "woody", "peppery", "piquant", "fashionable", "prudent", "unflattering", "tricky", "more-than-^",
+"cruel", "bumpy", "lumpy", "angry", "livid", "unnerving", "disgusting", "creamy", "woody", "peppery", "piquant", "fashionable", "prudent", "unflattering", "tricky", "more-than-^--",
 "efficient", "complementary", "fortitudinous", "hard", "stiff", "tart", "sour", "acidic", "viscous", "^ly ^",  "demanding", "draining", "clever", "peanut-buttery", "verbose",
-"exhausting", "well-behaved", "cute", "stunted", "bad", "good", "great", "boring", "less-than-^", "cringeworthy", "nerdy", "racy", "new", "interesting", "useful", "good",
-"elaborate", "live", "cultured", "slightly ^", "overly ^", "not-so-^", "crispy", "crunchy", "pure", "medium-sized", "furtive", "poor", "milquetoast", "pensive", "suave",
+"exhausting", "well-behaved", "cute", "stunted", "bad", "good", "great", "boring", "less-than-^--", "cringeworthy", "nerdy", "racy", "new", "interesting", "useful", "good",
+"elaborate", "live", "cultured", "slightly ^", "overly ^", "not-so-^--", "crispy", "crunchy", "pure", "medium-sized", "furtive", "poor", "milquetoast", "pensive", "suave",
 "overwhelming", "wrong", "well-written", "happy-go-lucky", "old", "medium-sized", "extra large", "loose", "political", "particular", "thoughtful", "confusing", "mean", "useless",
 "innappropriate", "quick", "fluent", "odd", "weird", "unusual", "stupid", "suspicious", "slight", "confident", "exaggerated", "unwavering", "true", "real", "emotional",
 "physical", "spiritual", "virtual", "textural", "perfect", "hot", "male", "female", "broken", "stern", "whiny", "indignant", "bright", "massive", "bare", "deft", "swift",
@@ -83,7 +83,7 @@ adjectives = ["dumb", "ugly", "brown", "campy", "proverbial", "obtuse", "arrogan
 "fiscal", "invisible", "unexpected", "secret", "cool", "erect", "sexy", "appalling", "horrifying", "contagious", "profound", "colorful", "universal", "unidentifiable", "blue",
 "green", "yellow", "purple", "painful", "unpleasant", "unsightly", "foul", "permanent", "desperate", "impotent", "unprofessional", "omnipresent", "soaring", "ethereal",
 "exquisite", "elegant", "dark", "rude", "insane", "crazy", "vegan", "*---free", "greasy", "choice", "random", "buxom", "sad", "angry", "furious", "load-bearing", "morose", 
-"gleeful"]
+"gleeful", "awful", "above-average", "below-average", "inspiring"]
 
 concepts = ["gusto", "fervor", "panache", "restraint", "style", "wherewithall", "curiosity", "pride", "luck", "chastity", "charity", "joy", "wonder", "dread", "terror",
 "passion", "delicacy", "peace", "understanding", "va-va-voom", "swagger", "ingenuity", "self-control", "spirit", "innovation", "clarity", "je ne sais quoi", "gumption", "||",
@@ -97,7 +97,7 @@ concepts = ["gusto", "fervor", "panache", "restraint", "style", "wherewithall", 
 
 ends = [" while @ was still president.", ", using QQ $ to chug a two-liter of liquid *.", " with the | of a ^ =.", " - how ^ is that?", ", demonstrating ^ |.",
 ", which, ^ly, broke the world record.", ", because that\'s what ^ | looks like.", ", cause money don\'t grow on %%.", ", showing no |.",
-" - however, this angered the envoy from +, starting World War &.", ", and that\'s a fact.", " with a | far beyond the norm.", " whilst fending off ^ ladies with a ^ spatula.",
+" - however, this angered the envoy from +, starting World War &.", ", and that\'s a fact.", " with a | that rivals @'s.", " whilst fending off ^ ladies with a ^ spatula.",
 " as part of a ^ comedy routine.", ", starting a new dance craze on _\'s video-sharing hub.", ", inspiring @ to paint a ^ picture of @.", ", inspiring @ to found _.",
 ", landing !!! in ^ water with +.", ", which @ then made a ^ joke about on _'s new social media platform.", ", which jumpstarted @\'s | for +\'s |.", "... ??.", ", ??!",
 ", making @ feel like a ^ =.", ", which gave @ ~.", ", which has to be the most ^ way to lose weight.", " - thanks a lot, VV!", ". ;)", "... ??!",
@@ -108,7 +108,7 @@ ends = [" while @ was still president.", ", using QQ $ to chug a two-liter of li
 " - in other words, " + utility.madeUpWord(False) + ".", ", permanently eradicating ~.", ", which gave @ ~.", ", curing @'s severe case of ~.", ", which is how @ and @ met.", 
 ", which sparked @'s interest in |.", ", which should fill you with |.", ". --@", ", which is how @ contracted ~.", " - ??!", " - ???",
 ", after which QQ $ fell off.", ", which is probably QQ best work.", ", which is a real slap in the $.", ' - well, "??" to you too!', " - ??, ??.", " - ??, ??!",
-", which happens to be the backstory for my new character, *CCMan.", " - but what about !!!?", ", which, for !!!, was ^ly ^."]
+", which happens to be the backstory for my new character, *CCMan.", " - but what about !!!?", ", which, for !!!, was ^ly ^.", "with & sacks of * in QQ $."]
 
 companies = ["Coca-Cola", "Monster Energy", "Frito-Lay", "Nestle", "Google", "Microsoft", "Minecraft", "JP Morgan", "Taco Bell", "Verizon", "US Cellular", "Cingular", 
 "VVCC Jeans, Inc", "IBM", "Fatheads", "Fiji Water", "Vance Refrigeration", "Disney", "Fox News", "MSNBC", "Walmart", "IKEA", "Snuggie", "FlexTape", 
@@ -173,7 +173,7 @@ parts = ["ear", "eye", "nose", "earlobe", "right pinky toe", "patella", "&th eye
 "amygdala", "toe", "finger", "eye", "chest", "knee", "lower back", "upper back", "ab", "diaphragm", "tongue", "epiglottis", "vocal fold", "uvula", "stomach", "peep",
 "gut", "larynx", "esophagus", "pelvis", "tibia", "phalange", "skull", "head", "scapula", "spleen", "sacrum", "coccyx", "spine", "funny bone", "cerebral cortex", "brain stem", "neck",
 "mouth", "inner thigh", "urethra", "pancreas", "lung", "gallbladder", "appendix", "rectum", "hand", "chest hand", "limb", "beard", "sternum", "callous", "scalp", 
-"frenulum", "pie hole", "tush", "teat", "sausage", "ovary", "nostril", "eardrum", "tummy", "mind", "&th $"]
+"frenulum", "pie hole", "tush", "teat", "sausage", "ovary", "nostril", "eardrum", "tummy", "mind", "&th $", "*"]
 
 disease = ["$ cancer", "diabetes", "$ swelling", "$ destruction", "$ blockage", "$ parasites", "$ failure", "$ erosion", "$ disease", "$ infection", "claustrophobia", 
 "MRSA", "food poisoning", "depression", "asthma", "anxiety", "alcoholism", "impulsive shopping", "darwinism", "halitosis", "gynecomastia", "gastroenteritis", 
@@ -185,9 +185,9 @@ disease = ["$ cancer", "diabetes", "$ swelling", "$ destruction", "$ blockage", 
 possessives = ["their", "its", "his/her", "the", "a", "her", "his", "de", "@'s", "your", "my", "y'all's", "VV's", "our", "somebody's", "a ^", "a random", "thy", 
 "yo VV's", "yo"]
 
-pronounsSubject = ["they", "it", "he/she", "she", "he", "dey", "@", "you", "I", "y'all", "VV", "we", "somebody", "%%", "thou", "yo VV", "ya"]
+pronounsSubject = ["they", "it", "he/she", "she", "he", "dey", "@", "you", "I", "y'all", "we", "somebody", "%%", "thou", "yo VV", "ya"]
 
-pronounsObject = ["them", "it", "him/her", "her", "him", "dem", "@", "you", "me", "y'all", "VV", "us", "those", "%%", "thee", "yo VV", "'em"]
+pronounsObject = ["them", "it", "him/her", "her", "him", "dem", "@", "you", "me", "y'all", "us", "those", "%%", "thee", "yo VV", "'em"]
 
 family = ["mom", "gramma", "grampa", "gramps", "grampie", "momma", "daddio", "g-dizzle", "brother", "sister", "mother", "dad", "stepdad", "step-sister", "step-brother", "stepmom", 
 "cousin", "great-great-great VV", "uncle", "aunt", "daddy", "mommy", "gruncle", "daughter", "son", "niece", "nephew", "&th cousin, & times removed", "father", "b-pizzle",
@@ -212,7 +212,7 @@ interjection = ["OK", "alright", "cool", "whatever", "great", "perfect", "who\'d
 "shoot", "how ^", "that's too bad", "how sad", "uh oh", "for pete\'s sake", "for crying out loud", "tough *", "how frustrating", "how embarrassing", "hmm", "what a show of |",
 "never seen such |", "takes my | away", "bless QQ heart", "watch out", "preposterous", "wonderful", "for *'s sake", "tarnation", "consarnit", "^", "nice", "how dare @", 
 "what |", "welp", "oh well", "gadzooks", "eureka", "aw man", "forsooth", "alas", "amen", "how could this be", "it can't be true", utility.madeUpWord(False), "golly", "yay", "!! don\'t care",
-"crikey", "exclamation", "for |\'s sake", "what a =", "double drat", "so", "haha", "cringe", "don/'t get me started", "well slap my $ and call me a VV", "well, ??", "sorry",
+"crikey", "exclamation", "for |\'s sake", "what a =", "double drat", "so", "haha", "cringe", "don\'t get me started", "well slap my $ and call me a VV", "well, ??", "sorry",
 "hallelujah", "my my", "oh my", "holy =", "holy *", "really", "oh yeah", "uh-huh"]
 
 # ideas: quantities, occasions, colors

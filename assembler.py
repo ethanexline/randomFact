@@ -3,9 +3,10 @@ import lists
 import utility
 
 def returnFact():
-    #fact = utility.getRand(lists.begs) + " " + utility.getRand(lists.parties) + " " + utility.getRand(lists.verbs) + " " + utility.getRand(lists.parties) + utility.getRand(lists.ends)
+    fact = utility.getRand(lists.begs) + " " + utility.getRand(lists.parties) + " " + utility.getRand(lists.verbs) + " " + utility.getRand(lists.parties) + utility.getRand(lists.ends)
     #fact = "* gravy, * sauce, * syrup, * concentrate, *CCMan, *CCLand, the World's Smallest *CC." # juicy test fact
-    fact  = "*---free *, *CC---Free *CC, less-than-*---flavored, More-Than-*CC---Free"
+    #fact = "*---free *, *CC---Free *CC, less-than-*---flavored, More-Than-*CC---Free" # I like this test too
+    #fact = "with & sacks of * in QQ $." # real test
     while (fact.find("_") != -1 or fact.find("#") != -1 or fact.find("@") != -1 or fact.find("&") != -1 or fact.find("+") != -1 or fact.find("^") != -1 or fact.find("|") != -1 
     or fact.find("=") != -1 or fact.find("%%") != -1 or fact.find("$") != -1 or fact.find("QQ") != -1 or fact.find("VV") != -1 or fact.find("~") != -1 or fact.find("*") != -1
     or fact.find("??") != -1 or fact.find("!!") != -1 or fact.find("!!!") != -1):
@@ -61,12 +62,12 @@ def returnFact():
                 else:
                     fact = fact.replace("^CC-^CCLand", replacement.title().replace(" ", "-").replace("\'", "") + " ^CCLand", 1)
             elif fact.find("^--") != -1:
-                replacemnt = utility.getRand(lists.adjectives)
+                replacement = utility.getRand(lists.adjectives)
                 if replacement.find(" ") != -1: 
                     replacement = replacement.replace(" ", "-")
                 fact = fact.replace("^--", replacement, 1)
             elif fact.find("^CC--") != -1:
-                replacemnt = utility.getRand(lists.adjectives).title()
+                replacement = utility.getRand(lists.adjectives).title()
                 if replacement.find(" ") != -1: 
                     replacement = replacement.replace(" ", "-")
                 fact = fact.replace("^--", replacement, 1)
@@ -466,11 +467,17 @@ def returnFact():
     if fact.find(" an use") != -1:
         fact = fact.replace(" an use", " a use")
 
+    if fact.find(" an uvu") != -1:
+        fact = fact.replace(" an uvu", " a uvu")
+
     if (fact.find(" an Uni") != -1 and fact.find(" an Unidentifiable") == -1):
         fact = fact.replace(" an Uni", " a Uni")
 
     if fact.find(" an Use") != -1:
         fact = fact.replace(" an Use", " a Use")
+
+    if fact.find(" an Uvu") != -1:
+        fact = fact.replace(" an Uvu", " a Uvu")
 
     if fact.find(" ,") != -1:
         fact = fact.replace(" ,", ",")
@@ -526,7 +533,7 @@ def returnFact():
     if fact.find('yess') != -1:
         fact = fact.replace('yess', 'yes')
 
-    if fact.find("hs") != -1 and fact.find("highs") == -1 and fact.find("ouths") == -1  and fact.find("oths") == -1 and fact.find("heetahs") == -1:
+    if fact.find("hs") != -1 and fact.find("highs") == -1 and fact.find("ouths") == -1  and fact.find("oths") == -1 and fact.find("heetahs") == -1 and fact.find("ariahs") == -1:
         fact = fact.replace("hs", "hes")
 
     if fact.find("lll") != -1:
@@ -1057,6 +1064,9 @@ def returnFact():
     
     if fact.find('n US') != -1:
         fact = fact.replace('n US', ' US')
+
+    if fact.find(' Us ') != -1:
+        fact = fact.replace(' Us ', ' US ')
 
     return fact
 
