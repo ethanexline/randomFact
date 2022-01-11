@@ -63,7 +63,7 @@ begs = ["In other news,", "In light of today\'s events,", "Despite what you may 
 "There is hope for %% as long as", "??, hope for humanity lost;", "?? -", "??;", "??,", "??...", "??!", "???", "The secret message on the back of the Constitution:",
 "Hope for humanity restored:", "Because of @\'s ^ |,", "In a display of ^ |,", "Since I just contracted a ^ case of ~,"]
 
-adjectives = ["dumb", "ugly", "brown", "campy", "proverbial", "obtuse", "arrogant", "swollen", "frightening", "hungry", "diseased", "naked", "squirming", "^---$\'d", "surprising",
+adjectives = ["dumb", "ugly", "brown", "campy", "proverbial", "obtuse", "arrogant", "swollen", "frightening", "hungry", "diseased", "naked", "squirming", "^---$--\'d", "surprising",
 "short", "rank", "malodorous", "cold", "long", "wide", "clammy", "strong", "stirring", "classy", "high-brow", "fat", "overweight", "wooden", "verdant", "al dente", "chewy", "fudgy",
 "pink", "local", "sweaty", "dry", "freeze-dried", "heroic", "suspicious", "explosive", "chunky", "*---flavored", "finely-aged", "expired", "evil", "chaotic", "black", "white", 
 "chocolatey", "fast", "intimidating", "drowning", "bland", "problematic", "rootin\' tootin\'", "blessed", "savage", "room-temperature", "underwhelming", "incompetent",
@@ -83,7 +83,7 @@ adjectives = ["dumb", "ugly", "brown", "campy", "proverbial", "obtuse", "arrogan
 "fiscal", "invisible", "unexpected", "secret", "cool", "erect", "sexy", "appalling", "horrifying", "contagious", "profound", "colorful", "universal", "unidentifiable", "blue",
 "green", "yellow", "purple", "painful", "unpleasant", "unsightly", "foul", "permanent", "desperate", "impotent", "unprofessional", "omnipresent", "soaring", "ethereal",
 "exquisite", "elegant", "dark", "rude", "insane", "crazy", "vegan", "*---free", "greasy", "choice", "random", "buxom", "sad", "angry", "furious", "load-bearing", "morose", 
-"gleeful", "awful", "above-average", "below-average", "inspiring"]
+"gleeful", "awful", "above-average", "below-average", "inspiring", "utterly ^"]
 
 concepts = ["gusto", "fervor", "panache", "restraint", "style", "wherewithall", "curiosity", "pride", "luck", "chastity", "charity", "joy", "wonder", "dread", "terror",
 "passion", "delicacy", "peace", "understanding", "va-va-voom", "swagger", "ingenuity", "self-control", "spirit", "innovation", "clarity", "je ne sais quoi", "gumption", "||",
@@ -108,7 +108,7 @@ ends = [" while @ was still president.", ", using QQ $ to chug a two-liter of li
 " - in other words, " + utility.madeUpWord(False) + ".", ", permanently eradicating ~.", ", which gave @ ~.", ", curing @'s severe case of ~.", ", which is how @ and @ met.", 
 ", which sparked @'s interest in |.", ", which should fill you with |.", ". --@", ", which is how @ contracted ~.", " - ??!", " - ???",
 ", after which QQ $ fell off.", ", which is probably QQ best work.", ", which is a real slap in the $.", ' - well, "??" to you too!', " - ??, ??.", " - ??, ??!",
-", which happens to be the backstory for my new character, *CCMan.", " - but what about !!!?", ", which, for !!!, was ^ly ^.", "with & sacks of * in QQ $."]
+", which happens to be the backstory for my new character, *CCMan.", " - but what about !!!?", ", which, for !!!, was ^ly ^.", " with & sacks of * in QQ $."]
 
 companies = ["Coca-Cola", "Monster Energy", "Frito-Lay", "Nestle", "Google", "Microsoft", "Minecraft", "JP Morgan", "Taco Bell", "Verizon", "US Cellular", "Cingular", 
 "VVCC Jeans, Inc", "IBM", "Fatheads", "Fiji Water", "Vance Refrigeration", "Disney", "Fox News", "MSNBC", "Walmart", "IKEA", "Snuggie", "FlexTape", 
@@ -165,7 +165,7 @@ animals = ["lion", "cat", "dog", "squid", "mollusk", "clam", "zebra", "axolotl",
 "merchant", "mermaid", "seaman", "pirate", "monk", "ninja", "nun", "rottweiler", "weimaraner", "vischla", "vampire", "terrier", "hound", "warrior", "crane", "crony", "raven",
 "crow", "sparrow", "robin", "bat", "bee", "hornet", "yellowjacket", "wolverine", "wombat", "vagrant", "wabbit", "warthog", "weasel", "werewolf", "hagraven", "harpy", "hippogriff",
 "hippopotamus", "spriggan", "troll", "gnome", "gargoyle", "giant", "gorgon", "griffin", "python", "water =", "lamb", "swine", "buffalo", "bison", "elk", "boar", "wild =",
-"teenager", "adolescent", "elder", "puppy", "kitty", "hag"]
+"teenager", "adolescent", "elder", "puppy", "kitty", "hag", "bride", "groom", "witch"]
 
 parts = ["ear", "eye", "nose", "earlobe", "right pinky toe", "patella", "&th eyelash from the right", "entire body", "&th nipple", "foot", "third foot", "top right incisor", 
 "tooth", "teeth", "elbow", "bellybutton", "fingernail", "brain", "xiphoid process", "tooth enamel", "skin", "armpit", "foot", "bottom leg", 
@@ -180,10 +180,9 @@ disease = ["$ cancer", "diabetes", "$ swelling", "$ destruction", "$ blockage", 
 "anal fissures", "^ $ pain", "ugliness", "a really weird $", "= $", "pregnancy", "obesity", "sociopathy", "antidisestablishmentarianism", "pneumonoultramicroscopicsilicovolcanoconiosis",
 "gastroenteritis", "PMS", "athlete's foot", "complementarianism", "extra limbs", "kidney stones", "broken $", "^-$", "hotdog finger", "count-choculitis", "no longer being alive", 
 "spontaneous dental hydroplosion", "chronic ~", "swine flu", "literally every STI", "loss of $", "diminished |", "vitamin deficiency", "egalitarianism", "dwarfism", 
-"|-deficiency", "=phobia", "baby $", "rapidly-aging $", "a * allergy", "too much *", "^-*", "$ pus"]
+"|-deficiency", "=phobia", "rapidly-aging $", "a * allergy", "too much *", "^-*--", "$ pus"]
 
-possessives = ["their", "its", "his/her", "the", "a", "her", "his", "de", "@'s", "your", "my", "y'all's", "VV's", "our", "somebody's", "a ^", "a random", "thy", 
-"yo VV's", "yo"]
+possessives = ["their", "its", "his/her", "the", "her", "his", "de", "@'s", "your", "my", "y'all's", "VV's", "our", "somebody's", "a ^", "a random", "thy", "yo VV's", "yo"]
 
 pronounsSubject = ["they", "it", "he/she", "she", "he", "dey", "@", "you", "I", "y'all", "we", "somebody", "%%", "thou", "yo VV", "ya"]
 

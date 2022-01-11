@@ -38,7 +38,7 @@ def madeUpWord(c):
     "forma", "gugmunger", "w\'estler", "pango", "beesnog", "hollas", "ackaboob", "tit", "boob", "weewee", "snorp", "flexor", "ublubber", "kacky", "elemen", "yuckma", "kalora", 
     "fabby", "underous", "nopal", "aliah", "morway", "sosig", "meme", "westerly", "abeeg", "haster", "bonapple", "googin", "mangerly", "bopis", "wawa", "dogin", "hooba", "cooki",
     "zass", "gunga", "apapa", "bonob", "shmo", "gawk", "taxes", "stanky", "euouae", "aeiou", "glunger", "swammy", "chungy", "a\'na", "gref\'chi", "b\'opway", "phobia", "astia", 
-    "blub", "philia", "\'ton", "sneek", "chotchni", "ccio", "piis"]
+    "blub", "philia", "\'ton", "sneek", "chotchni", "ccio", "piis", "teef"]
 
     while i < numGoes:
         word += getRand(wordParts)
