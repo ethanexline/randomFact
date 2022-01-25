@@ -137,7 +137,8 @@ celebs = ["Dolly Parton", "Robert Pattinson", "the Geico =CC", "the = from Air B
 "Charles Entertainment Cheese", "Larry the *CC", "Bob the *CC", "Gex", "Glover", "Donkey Kong", "Bowser", "Dark Souls", "@'s new lover (@)", "Ornstein and Smough",
 "Lord Gwyn", "the Gaping Dragon", "Cranky Kong", "Funky Kong", "Aldia, Scholar of the First Sin", "Manus, Father of the Abyss", "Knight Artorias", "the Firekeeper",
 "Martin Shkreli", "Adele", "John Krasinski", "Justin Bieber", "Brian Peppers", "Moses", "Richard Nixon", "Bill Clinton", "Ronald Reagan", "George Bush", "Andrew Jackson", 
-"Andre the Giant"]
+"Andre the Giant", "the King of *CC", "the King of |CC", "the Queen of *CC", "the Queen of |CC", "the Duchess of *CC", "the Duchess of |CC", "the Princess of *CC", 
+"the Princess of |CC"]
 
 places = ["^CC Jersey", "the ^CC States", "Europe", "Russia", "Asia", "Japan", "yo VV's house", "the sock drawer", "Madagascar", "Californ-I-A", "your soul", 
 "the corporate offices of _", "the ^CC House", "Yellowstone Park", "Italy", "the Pentagon", "Mount Everest", "an underground city", "the ^ dungeon", "a ^ city",

@@ -4,9 +4,9 @@ import utility
 
 def returnFact():
     #fact = utility.getRand(lists.begs) + " " + utility.getRand(lists.parties) + " " + utility.getRand(lists.verbs) + " " + utility.getRand(lists.parties) + utility.getRand(lists.ends)
-    fact = "* gravy, * sauce, * syrup, * concentrate, *CCMan, *CCLand, the World's Smallest *CC." # juicy test fact
+    #fact = "* gravy, * sauce, * syrup, * concentrate, *CCMan, *CCLand, the World's Smallest *CC." # juicy test fact
     #fact = "*---free *, *CC---Free *CC, less-than-*---flavored, More-Than-*CC---Free" # I like this test too
-    #fact = "the Duke of *CC." # real test
+    fact = "the Princess of *CC." # real test
     while (fact.find("_") != -1 or fact.find("#") != -1 or fact.find("@") != -1 or fact.find("&") != -1 or fact.find("+") != -1 or fact.find("^") != -1 or fact.find("|") != -1 
     or fact.find("=") != -1 or fact.find("%%") != -1 or fact.find("$") != -1 or fact.find("QQ") != -1 or fact.find("VV") != -1 or fact.find("~") != -1 or fact.find("*") != -1
     or fact.find("??") != -1 or fact.find("!!") != -1 or fact.find("!!!") != -1):
@@ -333,6 +333,7 @@ def returnFact():
                 fact = fact.replace("*CC--", replacement, 1)
             elif fact.find("*CC") != -1:
                 replacement = replacement[:-1].title() if replacement[-1] == "s" and ((fact.find("Prince of *CC") == -1 and fact.find("Duke of *CC") == -1 
+                and fact.find("King of *CC") == -1 and fact.find("Queen of *CC") == -1 and fact.find("Duchess of *CC") == -1 and fact.find("Princess of *CC") == -1
                 and not (fact.find("Deep-Fried *CC") != -1 or fact.find("Pickled *CC") != -1 or fact.find("Boiled *CC") != -1 or fact.find("Cooked *CC") != -1 
                 or fact.find("Fried *CC") != -1 or fact.find("Cream Of *CC") != -1 or fact.find("Baked *CC") != -1 or fact.find("Vegan *CC") != -1)) 
                 or (fact.find(" Soup") != -1 
