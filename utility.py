@@ -22,7 +22,7 @@ def madeUpWord(c):
     word = ""
     numGoes = randint(3, 6)
     
-    wordParts = ["tel", "mon", "sup", "ner", "welt", "so", "sc", "wer", "ont", "onc", "chen", "ber", "ni", "clo", "shlo", "din", "ger", "que", "nte", "zel", "phi", "chur", "pret", 
+    wordParts = ["tel", "mon", "sup", "ne", "welt", "so", "sc", "wer", "ont", "onc", "chen", "ber", "ni", "clo", "shlo", "din", "ger", "que", "nte", "zel", "phi", "chur", "pret", 
     "ker", "ble", "ret", "but", "orn", "pel", "ton", "ex", "neef", "glut", "vri", "sta", "neb", "mud", "sted", "preen", "op", "pusk", "mit", "rosc", "ey", "flong", "delp", "per",
     "tod", "deg", "nan", "bre", "pley", "stel", "chag", "zeet", "bot", "norb", "blet", "ling", "tion", "twog", "wit", "milg", "gleem", "ster", "vred", "wask", "ley", "dang", 
     "dled", "yep", "yod", "flit", "cow", "slam", "stle", "sten", "onc", "ology", "bia", "fred", "nkey", "ma", "no", "yes", "ey", "chew", "low", "fled", "donk", "ot", "man", "wo", 

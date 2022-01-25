@@ -36,7 +36,7 @@ parties = ["a = wearing false teeth", "the President of +", "the most ^ haircut 
 "the entire South Pole", "a stairway to +", "the reason you were born", "a ^ly ^ almond", "a tree", "The World\'s Largest *CC", "money", 
 "^, ^ *", "a war between =s and =s", "a ^ly ^ corn dog", "a = with a $ that\'s just too ^", "a = with a =", "a = with too much |", "a = with a ^ $", "The World\'s Smallest *CC",
 "the element of surprise", "a slip of the $", "hard, ^ drugs", "a banana that needs to be peeled & times", "* and *", "a perfect doppelganger for @", "=s\' rights",
-"the =CC President", "= enthusiasts", "attendees of a $ convention", "the stink eye", "the surface of the sun", "your VV\'s *", "@\'s *", "a =\'s $", "a =\'s *",
+"the =CC President", "= enthusiasts", "attendees of a $ conventions", "the stink eye", "the surface of the sun", "your VV\'s *", "@\'s *", "a =\'s $", "a =\'s *",
 "_-branded swag", "_\'s holiday bash", "@", "@\'s secret $", "@\'s $", "#", "a software product for =s", "@\'s raison d\'etre", "an outbreak of ~", "The World\'s Smallest =CC",
 "toast", "two =s square-knotted together", "= cruelty", "&th degree murder", "organized crime", "the NYPD", "waaay too much *", "a treasure worth & dollars",
 "someone who looks vaguely like @", "*", "^ *", "a mountain of *", "^ gossip", "memes from #", "a ^ baby", "+", "animals", "plants", "dirt", "an active volcano",
@@ -55,10 +55,10 @@ begs = ["In other news,", "In light of today\'s events,", "Despite what you may 
 "Thanks to free speech,", "Wanna really get QQ attention? Lay one of these on !!!:", 'The German word \"' + utility.madeUpWord(False) + '\" describes the situation where', 
 "@ has released the following statement:", "The hidden country of " + utility.madeUpWord(True) + " is where", "To strike a balance between | and |,", "To fill your life with |,", 
 "To fill your $ with |,", "To impart | into @\'s $, declare that", "To fill @ with |,", "Were you aware that", "If you ever visit +, ask the locals about how", 
-"It fills me with | to know that", "What if", "What !! teach in schools now is that", "An unprecendented turn of events:", "If !! got out once in a while, !!'d know that",
+"It fills me with | to know that", "What if", "What !! teaches in schools now is that", "An unprecendented turn of events:", "If !! got out once in a while, !!'d know that",
 "Due to an outbreak of ~,", "History would never be the same after the day that", "Due to %% and QQ *,", "Before !! " + utility.getRand(verbs) + " %%,",
 "I know it sounds ^, but", "%% tells me that", "All existing evidence suggests that", "We hold this truth to be self-evident, that", "Today's kids can\'t stop talking about how",
-"If !! want to get kicked out of +, !! should say that", "Congress met today to discuss the issue of how", "Today's kids only worry about how",
+"If !! wants to get kicked out of +, !! should say that", "Congress met today to discuss the issue of how", "Today's kids only worry about how",
 "^ band name suggestion:", "Our AI overlords wanted me to inform you that", "We regret to inform you that", "A ^ book premiers today which will reveal the story behind how", 
 "There is hope for %% as long as", "??, hope for humanity lost;", "?? -", "??;", "??,", "??...", "??!", "???", "The secret message on the back of the Constitution:",
 "Hope for humanity restored:", "Because of @\'s ^ |,", "In a display of ^ |,", "Since I just contracted a ^ case of ~,"]
@@ -83,7 +83,7 @@ adjectives = ["dumb", "ugly", "brown", "campy", "proverbial", "obtuse", "arrogan
 "fiscal", "invisible", "unexpected", "secret", "cool", "erect", "sexy", "appalling", "horrifying", "contagious", "profound", "colorful", "universal", "unidentifiable", "blue",
 "green", "yellow", "purple", "painful", "unpleasant", "unsightly", "foul", "permanent", "desperate", "impotent", "unprofessional", "omnipresent", "soaring", "ethereal",
 "exquisite", "elegant", "dark", "rude", "insane", "crazy", "vegan", "*---free", "greasy", "choice", "random", "buxom", "sad", "angry", "furious", "load-bearing", "morose", 
-"gleeful", "awful", "above-average", "below-average", "inspiring", "utterly ^"]
+"gleeful", "awful", "above-average", "below-average", "inspiring", "utterly ^", "lame", "unlucky", "stanky", "sorry"]
 
 concepts = ["gusto", "fervor", "panache", "restraint", "style", "wherewithall", "curiosity", "pride", "luck", "chastity", "charity", "joy", "wonder", "dread", "terror",
 "passion", "delicacy", "peace", "understanding", "va-va-voom", "swagger", "ingenuity", "self-control", "spirit", "innovation", "clarity", "je ne sais quoi", "gumption", "||",
@@ -101,14 +101,15 @@ ends = [" while @ was still president.", ", using QQ $ to chug a two-liter of li
 " as part of a ^ comedy routine.", ", starting a new dance craze on _\'s video-sharing hub.", ", inspiring @ to paint a ^ picture of @.", ", inspiring @ to found _.",
 ", landing !!! in ^ water with +.", ", which @ then made a ^ joke about on _'s new social media platform.", ", which jumpstarted @\'s | for +\'s |.", "... ??.", ", ??!",
 ", making @ feel like a ^ =.", ", which gave @ ~.", ", which has to be the most ^ way to lose weight.", " - thanks a lot, VV!", ". ;)", "... ??!",
-", which took a lot of |.", " to prove to QQ VV that !! have ^ |.", ", in hopes that it would make @ notice QQ |.", ", which prompted @ to have !!! cancelled.", 
+", which took a lot of |.", " to prove to QQ VV that !! has ^ |.", ", in hopes that it would make @ notice QQ |.", ", which prompted @ to have !!! cancelled.", 
 " - the three words I'd use to describe this would be ^, ^, and ^!", " - what a ^ time to be ^!", " - what a ^ way to have " + utility.getRand(verbs) + "!",
 " by sitting and thinking very hard about %%.", " by the $ of @.", " - now that shows some ^ |!", " - now that takes some |!", " - seems a bit ^ to me...", ", which is SO not ^.", 
 ", giving everyone ~.", ", utilizing only %% and %%.", ", causing @ to break QQ $.", ", causing @ to instantly grow a new $.", ", after which @ got QQ $ pierced.", " - ??.",
 " - in other words, " + utility.madeUpWord(False) + ".", ", permanently eradicating ~.", ", which gave @ ~.", ", curing @'s severe case of ~.", ", which is how @ and @ met.", 
-", which sparked @'s interest in |.", ", which should fill you with |.", ". --@", ", which is how @ contracted ~.", " - ??!", " - ???",
+", which sparked @'s interest in |.", ", which should fill you with |.", ". --@", ", which is how @ contracted ~.", " - ??!", " - ???", ", you ^ =!", ", you ^ sack of *!",
 ", after which QQ $ fell off.", ", which is probably QQ best work.", ", which is a real slap in the $.", ' - well, "??" to you too!', " - ??, ??.", " - ??, ??!",
-", which happens to be the backstory for my new character, *CCMan.", " - but what about !!!?", ", which, for !!!, was ^ly ^.", " with & sacks of * in QQ $."]
+", which happens to be the backstory for my new character, *CCMan.", " - but what about !!!?", ", which, for !!!, was ^ly ^.", " with & sacks of * in QQ $.", ", you ='s VV!",
+", you ^ piece of *!"]
 
 companies = ["Coca-Cola", "Monster Energy", "Frito-Lay", "Nestle", "Google", "Microsoft", "Minecraft", "JP Morgan", "Taco Bell", "Verizon", "US Cellular", "Cingular", 
 "VVCC Jeans, Inc", "IBM", "Fatheads", "Fiji Water", "Vance Refrigeration", "Disney", "Fox News", "MSNBC", "Walmart", "IKEA", "Snuggie", "FlexTape", 
@@ -118,7 +119,7 @@ companies = ["Coca-Cola", "Monster Energy", "Frito-Lay", "Nestle", "Google", "Mi
 "Starbucks", "Raid: Shadow Legends", "Blizzard", "FizzBuzz Inc", "Los Pollos Hermanos", "Amazon", "SpaceX", "Tesla", "Tumblr", "MySpace", "Reddit", "BitConnect", "The Dentist",
 "Cost Cutters", "Dr. Pepper", "Pepsi", "GameStop", "|CC Inc", "$CCs-R-Us", "=CCs-R-Us", "Chuck-E-Cheese", "Candy Crush", "Angry Birds", "Staples", "OfficeMax", "PETA", "the CDC",
 "Instagram", "Netflix", "Snapchat", "Spotify", "Vine", "Twitch", "Hulu", "Unilever", "Perdue Pharma", "BetterHelp", "the CIA", "the FBI", "the Department of Justice",
-"the Department of Defense", "the NSA", "the FDA", "the CDC", "the US Government", utility.madeUpWord(True) + " Corp"]
+"the Department of Defense", "the NSA", "the FDA", "the US Government", utility.madeUpWord(True) + " Corp"]
 
 celebs = ["Dolly Parton", "Robert Pattinson", "the Geico =CC", "the = from Air Bud", "Keanu Reeves", "the Car =CC", "Crisp Rat",
 "Ben Shapiro", "PewDiePie", "Elvis", "Nickelback", "Guy Fieri", "Gordon Ramsay", "a =", "a ^ =", "a ^ =", "The ^CC Man", "a ^ piece of fruit", "Jennifer Lawrence",
@@ -138,7 +139,7 @@ celebs = ["Dolly Parton", "Robert Pattinson", "the Geico =CC", "the = from Air B
 "Lord Gwyn", "the Gaping Dragon", "Cranky Kong", "Funky Kong", "Aldia, Scholar of the First Sin", "Manus, Father of the Abyss", "Knight Artorias", "the Firekeeper",
 "Martin Shkreli", "Adele", "John Krasinski", "Justin Bieber", "Brian Peppers", "Moses", "Richard Nixon", "Bill Clinton", "Ronald Reagan", "George Bush", "Andrew Jackson", 
 "Andre the Giant", "the King of *CC", "the King of |CC", "the Queen of *CC", "the Queen of |CC", "the Duchess of *CC", "the Duchess of |CC", "the Princess of *CC", 
-"the Princess of |CC"]
+"the Princess of |CC", "Pooh"]
 
 places = ["^CC Jersey", "the ^CC States", "Europe", "Russia", "Asia", "Japan", "yo VV's house", "the sock drawer", "Madagascar", "Californ-I-A", "your soul", 
 "the corporate offices of _", "the ^CC House", "Yellowstone Park", "Italy", "the Pentagon", "Mount Everest", "an underground city", "the ^ dungeon", "a ^ city",
@@ -169,7 +170,7 @@ animals = ["lion", "cat", "dog", "squid", "mollusk", "clam", "zebra", "axolotl",
 "teenager", "adolescent", "elder", "puppy", "kitty", "hag", "bride", "groom", "witch"]
 
 parts = ["ear", "eye", "nose", "earlobe", "right pinky toe", "patella", "&th eyelash from the right", "entire body", "&th nipple", "foot", "third foot", "top right incisor", 
-"tooth", "teeth", "elbow", "bellybutton", "fingernail", "brain", "xiphoid process", "tooth enamel", "skin", "armpit", "foot", "bottom leg", 
+"tooth", "elbow", "bellybutton", "fingernail", "brain", "xiphoid process", "tooth enamel", "skin", "armpit", "foot", "bottom leg", 
 "spare rib", "cheek", "butt", "no-no square", "fingie", "upper lip", "glabella", "pituitary gland", "thyroid gland", "tear duct", "epidermis", "nerve ending", "bunion", 
 "amygdala", "toe", "finger", "eye", "chest", "knee", "lower back", "upper back", "ab", "diaphragm", "tongue", "epiglottis", "vocal fold", "uvula", "stomach", "peep",
 "gut", "larynx", "esophagus", "pelvis", "tibia", "phalange", "skull", "head", "scapula", "spleen", "sacrum", "coccyx", "spine", "funny bone", "cerebral cortex", "brain stem", "neck",
@@ -181,9 +182,9 @@ disease = ["$ cancer", "diabetes", "$ swelling", "$ destruction", "$ blockage", 
 "anal fissures", "^ $ pain", "ugliness", "a really weird $", "= $", "pregnancy", "obesity", "sociopathy", "antidisestablishmentarianism", "pneumonoultramicroscopicsilicovolcanoconiosis",
 "gastroenteritis", "PMS", "athlete's foot", "complementarianism", "extra limbs", "kidney stones", "broken $", "^-$", "hotdog finger", "count-choculitis", "no longer being alive", 
 "spontaneous dental hydroplosion", "chronic ~", "swine flu", "literally every STI", "loss of $", "diminished |", "vitamin deficiency", "egalitarianism", "dwarfism", 
-"|-deficiency", "=phobia", "rapidly-aging $", "a * allergy", "too much *", "^-*--", "$ pus"]
+"|-deficiency", "=phobia", "rapidly-aging $", "a * allergy", "too much *", "^-*--", "$ pus", "the curse", "the Abyss"]
 
-possessives = ["their", "its", "his/her", "the", "her", "his", "de", "@'s", "your", "my", "y'all's", "VV's", "our", "somebody's", "a ^", "a random", "thy", "yo VV's", "yo"]
+possessives = ["their", "its", "his/her", "the", "her", "his", "de", "@'s", "your", "my", "y'all's", "VV's", "our", "somebody's", "a ^", "thy", "yo VV's", "yo"]
 
 pronounsSubject = ["they", "it", "he/she", "she", "he", "dey", "@", "you", "I", "y'all", "we", "somebody", "%%", "thou", "yo VV", "ya"]
 
@@ -213,7 +214,7 @@ interjection = ["OK", "alright", "cool", "whatever", "great", "perfect", "who\'d
 "never seen such |", "takes my | away", "bless QQ heart", "watch out", "preposterous", "wonderful", "for *'s sake", "tarnation", "consarnit", "^", "nice", "how dare @", 
 "what |", "welp", "oh well", "gadzooks", "eureka", "aw man", "forsooth", "alas", "amen", "how could this be", "it can't be true", utility.madeUpWord(False), "golly", "yay", "!! don\'t care",
 "crikey", "exclamation", "for |\'s sake", "what a =", "double drat", "so", "haha", "cringe", "don\'t get me started", "well slap my $ and call me a VV", "well, ??", "sorry",
-"hallelujah", "my my", "oh my", "holy =", "holy *", "really", "oh yeah", "uh-huh"]
+"hallelujah", "my my", "oh my", "holy =", "holy *", "really", "oh yeah", "uh-huh", "VV of a =", "well I'll be a ='s VV"]
 
 # ideas: quantities, occasions, colors
 # less necessary but still options: sports, languages, nationalities, countries?, cities?

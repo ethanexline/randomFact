@@ -7,8 +7,7 @@ api = Api(app)
 
 class Fact(Resource):
     def get(self):
-        fact = assembler.returnFact().replace("\'", "'").replace("\"", '"')
-        return {'fact': fact}, 200
+        return {'fact': assembler.returnFact()}, 200
 
 api.add_resource(Fact, '/fact')
 
