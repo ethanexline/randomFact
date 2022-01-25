@@ -200,7 +200,7 @@ foods = ["broccoli", "carrots", "cabbages", "cauliflower", "celery", "creamed co
 "hot dogs", "sandwiches", "sausages", "pepperonis", "salamis", "fried chicken", "collard greens", "lettuce", "pasta", "sushi", "fish", "gravy", "pork", "beef", "bacon", "steak",
 "alcohol", "lemonade", "cola", "soda", "coffee", "tea", "salsa", "refried beans", "curry", "chili", "chowder", "stew", "mashed potatoes", "tacos", "lo mein", "matcha", "almonds",
 "brussels sprouts", "milk", "anchovies", "avocados", "coconuts", "coconut milk", "coconut oil", "coconut water", "custard", "dressing", "egg whites", "nuts", "pudding", "pepper",
-"mustard", "ketchup", "mayonnaise", "olive oil", "pickles", "* juice", "fried =", "= oil", "= juice", "= sauce", "boiled =", "baked =", "cooked =", "pancakes", "filet mignon",
+"mustard", "ketchup", "mayonnaise", "olive oil", "pickles", "* juice", "fried =", "= oil", "= juice", "= sauce", "boiled =", "baked =", "cooked *", "cooked =", "pancakes", "filet mignon",
 "eggs benedict", "beef wellington", "quail", "= grease", "= milk", "syrup", "= concentrate", "cream of *", "cream of =", "= eggs", "pringles", "oreos", "doritos", "mountain dew",
 "chocolate", "endives", "parsley", "marjoram", "basil", "cinnamon", "coriander", "dill", "fennel", "pickled *", "pickled =", "* vinegar", "= vinegar", "* syrup", "= syrup", 
 "= meat", "Dr. pepper", "fried *", "deep-fried *", "deep-fried =", "* meat", "= cheese", "* oil", "barf", "puke", "biscuits", "= soup", "= gravy", "* soup", "* gravy", "= tacos",
