@@ -34,7 +34,7 @@ parties = ["a = wearing false teeth", "the President of +", "the most ^ haircut 
  "a ^CC =CC Champion", "the annual _ dance-off", "Dracula (but if he was from +)", "a ^ly ^ handshake", "an extra set of $s", "a * dish with = meat",
 "^ly ^ *", "QQ ^ dentist", "@\'s accountant", "a mirror that makes you look ^ly ^", "gorgonzola cheese", "the CEO of _", "liquid *", "Obama\'s last name", "The World\'s Largest =CC",
 "the entire South Pole", "a stairway to +", "the reason you were born", "a ^ly ^ almond", "a tree", "The World\'s Largest *CC", "money", 
-"^, ^ *", "a war between =s and =s", "a ^ly ^ corn dog", "a = with a $ that\'s just too ^", "a = with a =", "a = with too much |", "a = with a ^ $", "The World\'s Smallest *CC",
+"^, ^ *", "the war between =s and =s", "a ^ly ^ corn dog", "a = with a $ that\'s just too ^", "a = with a =", "a = with too much |", "a = with a ^ $", "The World\'s Smallest *CC",
 "the element of surprise", "a slip of the $", "hard, ^ drugs", "a banana that needs to be peeled & times", "* and *", "a perfect doppelganger for @", "=s\' rights",
 "the =CC President", "= enthusiasts", "attendees of a $ conventions", "the stink eye", "the surface of the sun", "QQ VV\'s *", "@\'s *", "a =\'s $", "a =\'s *",
 "_-branded swag", "_\'s holiday bash", "@", "@\'s secret $", "@\'s $", "#", "a software product for =s", "@\'s raison d\'etre", "an outbreak of ~", "The World\'s Smallest =CC",
