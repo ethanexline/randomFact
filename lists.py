@@ -46,22 +46,22 @@ parties = ["a = wearing false teeth", "the President of +", "the most ^ haircut 
 "a bag of ^ =s", "a can of * that expired in #", "a ^ |", 'the hit show \"%%CC\"', 'the new movie \"%%CC\"', "Donkey Kong Country 2", "my body", "QQ ^ doctor", 
 "a plastic surgeon specializing in $s", "a vet specializing in =s", "a $ surgeon", "mankind", "humanity", "the space-time continuum"]
 
-begs = ["In other news,", "In light of today\'s events,", "Despite what you may have heard,", "QQ VV looked me right in the $ and said:", "After drinking & gallons of liquid *,",
-"Having been born in the year #,", "Despite a lifelong battle with ~,", "Picture this in your mind for a moment:", "Fun fact:", "Did you know?", 
-"| is cancelled today, due to the fact that", "Have you considered the fact that", "My favorite childhood memory is when", "What\'s ^ is that mainstream media would have you believe", 
-"After eating & pounds of *,", "Once upon a time,", "When you really think about it,", "Yesterday,", "Whenever @ looks ^, it\'s because", "In the year of Our Lord #,", 
-"My pitch for a hit new TV show:", "In case you haven\'t heard yet,", "Through sheer | and |,", "If you ever have a ^ day, just remember", "In an act of |,", 
-"^ly, due to %%,", "If !! squints and turns !! $ ^ly to the side, !!\'ll see that", "Despite having ^ |,", "If a = or @ is attacking you, remember that", 
+begs = ["In other news,", "In light of today\'s events,", "Despite what !! may have heard,", "QQ VV looked me right in the $ and said:", "After drinking & gallons of liquid *,",
+"Having been born in the year #,", "Despite a lifelong battle with ~,", "Picture this in your mind for a moment:", "Fun fact:", "Did !! know?", 
+"| is cancelled today, due to the fact that", "Have !! considered the fact that", "My favorite childhood memory is when", "What\'s ^ is that mainstream media would have !!!! believe", 
+"After eating & pounds of *,", "Once upon a time,", "When !! really think about it,", "Yesterday,", "Whenever @ looks ^, it\'s because", "In the year of Our Lord #,", 
+"My pitch for a hit new TV show:", "In case !! haven\'t heard yet,", "Through sheer | and |,", "If !! ever have a ^ day, just remember", "In an act of |,", 
+"^ly, due to %%,", "If !! squints and turns !! $ ^ly to the side, !!\'ll see that", "Despite having ^ |,", "If a = or @ is attacking !!!!, remember that", 
 "Thanks to free speech,", "Wanna really get QQ attention? Lay one of these on !!!:", 'The German word \"' + utility.madeUpWord(False) + '\" describes the situation where', 
 "@ has released the following statement:", "The hidden country of " + utility.madeUpWord(True) + " is where", "To strike a balance between | and |,", "To fill QQ life with |,", 
-"To fill QQ $ with |,", "To impart | into QQ $, declare that", "To fill @ with |,", "Were you aware that", "If you ever visit +, ask the locals about how", 
+"To fill QQ $ with |,", "To impart | into QQ $, declare that", "To fill @ with |,", "Were you aware that", "If !! ever visit +, ask the locals about how", 
 "It fills me with | to know that", "What if", "What !! teaches in schools now is that", "An unprecendented turn of events:", "If !! got out once in a while, !!'d know that",
 "Due to an outbreak of ~,", "History would never be the same after the day that", "Due to %% and QQ *,", "Before !! " + utility.getRand(verbs) + " %%,",
 "I know it sounds ^, but", "%% tells me that", "All existing evidence suggests that", "We hold this truth to be self-evident, that", "Today's kids can\'t stop talking about how",
 "If !! wants to get kicked out of +, !! should say that", "Congress met today to discuss the issue of how", "Today's kids only worry about how",
-"^ band name suggestion:", "Our AI overlords wanted me to inform you that", "We regret to inform you that", "A ^ book premiers today which will reveal the story behind how", 
+"^ band name suggestion:", "Our AI overlords wanted !! to inform !!!! that", "!! regret to inform !!!! that", "A ^ book premiers today which will reveal the story behind how", 
 "There is hope for %% as long as", "??, hope for humanity lost;", "?? -", "??;", "??,", "??...", "??!", "???", "The secret message on the back of the Constitution:",
-"Hope for humanity restored:", "Because of @\'s ^ |,", "In a display of ^ |,", "Since I just contracted a ^ case of ~,"]
+"Hope for humanity restored:", "Because of @\'s ^ |,", "In a display of ^ |,", "Since !! just contracted a ^ case of ~,"]
 
 adjectives = ["dumb", "ugly", "brown", "campy", "proverbial", "obtuse", "arrogant", "swollen", "frightening", "hungry", "diseased", "naked", "squirming", "^---$--\'d", "surprising",
 "short", "rank", "malodorous", "cold", "long", "wide", "clammy", "strong", "stirring", "classy", "high-brow", "fat", "overweight", "wooden", "verdant", "al dente", "chewy", "fudgy",
