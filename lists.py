@@ -26,9 +26,10 @@ verbs = ["got", "chuggled", "fell in love with the idea of", "slurped", "locked 
 "mourned the loss of", "won a year's supply of", "pledged to never run out of", "developed a new paradigm around", "changed QQ outlook upon", "scraped out the last bit of a jar of",
 "took a big spoonful of", "trusted the | of", "took ^ advice from", "created a new branch of philosophy based on", "couldn\'t belive the | of", "couldn\'t comprehend", 
 "found a ^ passion for", "aspired to embody", "harbored a ^ | for", "thought constantly about", "was inspired by the | of", "had QQ $ stolen by", "had QQ closest brush with",
-"opened a store that exclusively vends", "waxed poetic about", "choked on too big a bite of", "gave the Heimlich maneuver to", "performed CPR on", "got on QQ soapbox about"]
+"opened a store that exclusively vends", "waxed poetic about", "choked on too big a bite of", "gave the Heimlich maneuver to", "performed CPR on", "got on QQ soapbox about",
+"passed a case of ~ on to"]
 
-parties = ["a = wearing false teeth", "the President of +", "the most ^ haircut of all time", "QQ $ (but & inches in length)", "a =", "Flat Earth Theory",
+parties = ["a = wearing false $s", "the President of +", "the most ^ haircut of all time", "QQ $ (but & inches in length)", "a =", "Flat Earth Theory",
 "nuclear war", "white people", "^ people", "^ stool", "a = that " + utility.getRand(verbs) + " @", "the CFO of _", 'a new street gang called \"the ^CC VVCCs\"', '\"the ^CC VVCCs\"',
 "& push-ups", "a ^, ^ bodybuilder", "a = disguised as @", "a ^ly ^ Halloween costume", "the bathroom", "^ soup", "@\'s new $s", "^ *", "a highly ^ strain of ~",
  "a ^CC =CC Champion", "the annual _ dance-off", "Dracula (but if he was from +)", "a ^ly ^ handshake", "an extra set of $s", "a * dish with = meat",
@@ -44,24 +45,24 @@ parties = ["a = wearing false teeth", "the President of +", "the most ^ haircut 
 "@\'s VV\'s favorite VV", "QQ VV riding a =", "^ chicken nuggets", utility.madeUpWord(False), "a ^ PR campaign", "~", "the asteroid belt", "@\'s pet =", "the sun", "the moon",
 'a bar trivia team called \"the ^CC $CC\"', "\'the facilities\'", "our AI overlords", "a hypothetical *", "a hypothetical =", "the Planet of the =CCs", 'the phrase \"??\"',
 "a bag of ^ =s", "a can of * that expired in #", "a ^ |", 'the hit show \"%%CC\"', 'the new movie \"%%CC\"', "Donkey Kong Country 2", "my body", "QQ ^ doctor", 
-"a plastic surgeon specializing in $s", "a vet specializing in =s", "a $ surgeon", "mankind", "humanity", "the space-time continuum"]
+"a plastic surgeon specializing in $s", "a vet specializing in =s", "a $ surgeon", "mankind", "humanity", "the space-time continuum", "& dollars", "& cents"]
 
 begs = ["In other news,", "In light of today\'s events,", "Despite what !! may have heard,", "QQ VV looked me right in the $ and said:", "After drinking & gallons of liquid *,",
 "Having been born in the year #,", "Despite a lifelong battle with ~,", "Picture this in your mind for a moment:", "Fun fact:", "Did !! know?", 
-"| is cancelled today, due to the fact that", "Have !! considered the fact that", "My favorite childhood memory is when", "What\'s ^ is that mainstream media would have !!!! believe", 
-"After eating & pounds of *,", "Once upon a time,", "When !! really think about it,", "Yesterday,", "Whenever @ looks ^, it\'s because", "In the year of Our Lord #,", 
+"| is cancelled today, due to the fact that", "Have you considered the fact that", "My favorite childhood memory is when", "What\'s ^ is that mainstream media would have !!! believe", 
+"After eating & pounds of *,", "Once upon a time,", "When you really think about it,", "Yesterday,", "Whenever @ looks ^, it\'s because", "In the year of Our Lord #,", 
 "My pitch for a hit new TV show:", "In case !! haven\'t heard yet,", "Through sheer | and |,", "If !! ever have a ^ day, just remember", "In an act of |,", 
-"^ly, due to %%,", "If !! squints and turns !! $ ^ly to the side, !!\'ll see that", "Despite having ^ |,", "If a = or @ is attacking !!!!, remember that", 
+"^ly, due to %%,", "If !! squints and turns QQ $ ^ly to the side, !!\'ll see that", "Despite having ^ |,", "If a = or @ is attacking !!!, remember that", 
 "Thanks to free speech,", "Wanna really get QQ attention? Lay one of these on !!!:", 'The German word \"' + utility.madeUpWord(False) + '\" describes the situation where', 
 "@ has released the following statement:", "The hidden country of " + utility.madeUpWord(True) + " is where", "To strike a balance between | and |,", "To fill QQ life with |,", 
-"To fill QQ $ with |,", "To impart | into QQ $, declare that", "To fill @ with |,", "Were you aware that", "If !! ever visit +, ask the locals about how", 
+"To fill QQ $ with |,", "To impart | into QQ $, declare that", "To fill @ with |,", "Were you aware that", "If you ever visit +, ask the locals about how", 
 "It fills me with | to know that", "What if", "What !! teaches in schools now is that", "An unprecendented turn of events:", "If !! got out once in a while, !!'d know that",
 "Due to an outbreak of ~,", "History would never be the same after the day that", "Due to %% and QQ *,", "Before !! " + utility.getRand(verbs) + " %%,",
 "I know it sounds ^, but", "%% tells me that", "All existing evidence suggests that", "We hold this truth to be self-evident, that", "Today's kids can\'t stop talking about how",
 "If !! wants to get kicked out of +, !! should say that", "Congress met today to discuss the issue of how", "Today's kids only worry about how",
-"^ band name suggestion:", "Our AI overlords wanted !! to inform !!!! that", "!! regret to inform !!!! that", "A ^ book premiers today which will reveal the story behind how", 
+"^ band name suggestion:", "Our AI overlords wanted !!! to inform !!! that", "We regret to inform !!! that", "A ^ book premiers today which will reveal the story behind how", 
 "There is hope for %% as long as", "??, hope for humanity lost;", "?? -", "??;", "??,", "??...", "??!", "???", "The secret message on the back of the Constitution:",
-"Hope for humanity restored:", "Because of @\'s ^ |,", "In a display of ^ |,", "Since !! just contracted a ^ case of ~,"]
+"Hope for humanity restored:", "Because of @\'s ^ |,", "In a display of ^ |,", "Since !! just contracted a ^ case of ~,", "After !! " + utility.getRand(verbs) + " %%,",]
 
 adjectives = ["dumb", "ugly", "brown", "campy", "proverbial", "obtuse", "arrogant", "swollen", "frightening", "hungry", "diseased", "naked", "squirming", "^---$--\'d", "surprising",
 "short", "rank", "malodorous", "cold", "long", "wide", "clammy", "strong", "stirring", "classy", "high-brow", "fat", "overweight", "wooden", "verdant", "al dente", "chewy", "fudgy",
@@ -78,22 +79,23 @@ adjectives = ["dumb", "ugly", "brown", "campy", "proverbial", "obtuse", "arrogan
 "innappropriate", "quick", "fluent", "odd", "weird", "unusual", "stupid", "suspicious", "slight", "confident", "exaggerated", "unwavering", "true", "real", "emotional",
 "physical", "spiritual", "virtual", "textural", "perfect", "hot", "male", "female", "broken", "stern", "whiny", "indignant", "bright", "massive", "bare", "deft", "swift",
 "convenient", "functional", "chic", "united", "greedy", "brash", "proud", "unstoppable", "floppy", "flailing", "full", "positive", "negative", "dirty", "fishy", "filthy",
-"candy", "iron", "bronzen", "flaxen", "golden", "rock-hard", "titanium", utility.madeUpWord(False), "moderate", "impressive", "successful", "unsuccessful", "hypothetical", "insufficient",
+"iron", "bronzen", "flaxen", "golden", "rock-hard", "titanium", utility.madeUpWord(False), "moderate", "impressive", "successful", "unsuccessful", "hypothetical", "insufficient",
 "frozen", "melted", "acute", "instant", "amateur", "flat", "unprecedented", "uncouth", "unbecoming", "subpar", "violent", "unattractive", "edible", "sociable", "dangerous", 
 "fiscal", "invisible", "unexpected", "secret", "cool", "erect", "sexy", "appalling", "horrifying", "contagious", "profound", "colorful", "universal", "unidentifiable", "blue",
 "green", "yellow", "purple", "painful", "unpleasant", "unsightly", "foul", "permanent", "desperate", "impotent", "unprofessional", "omnipresent", "soaring", "ethereal",
 "exquisite", "elegant", "dark", "rude", "insane", "crazy", "vegan", "*---free", "greasy", "choice", "random", "buxom", "sad", "angry", "furious", "load-bearing", "morose", 
-"gleeful", "awful", "above-average", "below-average", "inspiring", "utterly ^", "lame", "unlucky", "stanky", "sorry", "pregnant"]
+"gleeful", "awful", "above-average", "below-average", "inspiring", "utterly ^", "lame", "unlucky", "stanky", "sorry", "pregnant", "gargantuan", "politically-correct",
+"anatomically-correct", "oh-so-^--", "dank", "skunky", "$y", "=y", "^ and ^", "aggressive"]
 
 concepts = ["gusto", "fervor", "panache", "restraint", "style", "wherewithall", "curiosity", "pride", "luck", "chastity", "charity", "joy", "wonder", "dread", "terror",
-"passion", "delicacy", "peace", "understanding", "va-va-voom", "swagger", "ingenuity", "self-control", "spirit", "innovation", "clarity", "je ne sais quoi", "gumption", "||",
+"passion", "delicacy", "peace", "understanding", "va-va-voom", "swagger", "ingenuity", "self-control", "spirit", "innovation", "clarity", "je ne sais quoi", "gumption",
 "love", "nerve", "hutzpah", "cacahuetes", "resolve", "verve", "boldness", "genius", "grit", "determination", "hunger", "rage", "nostalgia", "melancholy", "wistfulness",
 "longing", "resilience", "wit", "faith", "honor", "candor", "serenity", "hope", "patience", "kindness", "cheer", "goodwill", "can-do attitude", "spirit", "moxie", "soul",
 "joie de vivre", "virtue", "courage", "fire", "selflessness", "pride", "glamour", "$", utility.madeUpWord(False), "culture", "disdain", "apprehension", "hesitancy", "cowardice", 
 "evil", "coldness", "underhandedness", "subtlety", "visibility", "sausage", "pancakes", "stupor", "~", "ambition", "fear", "shame", "desperation", "security", "dignity",
 "fidelity", "humility", "honesty", "humor", "horror", "ego", "guilt", "kindness", "gentleness", "despair", "consternation", "regret", "remorse", "science", "math", "geometry",
 "physics", "arithmetic", "trigenometry", "chemistry", "somatics", "logic", "ethics", "philosophy", "psychology", "sociology", "mercy", "grace", "compassion", "politics", 
-"economics", "semantics", "sadness", "grief", "sorrow", "despair", "heat", "ice", "anger", "purpose", "*"]
+"economics", "semantics", "sadness", "grief", "sorrow", "despair", "heat", "ice", "anger", "purpose", "*", "law", "order", "justice"]
 
 ends = [" while @ was still president.", ", using QQ $ to chug a two-liter of liquid *.", " with the | of a ^ =.", " - how ^ is that?", ", demonstrating ^ |.",
 ", which, ^ly, broke the world record.", ", because that\'s what ^ | looks like.", ", cause money don\'t grow on %%.", ", showing no |.",
@@ -119,7 +121,8 @@ companies = ["Coca-Cola", "Monster Energy", "Frito-Lay", "Nestle", "Google", "Mi
 "Starbucks", "Raid: Shadow Legends", "Blizzard", "FizzBuzz Inc", "Los Pollos Hermanos", "Amazon", "SpaceX", "Tesla", "Tumblr", "MySpace", "Reddit", "BitConnect", "The Dentist",
 "Cost Cutters", "Dr. Pepper", "Pepsi", "GameStop", "|CC Inc", "$CCs-R-Us", "=CCs-R-Us", "Chuck-E-Cheese", "Candy Crush", "Angry Birds", "Staples", "OfficeMax", "PETA", "the CDC",
 "Instagram", "Netflix", "Snapchat", "Spotify", "Vine", "Twitch", "Hulu", "Unilever", "Perdue Pharma", "BetterHelp", "the CIA", "the FBI", "the Department of Justice",
-"the Department of Defense", "the NSA", "the FDA", "the US Government", utility.madeUpWord(True) + " Corp"]
+"the Department of Defense", "the NSA", "the FDA", "the US Government", utility.madeUpWord(True) + " Corp", "^CC$CC", "Studio Ghibli", "the Department of |CC", 
+"the Department of *CC", "the Department of =CCs"]
 
 celebs = ["Dolly Parton", "Robert Pattinson", "the Geico =CC", "the = from Air Bud", "Keanu Reeves", "the Car =CC", "Crisp Rat",
 "Ben Shapiro", "PewDiePie", "Elvis", "Nickelback", "Guy Fieri", "Gordon Ramsay", "a =", "a ^ =", "a ^ =", "The ^CC Man", "a ^ piece of fruit", "Jennifer Lawrence",
@@ -139,7 +142,7 @@ celebs = ["Dolly Parton", "Robert Pattinson", "the Geico =CC", "the = from Air B
 "Lord Gwyn", "the Gaping Dragon", "Cranky Kong", "Funky Kong", "Aldia, Scholar of the First Sin", "Manus, Father of the Abyss", "Knight Artorias", "the Firekeeper",
 "Martin Shkreli", "Adele", "John Krasinski", "Justin Bieber", "Brian Peppers", "Moses", "Richard Nixon", "Bill Clinton", "Ronald Reagan", "George Bush", "Andrew Jackson", 
 "Andre the Giant", "the King of *CC", "the King of |CC", "the Queen of *CC", "the Queen of |CC", "the Duchess of *CC", "the Duchess of |CC", "the Princess of *CC", 
-"the Princess of |CC", "Pooh", "Ysgramor", "Alduin", "Paarthurnax", "the Grinch", "Santa Claus"]
+"the Princess of |CC", "Pooh", "Ysgramor", "Alduin", "Paarthurnax", "the Grinch", "Santa Claus", "Hideo Kojima", "Hidetaka Miyazaki", "Mark Zuckerberg", "Todd Howard"]
 
 places = ["^CC Jersey", "the ^CC States", "Europe", "Russia", "Asia", "Japan", "yo VV's house", "the sock drawer", "Madagascar", "Californ-I-A", "QQ soul", 
 "the corporate offices of _", "the ^CC House", "Yellowstone Park", "Italy", "the Pentagon", "Mount Everest", "an underground city", "the ^ dungeon", "a ^ city",
@@ -149,7 +152,8 @@ places = ["^CC Jersey", "the ^CC States", "Europe", "Russia", "Asia", "Japan", "
 "Tokyo", "Beijing", "Athens", "Ancient Rome", "London", "Austrialia", "^CC Zealand", "Azerbaijan", "Heaven", "the University of +", "^CCLand", "^CC-^CCLand", "Flat Earth",
 "*CCLand", "=CCLand", "_'s headquarters", "Anor Londo", "Drangleic", "Londor", "the Abyss", "the ^CC Abyss", "New Londo", "Planet Namek", "the ^CC Planet", "QQ @ shrine",
 "Planet ^CC's &th moon", "the Planet of the =CCs", "Firelink Shrine", "the Catacombs", "the =CC Temple", "the =CC Shrine", "@'s personal aircraft", "the |CC Dimension",
-"Majula", "Kong Island", "Krem Quay", "Schitt's Creek", "Middle-Earth", "Jotunheim", "Yggdrasil", "Asgard", "Niflheim", "Valhalla", "Sovngarde", "Tamriel"]
+"Majula", "Kong Island", "Krem Quay", "Schitt's Creek", "Middle-Earth", "Jotunheim", "Yggdrasil", "Asgard", "Niflheim", "Valhalla", "Sovngarde", "Tamriel",
+"the Department of |CC", "the Department of *CC", "the Department of =CCs"]
 
 animals = ["lion", "cat", "dog", "squid", "mollusk", "clam", "zebra", "axolotl", "rhino", "tiger", "lamb", "octopus", "antelope", "fawn", "llama", "parrot", "whale", 
 "geoduck", "barnacle", "snail", "slug", "squirrel", "giraffe", "dingo", "wolf", "coyote", "hyena", "ocelot", "puma", "mountain lion", "fox", "polar bear", "grizzly bear", 
@@ -167,7 +171,7 @@ animals = ["lion", "cat", "dog", "squid", "mollusk", "clam", "zebra", "axolotl",
 "merchant", "mermaid", "seaman", "pirate", "monk", "ninja", "nun", "rottweiler", "weimaraner", "vischla", "vampire", "terrier", "hound", "warrior", "crane", "crony", "raven",
 "crow", "sparrow", "robin", "bat", "bee", "hornet", "yellowjacket", "wolverine", "wombat", "vagrant", "wabbit", "warthog", "weasel", "werewolf", "hagraven", "harpy", "hippogriff",
 "hippopotamus", "spriggan", "troll", "gnome", "gargoyle", "giant", "gorgon", "griffin", "python", "water =", "lamb", "swine", "buffalo", "bison", "elk", "boar", "wild =",
-"teenager", "adolescent", "elder", "puppy", "kitty", "hag", "bride", "groom", "witch"]
+"teenager", "adolescent", "elder", "puppy", "kitty", "hag", "bride", "groom", "witch", "computer", "robot", "cop", "gun"]
 
 parts = ["ear", "eye", "nose", "earlobe", "right pinky toe", "patella", "&th eyelash from the right", "entire body", "&th nipple", "foot", "third foot", "top right incisor", 
 "tooth", "elbow", "bellybutton", "fingernail", "brain", "xiphoid process", "tooth enamel", "skin", "armpit", "foot", "bottom leg", 
@@ -185,7 +189,7 @@ disease = ["$ cancer", "diabetes", "$ swelling", "$ destruction", "$ blockage", 
 "|-deficiency", "=phobia", "rapidly-aging $s", "a * allergy", "too much *", "^-*--", "$ pus", "the curse", "the Abyss", "dyslexia", "astigmatism", "hyper-diarrhea", "gout", 
 "swollen $s"]
 
-possessives = ["their", "its", "his/her", "the", "her", "his", "de", "@'s", "your", "my", "y'all's", "VV's", "our", "somebody's", "a ^", "thy", "yo VV's", "yo"]
+possessives = ["their", "its", "his/her", "the", "her", "his", "de", "@'s", "your", "a", "that", "my", "y'all's", "VV's", "our", "somebody's", "a ^", "thy", "yo VV's", "yo"]
 
 pronounsSubject = ["they", "it", "he/she", "she", "he", "dey", "@", "you", "I", "y'all", "we", "somebody", "%%", "thou", "yo VV", "ya"]
 

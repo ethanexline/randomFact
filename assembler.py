@@ -6,7 +6,7 @@ def returnFact():
     fact = utility.getRand(lists.begs) + " " + utility.getRand(lists.parties) + " " + utility.getRand(lists.verbs) + " " + utility.getRand(lists.parties) + utility.getRand(lists.ends)
     #fact = "* gravy, * sauce, * syrup, * concentrate, *CCMan, *CCLand, the World's Smallest *CC." # juicy test fact
     #fact = "*---free *, *CC---Free *CC, less-than-*---flavored, More-Than-*CC---Free" # I like this test too
-    #fact =  "publicly" # real test
+    #fact =  "*---flavored" # real test
     while (fact.find("_") != -1 or fact.find("#") != -1 or fact.find("@") != -1 or fact.find("&") != -1 or fact.find("+") != -1 or fact.find("^") != -1 or fact.find("|") != -1 
     or fact.find("=") != -1 or fact.find("%%") != -1 or fact.find("$") != -1 or fact.find("QQ") != -1 or fact.find("VV") != -1 or fact.find("~") != -1 or fact.find("*") != -1
     or fact.find("??") != -1 or fact.find("!!") != -1 or fact.find("!!!") != -1):
@@ -193,8 +193,8 @@ def returnFact():
                     replacement = replacement.replace("=", "=CC")
                 if ((fact.find("Land") != -1 or fact.find("Man") != -1) and (fact[fact.find("Land") - 1] == "C" or fact[fact.find("Man") - 1] == "C")) and replacement.find(" ") != -1:
                     replacement = replacement.replace(" ", "")
-                elif fact.find("---") != -1:
-                    replacement = replacement.replace(" ", "-")
+                # elif fact.find("---") != -1:
+                #     replacement = replacement.replace(" ", "-")
                 elif replacement.find(" ") != -1:
                     if fact[fact.find("=CC") + 3].isupper():
                         replacement = replacement.replace(" ", "")
@@ -249,6 +249,8 @@ def returnFact():
                     fact = fact.replace("$CC", replacement, 1)
                 elif fact.find("R-Us") != -1:
                     fact = fact.replace("$CC", replacement.title().replace(" ", "-"), 1)
+                elif fact.find("^CC$CC") != -1:
+                    fact - fact.replace("$CC", replacement.title().replace(" ", ""), 1)
                 else:
                     fact = fact.replace("$CC", replacement.title(), 1)
             else:
@@ -406,7 +408,7 @@ def returnFact():
 
         if fact.find("!!") != -1:
             if fact.find("!!!") != -1:
-                fact = fact.replace("!!!", utility.getRand(lists.pronounsObject))
+                fact = fact.replace("!!!", utility.getRand(lists.pronounsObject), 1)
             else:
                 fact = fact.replace("!!", utility.getRand(lists.pronounsSubject))
 
@@ -466,7 +468,7 @@ def returnFact():
                 fact = fact[0:searchFrom] + fact[searchFrom:].replace(" a ", " an ", 1)
                 aCount -= 1
                 searchFrom = fact.find(" an ", searchFrom) + 3
-            elif ((fact[fact.find(" a ", searchFrom) + 3] == '"') and (fact[fact.find(" a ", searchFrom) + 4] == "a" 
+            elif ((fact[fact.find(" a ", searchFrom) + 3] == '"' or fact[fact.find(" a ", searchFrom) + 3] == "'") and (fact[fact.find(" a ", searchFrom) + 4] == "a" 
             or fact[fact.find(" a ", searchFrom) + 4] == "e" or fact[fact.find(" a ", searchFrom) + 4] == "i" or fact[fact.find(" a ", searchFrom) + 4] == "o" 
             or fact[fact.find(" a ", searchFrom) + 4] == "u" or fact[fact.find(" a ", searchFrom) + 4] == "A" or fact[fact.find(" a ", searchFrom) + 4] == "E" 
             or fact[fact.find(" a ", searchFrom) + 4] == "I" or fact[fact.find(" a ", searchFrom) + 4] == "O" or fact[fact.find(" a ", searchFrom) + 4] == "U")):
@@ -528,11 +530,14 @@ def returnFact():
     if fact.find("ippopotamuss") != -1:
         fact = fact.replace("ippopotamuss", "ippopotamuses")
 
-    if fact.find("esophaguss") != -1:
-        fact = fact.replace("esophaguss", "esophaguses")
+    if fact.find("sophaguss") != -1:
+        fact = fact.replace("sophaguss", "sophaguses")
 
     if fact.find('yess') != -1:
         fact = fact.replace('yess', 'yes')
+
+    if fact.find('louss') != -1:
+        fact = fact.replace('louss', 'louses')
 
     if fact[fact.find("iss") + 3] == " " or fact[fact.find("iss") + 3] == "-" or fact[fact.find("iss") + 3] == "'":
         fact = fact.replace("iss", "ises")
@@ -711,11 +716,17 @@ def returnFact():
     if fact.find("a Proletariat") != -1:
         fact = fact.replace("a Proletariat", "the Proletariat")
 
-    if fact.find("a proletariat") != -1:
+    if fact.find("a bourgeoisie") != -1:
         fact = fact.replace("a bourgeoisie", "the bourgeoisie")
 
     if fact.find("a Bourgeoisie") != -1:
         fact = fact.replace("a Bourgeoisie", "the Bourgeoisie")
+
+    if fact.find("ourgeoisies") != -1:
+        fact = fact.replace("ourgeoisies", "ourgeoisie")
+
+    if fact.find("roletariats") != -1:
+        fact = fact.replace("roletariats", "roletariat")
 
     if fact.find("Creamof") != -1:
         fact = fact.replace("Creamof", "CreamOf")
@@ -954,7 +965,7 @@ def returnFact():
     if fact.find("wifes") != -1 or fact.find("Wifes") != -1:
         fact = fact.replace("ifes", "ives")
 
-    if fact.find("? ") != -1 and fact.find("attention?") == -1 and fact.find(";)") == -1 and fact.find("know?") == -1 and fact.find(" --") == -1:
+    if fact.find("? ") != -1 and fact.find("attention?") == -1 and fact.find(";)") == -1 and fact.find("know?") == -1 and fact.find(" --") == -1 and fact.find("Were you aware that") == -1 and fact.find("What if") == -1:
         fact = fact.replace("? ", ". ")
 
     if fact.find("chovie") != -1 and fact.find("chovies") == -1:
@@ -1123,6 +1134,9 @@ def returnFact():
     if fact.find('Ikea') != -1:
         fact = fact.replace('Ikea', 'IKEA')
 
+    if fact.find('Nypd') != -1:
+        fact = fact.replace('Nypd', 'NYPD')
+
     if fact.find('Ceo ') != -1:
         fact = fact.replace('Ceo ', 'CEO ')
 
@@ -1144,10 +1158,13 @@ def returnFact():
     if fact.find('Fbi') != -1:
         fact = fact.replace('Fbi', 'FBI')
 
+    if fact.find(' Ai ') != -1:
+        fact = fact.replace(' Ai ', ' AI ')
+
     if fact.find('A O') != -1:
         fact = fact.replace('A O', 'An O')
 
-    if fact.find("1 dollars") != -1:
+    if fact.find(" 1 dollars") != -1 or fact.find('"1 dollars') != -1:
         fact = fact.replace("1 dollars", "1 dollar")
 
     if fact.find("Us Cellular") != -1 or fact.find("Us G") != -1:
