@@ -34,7 +34,7 @@ parties = ["a = wearing false $s", "the President of +", "the most ^ haircut of 
 "& push-ups", "a ^, ^ bodybuilder", "a = disguised as @", "a ^ly ^ Halloween costume", "the bathroom", "^ soup", "@\'s new $s", "^ *", "a highly ^ strain of ~",
  "a ^CC =CC Champion", "the annual _ dance-off", "Dracula (but if he was from +)", "a ^ly ^ handshake", "an extra set of $s", "a * dish with = meat",
 "^ly ^ *", "QQ ^ dentist", "@\'s accountant", "a mirror that makes you look ^ly ^", "gorgonzola cheese", "the CEO of _", "liquid *", "Obama\'s last name", "The World\'s Largest =CC",
-"the entire South Pole", "a stairway to +", "the reason you were born", "a ^ly ^ almond", "a tree", "The World\'s Largest *CC", "money", 
+"the entire South Pole", "a stairway to +", "the reason !! was born", "a ^ly ^ almond", "a tree", "The World\'s Largest *CC", "money", 
 "^, ^ *", "the war between =s and =s", "a ^ly ^ corn dog", "a = with a $ that\'s just too ^", "a = with a =", "a = with too much |", "a = with a ^ $", "The World\'s Smallest *CC",
 "the element of surprise", "a slip of the $", "hard, ^ drugs", "a banana that needs to be peeled & times", "* and *", "a perfect doppelganger for @", "=s\' rights",
 "the =CC President", "= enthusiasts", "attendees of a $ conventions", "the stink eye", "the surface of the sun", "QQ VV\'s *", "@\'s *", "a =\'s $", "a =\'s *",
@@ -51,11 +51,11 @@ begs = ["In other news,", "In light of today\'s events,", "Despite what !! may h
 "Having been born in the year #,", "Despite a lifelong battle with ~,", "Picture this in your mind for a moment:", "Fun fact:", "Did !! know?", 
 "| is cancelled today, due to the fact that", "Have you considered the fact that", "My favorite childhood memory is when", "What\'s ^ is that mainstream media would have !!! believe", 
 "After eating & pounds of *,", "Once upon a time,", "When you really think about it,", "Yesterday,", "Whenever @ looks ^, it\'s because", "In the year of Our Lord #,", 
-"My pitch for a hit new TV show:", "In case !! haven\'t heard yet,", "Through sheer | and |,", "If !! ever have a ^ day, just remember", "In an act of |,", 
+"My pitch for a hit new TV show:", "In case !! hasn\'t heard yet,", "Through sheer | and |,", "If !! has a ^ day, just remember", "In an act of |,", 
 "^ly, due to %%,", "If !! squints and turns QQ $ ^ly to the side, !!\'ll see that", "Despite having ^ |,", "If a = or @ is attacking !!!, remember that", 
 "Thanks to free speech,", "Wanna really get QQ attention? Lay one of these on !!!:", 'The German word \"' + utility.madeUpWord(False) + '\" describes the situation where', 
 "@ has released the following statement:", "The hidden country of " + utility.madeUpWord(True) + " is where", "To strike a balance between | and |,", "To fill QQ life with |,", 
-"To fill QQ $ with |,", "To impart | into QQ $, declare that", "To fill @ with |,", "Were you aware that", "If you ever visit +, ask the locals about how", 
+"To fill QQ $ with |,", "To impart | into QQ $, declare that", "To fill @ with |,", "^ly, !! has been made aware that", "If you ever visit +, ask the locals about how", 
 "It fills me with | to know that", "What if", "What !! teaches in schools now is that", "An unprecendented turn of events:", "If !! got out once in a while, !!'d know that",
 "Due to an outbreak of ~,", "History would never be the same after the day that", "Due to %% and QQ *,", "Before !! " + utility.getRand(verbs) + " %%,",
 "I know it sounds ^, but", "%% tells me that", "All existing evidence suggests that", "We hold this truth to be self-evident, that", "Today's kids can\'t stop talking about how",
@@ -85,7 +85,7 @@ adjectives = ["dumb", "ugly", "brown", "campy", "proverbial", "obtuse", "arrogan
 "green", "yellow", "purple", "painful", "unpleasant", "unsightly", "foul", "permanent", "desperate", "impotent", "unprofessional", "omnipresent", "soaring", "ethereal",
 "exquisite", "elegant", "dark", "rude", "insane", "crazy", "vegan", "*---free", "greasy", "choice", "random", "buxom", "sad", "angry", "furious", "load-bearing", "morose", 
 "gleeful", "awful", "above-average", "below-average", "inspiring", "utterly ^", "lame", "unlucky", "stanky", "sorry", "pregnant", "gargantuan", "politically-correct",
-"anatomically-correct", "oh-so-^--", "dank", "skunky", "$y", "=y", "^ and ^", "aggressive"]
+"anatomically-correct", "oh-so-^--", "dank", "skunky", "$y", "=y", "^ and ^", "aggressive", "regretful"]
 
 concepts = ["gusto", "fervor", "panache", "restraint", "style", "wherewithall", "curiosity", "pride", "luck", "chastity", "charity", "joy", "wonder", "dread", "terror",
 "passion", "delicacy", "peace", "understanding", "va-va-voom", "swagger", "ingenuity", "self-control", "spirit", "innovation", "clarity", "je ne sais quoi", "gumption",

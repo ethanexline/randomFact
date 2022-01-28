@@ -595,6 +595,12 @@ def returnFact():
     if fact.find("you teaches") != -1 or fact.find("they teaches ") != -1 or fact.find("dey teaches ") != -1 or fact.find("I teaches ") != -1 or fact.find("y'all teaches ") != -1 or fact.find("we teaches ") != -1 or fact.find("thou teaches ") != -1 or fact.find("ya teaches ") != -1:
         fact = fact.replace(" teaches ", " teach ")
 
+    if fact.find("you has") != -1 or fact.find("they has") != -1 or fact.find("dey has") != -1 or fact.find("I has") != -1 or fact.find("y'all has") != -1 or fact.find("we has") != -1 or fact.find("thou has") != -1 or fact.find("ya has") != -1:
+        fact = fact.replace(" has", " have")
+
+    if fact.find("you was") != -1 or fact.find("they was") != -1 or fact.find("dey was") != -1 or fact.find("y'all was") != -1 or fact.find("we was") != -1 or fact.find("thou was") != -1 or fact.find("ya was") != -1:
+        fact = fact.replace(" was", " were")
+
     if fact.find(" me looks") != -1:
         fact = fact.replace(" me looks", " I look")
 
