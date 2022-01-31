@@ -1178,6 +1178,15 @@ def returnFact():
     if fact.find(" 1 dollars") != -1 or fact.find('"1 dollars') != -1:
         fact = fact.replace("1 dollars", "1 dollar")
 
+    if fact.find(" 1 pounds") != -1 or fact.find('"1 pounds') != -1:
+        fact = fact.replace("1 pounds", "1 pound")
+
+    if fact.find("chronic the") != -1:
+        fact = fact.replace("chronic the", "chronic ")
+
+    if fact.find("your.") != -1:
+        fact = fact.replace("your.", "yours.")
+
     if fact.find("Us Cellular") != -1 or fact.find("Us G") != -1:
         fact = fact.replace("Us ", "US ")
 
