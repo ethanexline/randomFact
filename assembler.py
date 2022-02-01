@@ -3,10 +3,10 @@ import lists
 import utility
 
 def returnFact():
-    fact = utility.getRand(lists.begs) + " " + utility.getRand(lists.parties) + " " + utility.getRand(lists.verbs) + " " + utility.getRand(lists.parties) + utility.getRand(lists.ends)
+    #fact = utility.getRand(lists.begs) + " " + utility.getRand(lists.parties) + " " + utility.getRand(lists.verbs) + " " + utility.getRand(lists.parties) + utility.getRand(lists.ends)
     #fact = "* gravy, * sauce, * syrup, * concentrate, *CCMan, *CCLand, the World's Smallest *CC." # juicy test fact
     #fact = "*---free *, *CC---Free *CC, less-than-*---flavored, More-Than-*CC---Free" # I like this test too
-    #fact =  "The World's Largest *CC " # real test
+    fact =  "Larry the *CC " # real test
     while (fact.find("_") != -1 or fact.find("#") != -1 or fact.find("@") != -1 or fact.find("&") != -1 or fact.find("+") != -1 or fact.find("^") != -1 or fact.find("|") != -1 
     or fact.find("=") != -1 or fact.find("%%") != -1 or fact.find("$") != -1 or fact.find("QQ") != -1 or fact.find("VV") != -1 or fact.find("~") != -1 or fact.find("*") != -1
     or fact.find("??") != -1 or fact.find("!!") != -1 or fact.find("!!!") != -1):
@@ -337,14 +337,14 @@ def returnFact():
                     replacement = replacement.replace("Qq", "QQCC")
                 fact = fact.replace("*CC--", replacement, 1)
             elif fact.find("*CC") != -1:
-                replacement = replacement[:-1].title() if replacement[-1] == "s" and ((fact.find("Prince of *") == -1 and fact.find("Duke of *") == -1 
+                replacement = replacement[:-1].title() if replacement[-1] == "s" and ((fact.find("Prince of *") == -1 and fact.find("Duke of *") == -1
                 and fact.find("King of *") == -1 and fact.find("Queen of *") == -1 and fact.find("Duchess of *") == -1 and fact.find("Princess of *") == -1)
                 and (fact.find("Deep-Fried *") != -1 or fact.find("Pickled *") != -1 or fact.find("Boiled *") != -1 or fact.find("Cooked *") != -1 
-                or fact.find("Fried *") != -1 or fact.find("Cream Of *") != -1 or fact.find("Baked *") != -1 or fact.find("Vegan *") != -1 or fact.find("Largest *") != -1
-                or fact.find("Smallest *") != -1 or fact.find(" Soup") != -1 or fact.find(" Grease") != -1 or fact.find(" Eggs") != -1 or fact.find(" Milk") != -1 
-                or fact.find(" Syrup") != -1 or fact.find(" Oil") != -1 or fact.find(" Juice") != -1 or fact.find(" Vinegar") != -1 or fact.find(" Meat") != -1 
-                or fact.find(" Sauce") != -1 or fact.find(" Concentrate") != -1 or fact.find(" Tea") != -1 or fact.find(" Pie") != -1 or fact.find(" Cheese") != -1 
-                or fact.find(" Butter") != -1 or fact.find(" Paste") != -1 or fact.find(" Gravy") != -1)) else replacement.title()
+                or fact.find("Fried *") != -1 or fact.find("Cream Of *") != -1 or fact.find("Baked *") != -1 or fact.find("Vegan *") != -1 or fact.find("Largest *") != -1 
+                or fact.find("Larry the *") != -1 or fact.find("Smallest *") != -1 or fact.find(" Soup") != -1 or fact.find(" Grease") != -1 or fact.find(" Eggs") != -1 
+                or fact.find(" Milk") != -1 or fact.find(" Syrup") != -1 or fact.find(" Oil") != -1 or fact.find(" Juice") != -1 or fact.find(" Vinegar") != -1 
+                or fact.find(" Meat") != -1 or fact.find(" Sauce") != -1 or fact.find(" Concentrate") != -1 or fact.find(" Tea") != -1 or fact.find(" Pie") != -1 
+                or fact.find(" Cheese") != -1 or fact.find(" Butter") != -1 or fact.find(" Paste") != -1 or fact.find(" Gravy") != -1)) else replacement.title()
 
                 if replacement.find("^") != -1:
                     replacement = replacement.replace("^", "^CC")
