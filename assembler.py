@@ -602,6 +602,9 @@ def returnFact():
     if fact.find("you was") != -1 or fact.find("they was") != -1 or fact.find("dey was") != -1 or fact.find("y'all was") != -1 or fact.find("we was") != -1 or fact.find("thou was") != -1 or fact.find("ya was") != -1:
         fact = fact.replace(" was", " were")
 
+    if fact.find("you squints") != -1 or fact.find("they squints") != -1 or fact.find("dey squints") != -1 or fact.find("y'all squints") != -1 or fact.find("we squints") != -1 or fact.find("thou squints") != -1 or fact.find("ya squints") != -1:
+        fact = fact.replace(" squints and turns", " squint and turn")
+
     if fact.find(" me looks") != -1:
         fact = fact.replace(" me looks", " I look")
 
@@ -709,6 +712,9 @@ def returnFact():
 
     if fact.find("you's") != -1:
         fact = fact.replace("you's", "your")
+
+    if fact.find(" ya'll ") != -1:
+        fact = fact.replace(" ya'll ", " y'all'll ")
 
     if fact.find("foots") != -1:
         fact = fact.replace("foots", "feet")
