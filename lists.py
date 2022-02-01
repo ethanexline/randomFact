@@ -12,7 +12,7 @@ verbs = ["got", "chuggled", "fell in love with the idea of", "slurped", "locked 
 "wrote a ^ novel about", "learned about", "squeezed out", "gave birth to", "bought %% for", "drank an entire glass of", "wanted to slap", "^ly swallowed", "loved to hate",
 "held a charity yard sale for", "^ly slit the $ of", "^ly saved", "showed real | to", "broke QQ $ because of", "punctured QQ $ with", "chewed up and spit out", "doggedly pursued",
 "raised a ^ $ toward", "created the first prototype for", "envisioned a ^ future for", "proposed a toast to", "threw a ^ party to celebrate", "flew too close to", 
-"engaged in $-to-$ combat with", "started a restaurant that only serves", "joked about the size of @\'s $ by referencing", "started a petition to outlaw", "held",
+"engaged in $---to-$-- combat with", "started a restaurant that only serves", "joked about the size of @\'s $ by referencing", "started a petition to outlaw", "held",
 "was cast as @ in a TV show about", "started a Kickstarter campaign to fund the creation of", "gave an unexpected proposal to", "became", "was transformed by a magic = into",
 "traveled to + with", "created a ^ sport based off the writings of", "wore a ^ dress made of", "made * out of", "contracted a ^ case of ~ from", "forced %% to relinquish",
 "was served fine *, which !! paid for by pawning", "commit an armed robbery using", "began a criminal enterprise focused upon", "was marooned in + with only", 
