@@ -11,8 +11,12 @@ def returnFact():
     while (fact.find("_") != -1 or fact.find("#") != -1 or fact.find("@") != -1 or fact.find("&") != -1 or fact.find("+") != -1 or fact.find("^") != -1 or fact.find("|") != -1 
     or fact.find("=") != -1 or fact.find("%%") != -1 or fact.find("$") != -1 or fact.find("QQ") != -1 or fact.find("VV") != -1 or fact.find("~") != -1 or fact.find("*") != -1
     or fact.find("??") != -1 or fact.find("!!") != -1 or fact.find("!!!") != -1):
+
         if fact.find("CCCC") != -1:
             fact = fact.replace("CCCC", "CC")
+        if fact.find("----") != -1:
+            fact = fact.replace("----", "--")
+            
         if fact.find("_") != -1:
             fact = fact.replace("_", utility.getRand(lists.companies), 1)
 
