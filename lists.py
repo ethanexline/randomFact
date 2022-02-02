@@ -32,9 +32,9 @@ verbs = ["got", "chuggled", "fell in love with the idea of", "slurped", "locked 
 parties = ["a = wearing false $s", "the President of +", "the most ^ haircut of all time", "QQ $ (but & inches in length)", "a =", "Flat Earth Theory",
 "nuclear war", "white people", "^ people", "^ stool", "a = that " + utility.getRand(verbs) + " @", "the CFO of _", 'a new street gang called \"the ^CC VVCCs\"', '\"the ^CC VVCCs\"',
 "& push-ups", "a ^, ^ bodybuilder", "a = disguised as @", "a ^ly ^ Halloween costume", "the bathroom", "^ soup", "@\'s new $s", "^ *", "a highly ^ strain of ~",
- "a ^CC =CC Champion", "the annual _ dance-off", "Dracula (but if he was from +)", "a ^ly ^ handshake", "an extra set of $s", "a * dish with = meat",
+ "a ^CC =CC Champion", "the annual _ dance-off", "Dracula (but if he was from +)", "a ^ly ^ handshake", "an extra set of $s", "a * dish with = meat", "^CC$CC", "^CC=CC",
 "^ly ^ *", "QQ ^ dentist", "@\'s accountant", "a mirror that makes you look ^ly ^", "gorgonzola cheese", "the CEO of _", "liquid *", "Obama\'s last name", "The World\'s Largest =CC",
-"the entire South Pole", "a stairway to +", "the reason !! was born", "a ^ly ^ almond", "a tree", "The World\'s Largest *CC", "money", 
+"the entire South Pole", "a stairway to +", "the reason !! was born", "a ^ly ^ almond", "a tree", "The World\'s Largest *CC", "money", "& $s from +",
 "^, ^ *", "the war between =s and =s", "a ^ly ^ corn dog", "a = with a $ that\'s just too ^", "a = with a =", "a = with too much |", "a = with a ^ $", "The World\'s Smallest *CC",
 "the element of surprise", "a slip of the $", "hard, ^ drugs", "a banana that needs to be peeled & times", "* and *", "a perfect doppelganger for @", "=s\' rights",
 "the =CC President", "= enthusiasts", "attendees of a $ conventions", "the stink eye", "the surface of the sun", "QQ VV\'s *", "@\'s *", "a =\'s $", "a =\'s *",
@@ -85,7 +85,8 @@ adjectives = ["dumb", "ugly", "brown", "campy", "proverbial", "obtuse", "arrogan
 "green", "yellow", "purple", "painful", "unpleasant", "unsightly", "foul", "permanent", "desperate", "impotent", "unprofessional", "omnipresent", "soaring", "ethereal",
 "exquisite", "elegant", "dark", "rude", "insane", "crazy", "vegan", "*---free", "greasy", "choice", "random", "buxom", "sad", "angry", "furious", "load-bearing", "morose", 
 "gleeful", "awful", "above-average", "below-average", "inspiring", "utterly ^", "lame", "unlucky", "stanky", "sorry", "pregnant", "gargantuan", "politically-correct",
-"anatomically-correct", "oh-so-^--", "dank", "skunky", "$y", "=y", "^ and ^", "aggressive", "regretful"]
+"anatomically-correct", "oh-so-^--", "dank", "skunky", "$y", "=y", "^ and ^", "aggressive", "regretful", "toasted", "savory", "unctuous", "umami", "salty", "bitter", "bittersweet",
+"challenging"]
 
 concepts = ["gusto", "fervor", "panache", "restraint", "style", "wherewithall", "curiosity", "pride", "luck", "chastity", "charity", "joy", "wonder", "dread", "terror",
 "passion", "delicacy", "peace", "understanding", "va-va-voom", "swagger", "ingenuity", "self-control", "spirit", "innovation", "clarity", "je ne sais quoi", "gumption",
@@ -121,7 +122,7 @@ companies = ["Coca-Cola", "Monster Energy", "Frito-Lay", "Nestle", "Google", "Mi
 "Starbucks", "Raid: Shadow Legends", "Blizzard", "FizzBuzz Inc", "Los Pollos Hermanos", "Amazon", "SpaceX", "Tesla", "Tumblr", "MySpace", "Reddit", "BitConnect", "The Dentist",
 "Cost Cutters", "Dr. Pepper", "Pepsi", "GameStop", "|CC Inc", "$CCs-R-Us", "=CCs-R-Us", "Chuck-E-Cheese", "Candy Crush", "Angry Birds", "Staples", "OfficeMax", "PETA", "the CDC",
 "Instagram", "Netflix", "Snapchat", "Spotify", "Vine", "Twitch", "Hulu", "Unilever", "Perdue Pharma", "BetterHelp", "the CIA", "the FBI", "the Department of Justice",
-"the Department of Defense", "the NSA", "the FDA", "the US Government", utility.madeUpWord(True) + " Corp", "^CC$CC", "Studio Ghibli", "the Department of |CC", 
+"the Department of Defense", "the NSA", "the FDA", "the US Government", utility.madeUpWord(True) + " Corp", "^CC$CC", "^CC=CC", "Studio Ghibli", "the Department of |CC", 
 "the Department of *CC", "the Department of =CCs"]
 
 celebs = ["Dolly Parton", "Robert Pattinson", "the Geico =CC", "the = from Air Bud", "Keanu Reeves", "the Car =CC", "Crisp Rat",
@@ -135,9 +136,9 @@ celebs = ["Dolly Parton", "Robert Pattinson", "the Geico =CC", "the = from Air B
 "CatDog", "= =", "Arnold (from Hey Arnold)", "=CCMan", "The all-new Hyundai Sonata", "The ^CC $CC", "Joker (from Joker)", "Squidward", "Patrick", "Hoobastank", "Harold",
 "Brendan Frasier", "Tommy Wiseau", "Kirby", "Bubsy", "Bigfoot", "Sonic the =CC", "Gurbanguly Berdimuhamedow", "Kim Jong Un", "Xi Jinping", "Moon Jae-in", "Death", "John Cena",
 "Reggie Fils-Aime", "Yoshihide Suga", "Grandma", "Grandpa", "^CCMan", "Finn the =CC", "a _ employee", "Warren Buffet", "Billie Eilish", "Videogamedunkey", "Grover Cleveland", 
-"Thomas Edison", "Winnie the Pooh", "QuailMan", "Jeffery Bezos", "Vermin Supreme", "Chris Hemsworth", "Chevy Chase", "Dick Van Dyke", "Andy Griffith", "Bob Hope", 
+"Thomas Edison", "Winnie the Pooh", "QuailMan", "Jeffery Bezos", "Vermin Supreme", "Chris Hemsworth", "Chevy Chase", "Dick Van Dyke", "Andy Griffith", "Bob Hope", "^CC=CC",
 "Regis Philbin", "Dr. Phil", "Hulk Hogan", "Honey Boo-Boo", "Gordon Ramsay", "Bo Burnham", "Obamna", "Conan O'Brian", "Steve Carrell", "James Brown", "Michael Jackson",
-"Steve Harvey", "Tim Apple", "The One True =CC", "Peewee Herman", '@ AKA \"the ^CC =CC\"', "me", "Rongle McDongle", "*CCMan", "George RR Martin", "George Bush",
+"Steve Harvey", "Tim Apple", "The One True =CC", "Peewee Herman", '@ AKA \"the ^CC =CC\"', "me", "Rongle McDongle", "*CCMan", "George RR Martin", "George Bush", "^CC$CC",
 "Charles Entertainment Cheese", "Larry the *CC", "Bob the *CC", "Gex", "Glover", "Donkey Kong", "Bowser", "Dark Souls", "@'s new lover (@)", "Ornstein and Smough",
 "Lord Gwyn", "the Gaping Dragon", "Cranky Kong", "Funky Kong", "Aldia, Scholar of the First Sin", "Manus, Father of the Abyss", "Knight Artorias", "the Firekeeper",
 "Martin Shkreli", "Adele", "John Krasinski", "Justin Bieber", "Brian Peppers", "Moses", "Richard Nixon", "Bill Clinton", "Ronald Reagan", "George Bush", "Andrew Jackson", 
@@ -153,7 +154,7 @@ places = ["^CC Jersey", "the ^CC States", "Europe", "Russia", "Asia", "Japan", "
 "*CCLand", "=CCLand", "_'s headquarters", "Anor Londo", "Drangleic", "Londor", "the Abyss", "the ^CC Abyss", "New Londo", "Planet Namek", "the ^CC Planet", "QQ @ shrine",
 "Planet ^CC's &th moon", "the Planet of the =CCs", "Firelink Shrine", "the Catacombs", "the =CC Temple", "the =CC Shrine", "@'s personal aircraft", "the |CC Dimension",
 "Majula", "Kong Island", "Krem Quay", "Schitt's Creek", "Middle-Earth", "Jotunheim", "Yggdrasil", "Asgard", "Niflheim", "Valhalla", "Sovngarde", "Tamriel",
-"the Department of |CC", "the Department of *CC", "the Department of =CCs"]
+"the Department of |CC", "the Department of *CC", "the Department of =CCs", "^CC$CC", "^CC$CC"]
 
 animals = ["lion", "cat", "dog", "squid", "mollusk", "clam", "zebra", "axolotl", "rhino", "tiger", "lamb", "octopus", "antelope", "fawn", "llama", "parrot", "whale", 
 "geoduck", "barnacle", "snail", "slug", "squirrel", "giraffe", "dingo", "wolf", "coyote", "hyena", "ocelot", "puma", "mountain lion", "fox", "polar bear", "grizzly bear", 
@@ -173,13 +174,13 @@ animals = ["lion", "cat", "dog", "squid", "mollusk", "clam", "zebra", "axolotl",
 "hippopotamus", "spriggan", "troll", "gnome", "gargoyle", "giant", "gorgon", "griffin", "python", "water =", "lamb", "swine", "buffalo", "bison", "elk", "boar", "wild =",
 "teenager", "adolescent", "elder", "puppy", "kitty", "hag", "bride", "groom", "witch", "computer", "robot", "cop", "gun"]
 
-parts = ["ear", "eye", "nose", "earlobe", "right pinky toe", "patella", "&th eyelash from the right", "entire body", "&th nipple", "foot", "third foot", "top right incisor", 
-"tooth", "elbow", "bellybutton", "fingernail", "brain", "xiphoid process", "tooth enamel", "skin", "armpit", "foot", "bottom leg", 
-"spare rib", "cheek", "butt", "no-no square", "fingie", "upper lip", "glabella", "pituitary gland", "thyroid gland", "tear duct", "epidermis", "nerve ending", "bunion", 
-"amygdala", "toe", "finger", "eye", "chest", "knee", "lower back", "upper back", "ab", "diaphragm", "tongue", "epiglottis", "vocal fold", "uvula", "stomach", "peep",
+parts = ["ear", "eye", "nose", "earlobe", "right pinky toe", "patella", "&th $ from the right", "entire body", "foot", "arm", "top right $", "inner $", "eyelash", "goiter",
+"tooth", "elbow", "bellybutton", "fingernail", "brain", "xiphoid process", "tooth enamel", "skin", "armpit", "leg", "nipple", "top left $", "bottom $", "bicep", "shoulder",
+"rib", "cheek", "butt", "no-no square", "fingie", "lip", "thigh", "glabella", "pituitary gland", "thyroid gland", "tear duct", "epidermis", "nerve ending", "bunion", "spare $",
+"amygdala", "toe", "finger", "eye", "chest", "knee", "lower $", "ab", "diaphragm", "tongue", "epiglottis", "vocal fold", "uvula", "stomach", "peep", "upper $", "blister", "larynx",
 "gut", "larynx", "esophagus", "pelvis", "tibia", "phalange", "skull", "head", "scapula", "spleen", "sacrum", "coccyx", "spine", "funny bone", "cerebral cortex", "brain stem", "neck",
-"mouth", "inner thigh", "urethra", "pancreas", "lung", "gallbladder", "appendix", "rectum", "hand", "chest hand", "limb", "beard", "sternum", "callous", "scalp", 
-"frenulum", "pie hole", "tush", "teat", "sausage", "ovary", "nostril", "eardrum", "tummy", "mind", "&th $", "*", "gland"]
+"mouth", "urethra", "pancreas", "lung", "gallbladder", "appendix", "rectum", "hand", "chest hand", "limb", "beard", "sternum", "callous", "scalp", "&th $ from the bottom",
+"frenulum", "tush", "teat", "sausage", "ovary", "nostril", "eardrum", "tummy", "mind", "&th $", "*", "gland", "* hole", "back", "&th $ from the left", "&th $ from the top"]
 
 disease = ["$ cancer", "diabetes", "$ swelling", "$ destruction", "$ blockage", "$ parasites", "$ failure", "$ erosion", "$ disease", "$ infection", "claustrophobia", 
 "MRSA", "food poisoning", "depression", "asthma", "anxiety", "alcoholism", "impulsive shopping", "darwinism", "halitosis", "gynecomastia", "gastroenteritis", 
@@ -187,7 +188,7 @@ disease = ["$ cancer", "diabetes", "$ swelling", "$ destruction", "$ blockage", 
 "gastroenteritis", "PMS", "athlete's foot", "complementarianism", "extra limbs", "kidney stones", "broken $", "^-$", "hotdog finger", "count-choculitis", "no longer being alive", 
 "spontaneous dental hydroplosion", "chronic ~", "swine flu", "literally every STI", "loss of $", "diminished |", "vitamin deficiency", "egalitarianism", "dwarfism", 
 "|-deficiency", "=phobia", "rapidly-aging $s", "a * allergy", "too much *", "^-*--", "$ pus", "the curse", "the Abyss", "dyslexia", "astigmatism", "hyper-diarrhea", "gout", 
-"swollen $s"]
+"swollen $s", "missing $s"]
 
 possessives = ["their", "its", "his/her", "the", "her", "his", "de", "@'s", "your", "a", "that", "my", "y'all's", "VV's", "our", "somebody's", "a ^", "thy", "yo VV's", "yo"]
 
