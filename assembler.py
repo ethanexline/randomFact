@@ -3,10 +3,10 @@ import lists
 import utility
 
 def returnFact():
-    #fact = utility.getRand(lists.begs) + " " + utility.getRand(lists.parties) + " " + utility.getRand(lists.verbs) + " " + utility.getRand(lists.parties) + utility.getRand(lists.ends)
+    fact = utility.getRand(lists.begs) + " " + utility.getRand(lists.parties) + " " + utility.getRand(lists.verbs) + " " + utility.getRand(lists.parties) + utility.getRand(lists.ends)
     #fact = "* gravy, * sauce, * syrup, * concentrate, *CCMan, *CCLand, the World's Smallest *CC." # juicy test fact
     #fact = "*---free *, *CC---Free *CC, less-than-*---flavored, More-Than-*CC---Free" # I like this test too
-    fact = '' # real test
+    #fact = 'Princess of *CC, Bob the *CC, Duchess of *CC Grease.' # real test
 
     while (fact.find("_") != -1 or fact.find("#") != -1 or fact.find("@") != -1 or fact.find("&") != -1 or fact.find("+") != -1 or fact.find("^") != -1 or fact.find("|") != -1 
     or fact.find("=") != -1 or fact.find("%%") != -1 or fact.find("$") != -1 or fact.find("QQ") != -1 or fact.find("VV") != -1 or fact.find("~") != -1 or fact.find("*") != -1
@@ -65,7 +65,7 @@ def returnFact():
                 fact = fact.replace("+", replacement, 1)
 
         while fact.find("^CC$CC") != -1:
-            adjective = utility.getRand(lists.adjectives).title().replace(" ", "").replace("-", "")
+            adjective = utility.getRand(lists.adjectives).title().replace(" ", "").replace("-", "").replace("'", "")
             if adjective.find("^") != -1:
                 adjective = adjective.replace("^", "^CC")
             if adjective.find("*") != -1:
@@ -102,7 +102,7 @@ def returnFact():
             fact = fact.replace("^CC$CC", adjective + part, 1)
 
         while fact.find("^CC=CC") != -1:
-            adjective = utility.getRand(lists.adjectives).title().replace(" ", "").replace("-", "")
+            adjective = utility.getRand(lists.adjectives).title().replace(" ", "").replace("-", "").replace("'", "")
             if adjective.find("^") != -1:
                 adjective = adjective.replace("^", "^CC")
             if adjective.find("*") != -1:
@@ -631,239 +631,62 @@ def returnFact():
     if fact.find("  ") != -1:
         fact = fact.replace("  ", " ")
 
-    if fact.find("yl") != -1 and fact.find("style") == -1 and fact.find("Disneyland") == -1 and fact.find("style") == -1 and fact.find("argoyle") == -1:
-        fact = fact.replace("yl", "il")
+    if fact.find("s Soup") != -1:
+        fact = fact.replace("s Soup", " Soup")
 
-    if fact.find("yly") != -1:
-        fact = fact.replace("yly", "ily")
+    if fact.find("s Grease") != -1:
+        fact = fact.replace("s Grease", " Grease")
 
-    if fact.find("ys") != -1 and fact.find("hysic") == -1 and fact.find("MySpace") == -1 and fact.find("onkeys") == -1 and fact.find("Cowboys") == -1 and fact.find("oneys") == -1 and fact.find("Abyss") == -1 and fact.find("ays") == -1 and fact.find("yslexia") == -1:
-        fact = fact.replace("ys", "ies")
+    if fact.find("s Eggs") != -1:
+        fact = fact.replace("s Eggs", " Eggs")
 
-    if fact.find("a the") != -1 and fact.find("Grandpa") == -1:
-        fact = fact.replace("a the", "a")
+    if fact.find("s Milk") != -1:
+        fact = fact.replace("s Milk", " Milk")
 
-    if fact.find("sss") != -1:
-        fact = fact.replace("sss", "sses")
+    if fact.find("s Syrup") != -1:
+        fact = fact.replace("s Syrup", " Syrup")
 
-    if fact.find("ippopotamuss") != -1:
-        fact = fact.replace("ippopotamuss", "ippopotamuses")
+    if fact.find("s Oil") != -1:
+        fact = fact.replace("s Oil", " Oil")
 
-    if fact.find("sophaguss") != -1:
-        fact = fact.replace("sophaguss", "sophaguses")
+    if fact.find("s Juice") != -1:
+        fact = fact.replace("s Juice", " Juice")
 
-    if fact.find('yess') != -1:
-        fact = fact.replace('yess', 'yes')
+    if fact.find("s Vinegar") != -1:
+        fact = fact.replace("s Vinegar", " Vinegar")
 
-    if fact.find('louss') != -1:
-        fact = fact.replace('louss', 'louses')
+    if fact.find("s Meat") != -1:
+        fact = fact.replace("s Meat", " Meat")
 
-    if fact[fact.find("iss") + 3] == " " or fact[fact.find("iss") + 3] == "-" or fact[fact.find("iss") + 3] == "'" or fact[fact.find("iss") + 3] == "." or fact[fact.find("iss") + 3] == "," or fact[fact.find("iss") + 3] == "!" or fact[fact.find("iss") + 3] == "?":
-        fact = fact.replace("iss", "ises")
+    if fact.find("s Sauce") != -1:
+        fact = fact.replace("s Sauce", " Sauce")
 
-    if fact.find("hs") != -1 and fact.find("highs") == -1 and fact.find("ouths") == -1  and fact.find("oths") == -1 and fact.find("heetahs") == -1 and fact.find("ariahs") == -1:
-        fact = fact.replace("hs", "hes")
+    if fact.find("s Concentrate") != -1:
+        fact = fact.replace("s Concentrate", " Concentrate")
 
-    if fact.find("lll") != -1:
-        fact = fact.replace("lll", "ll")
+    if fact.find("s Tea") != -1:
+        fact = fact.replace("s Tea", " Tea")
 
-    if fact.find("xs") != -1:
-        fact = fact.replace("xs", "xes")
+    if fact.find("s Pie") != -1:
+        fact = fact.replace("s Pie", " Pie")
 
-    if fact.find("'S") != -1:
-        fact = fact.replace("'S", "'s")
+    if fact.find("s Cheese") != -1:
+        fact = fact.replace("s Cheese", " Cheese")
 
-    if fact.find("lely") != -1 and fact.find("malely") == -1:
-        fact = fact.replace("lely", "ly")
+    if fact.find("s Butter") != -1:
+        fact = fact.replace("s Butter", " Butter")
 
-    if fact.find("Ly") != -1:
-        fact = fact.replace("Ly", "ly")
+    if fact.find("s Paste") != -1:
+        fact = fact.replace("s Paste", " Paste")
 
-    if fact.find('S"') != -1:
-        fact = fact.replace('S"', 's"')
-
-    if fact.find("yed") != -1 and fact.find("played") == -1 and fact.find("destroyed") == -1:
-        fact = fact.replace("yed", "ied")
-
-    if fact.find("s-y") != -1 or fact.find("s-flavored") != -1:
-        fact = fact.replace("s-", "-")
-
-    if fact.find("ragu ") != -1 or fact.find("ragu-") != -1 or fact.find("ragu,") != -1 or fact.find("ragu.") != -1 or fact.find("ragu!") != -1 or fact.find("ragu?") != -1:
-        fact = fact.replace("ragu", "ragus")
-
-    if fact.find("Abys") != -1 and fact.find("Abyss") == -1:
-        fact = fact.replace("Abys", "Abyss")
-
-    if fact.find("s juice") != -1:
-        fact = fact.replace("s juice", " juice")
+    if fact.find("s Gravy") != -1:
+        fact = fact.replace("s Gravy", " Gravy")
 
     if fact.find("s dish") != -1:
         fact = fact.replace("s dish", " dish")
-    
-    if fact.find("les-than") != -1:
-        fact = fact.replace("les-than", "less-than")
 
-    if (fact.find("Have you considered the fact that") != -1 or fact.find("What if") != -1 or fact.find("Were you aware that") != -1) and fact.find("...") == -1:
-        fact = fact.replace(".", "?").replace("!", "?")
-
-    if fact.find("you has") != -1 or fact.find("they has ") != -1 or fact.find("dey has ") != -1 or fact.find("I has ") != -1 or fact.find("y'all has ") != -1 or fact.find("we has ") != -1 or fact.find("thou has ") != -1 or fact.find("ya has ") != -1:
-        fact = fact.replace(" has ", " have ")
-
-    if fact.find("you wants") != -1 or fact.find("they wants ") != -1 or fact.find("dey wants ") != -1 or fact.find("I wants ") != -1 or fact.find("y'all wants ") != -1 or fact.find("we wants ") != -1 or fact.find("thou wants ") != -1 or fact.find("ya wants ") != -1:
-        fact = fact.replace(" wants ", " want ")
-
-    if fact.find("you teaches") != -1 or fact.find("they teaches ") != -1 or fact.find("dey teaches ") != -1 or fact.find("I teaches ") != -1 or fact.find("y'all teaches ") != -1 or fact.find("we teaches ") != -1 or fact.find("thou teaches ") != -1 or fact.find("ya teaches ") != -1:
-        fact = fact.replace(" teaches ", " teach ")
-
-    if fact.find("you has") != -1 or fact.find("they has") != -1 or fact.find("dey has") != -1 or fact.find("I has") != -1 or fact.find("y'all has") != -1 or fact.find("we has") != -1 or fact.find("thou has") != -1 or fact.find("ya has") != -1:
-        fact = fact.replace(" has", " have")
-
-    if fact.find("you was") != -1 or fact.find("they was") != -1 or fact.find("dey was") != -1 or fact.find("y'all was") != -1 or fact.find("we was") != -1 or fact.find("thou was") != -1 or fact.find("ya was") != -1:
-        fact = fact.replace(" was", " were")
-
-    if fact.find("you squints") != -1 or fact.find("they squints") != -1 or fact.find("dey squints") != -1 or fact.find("y'all squints") != -1 or fact.find("we squints") != -1 or fact.find("thou squints") != -1 or fact.find("ya squints") != -1:
-        fact = fact.replace(" squints and turns", " squint and turn")
-
-    if fact.find(" me looks") != -1:
-        fact = fact.replace(" me looks", " I look")
-
-    if fact.find("thou have") != -1:
-        fact = fact.replace("thou have", "thou hast")
-
-    if fact.find("have gave") != -1:
-        fact = fact.replace("have gave", "have given")
-
-    if fact.find("have wrote") != -1:
-        fact = fact.replace("have wrote", "have written")
-
-    if fact.find("have broke") != -1:
-        fact = fact.replace("have broke", "have broken")
-
-    if fact.find("have saw") != -1:
-        fact = fact.replace("have saw", "have seen")
-
-    if fact.find("have did") != -1:
-        fact = fact.replace("have did", "have done")
-
-    if fact.find("have punched") != -1:
-        fact = fact.replace("have punched", "have been punched")
-
-    if fact.find("have squirted") != -1:
-        fact = fact.replace("have squirted", "have been squirted")
-    
-    if fact.find("have wore") != -1:
-        fact = fact.replace("have wore", "have worn")
-
-    if fact.find("have was") != -1:
-        fact = fact.replace("have was", "have been")
-
-    if fact.find("with only!") != -1:
-        fact = fact.replace("with only!", "with!")
-
-    if fact.find("been was") != -1:
-        fact = fact.replace("been was", "been ")
-
-    if fact.find("people was") != -1:
-        fact = fact.replace("people was", "people were")
-
-    if fact.find("have ate") != -1:
-        fact = fact.replace("have ate", "have eaten")
-
-    if fact.find("have hired") != -1:
-        fact = fact.replace("have hired", "have been hired")
-
-    if fact.find("have took") != -1:
-        fact = fact.replace("have took", "have taken")
-
-    if fact.find("have threw") != -1:
-        fact = fact.replace("have threw", "have thrown")
-
-    if fact.find(" an a ") != -1:
-        fact = fact.replace(" an a ", " a ")
-
-    if fact.find(" an an ") != -1:
-        fact = fact.replace(" an an ", " an ")
-
-    if fact.find(" Of A ") != -1:
-        fact = fact.replace(" Of A ", " of a ")
-
-    if fact.find("siss") != -1:
-        fact = fact.replace("siss", "sisters")
-
-    if fact.find("S ") != -1:
-        fact = fact.replace("S ", "s ")
-
-    if fact.find("pss") != -1:
-        fact = fact.replace("pss", "pses")
-
-    if fact.find("puss") != -1:
-        fact = fact.replace("puss", "puses")
-
-    if fact.find("ancreass") != -1:
-        fact = fact.replace("ancreass", "ancreases")
-
-    if fact.find("ligarches") != -1:
-        fact = fact.replace("ligarches", "ligarchs")
-
-    if fact.find("ruely") != -1:
-        fact = fact.replace("ruely", "ruly")
-
-    if fact.find("hocolateily") != -1:
-        fact = fact.replace("hocolateily", "hocolately")
-
-    if fact.find("olfs") != -1:
-        fact = fact.replace("olfs", "olves")
-
-    if fact.find("iefs") != -1:
-        fact = fact.replace("iefs", "ieves")
-
-    if fact.find("thou'll") != -1:
-        fact = fact.replace("thou'll", "thou shalt")
-
-    if fact.find("liquid liquid") != -1:
-        fact = fact.replace("liquid liquid", "liquid")
-
-    if fact.find("water water") != -1:
-        fact = fact.replace("water water", "water")
-
-    if fact.find("Water Water") != -1:
-        fact = fact.replace("Water Water", "Water")
-    
-    if fact.find("'S") != -1:
-        fact = fact.replace("'S", "'s", 1)
-
-    if fact.find("me's") != -1 and fact.find("Aime's") == -1 and fact.find("Rome's") == -1 and fact.find("Supreme's") == -1:
-        fact = fact.replace("me's", "my")
-
-    if fact.find("you's") != -1:
-        fact = fact.replace("you's", "your")
-
-    if fact.find(" ya'll ") != -1:
-        fact = fact.replace(" ya'll ", " y'all'll ")
-
-    if fact.find("foots") != -1:
-        fact = fact.replace("foots", "feet")
-
-    if fact.find("icly ") != -1 and fact.find("chicly") == -1 and fact.find("publicly") == -1:
-        fact = fact.replace("icly ", "ically ")
-
-    if fact.find("a proletariat") != -1:
-        fact = fact.replace("a proletariat", "the proletariat")
-
-    if fact.find("a Proletariat") != -1:
-        fact = fact.replace("a Proletariat", "the Proletariat")
-
-    if fact.find("proletariats") != -1:
-        fact = fact.replace("proletariats", "the proletariat")
-
-    if fact.find("a bourgeoisie") != -1:
-        fact = fact.replace("a bourgeoisie", "the bourgeoisie")
-
-    if fact.find("a Bourgeoisie") != -1:
-        fact = fact.replace("a Bourgeoisie", "the Bourgeoisie")
-
-    if fact.find("bourgeoisies") != -1:
-        fact = fact.replace("bourgeoisies", "the bourgeoisie")
+    if fact.find("s Dish") != -1:
+        fact = fact.replace("s Dish", " Dish")
 
     if fact.find("Creamof") != -1:
         fact = fact.replace("Creamof", "CreamOf")
@@ -1080,6 +903,237 @@ def returnFact():
 
     if fact.find("deep-fried deep-fried") != -1:
         fact = fact.replace("deep-fried deep-fried", "deep-fried")
+
+    if fact.find("liquid liquid") != -1:
+        fact = fact.replace("liquid liquid", "liquid")
+
+    if fact.find("water water") != -1:
+        fact = fact.replace("water water", "water")
+
+    if fact.find("Water Water") != -1:
+        fact = fact.replace("Water Water", "Water")
+
+    if fact.find("yl") != -1 and fact.find("style") == -1 and fact.find("Disneyland") == -1 and fact.find("style") == -1 and fact.find("argoyle") == -1:
+        fact = fact.replace("yl", "il")
+
+    if fact.find("yly") != -1:
+        fact = fact.replace("yly", "ily")
+
+    if fact.find("ys") != -1 and fact.find("hysic") == -1 and fact.find("MySpace") == -1 and fact.find("onkeys") == -1 and fact.find("Cowboys") == -1 and fact.find("oneys") == -1 and fact.find("Abyss") == -1 and fact.find("ays") == -1 and fact.find("yslexia") == -1:
+        fact = fact.replace("ys", "ies")
+
+    if fact.find("a the") != -1 and fact.find("Grandpa") == -1:
+        fact = fact.replace("a the", "a")
+
+    if fact.find("sss") != -1:
+        fact = fact.replace("sss", "sses")
+
+    if fact.find("ippopotamuss") != -1:
+        fact = fact.replace("ippopotamuss", "ippopotamuses")
+
+    if fact.find("sophaguss") != -1:
+        fact = fact.replace("sophaguss", "sophaguses")
+
+    if fact.find('yess') != -1:
+        fact = fact.replace('yess', 'yes')
+
+    if fact.find('louss') != -1:
+        fact = fact.replace('louss', 'louses')
+
+    if fact[fact.find("iss") + 3] == " " or fact[fact.find("iss") + 3] == "-" or fact[fact.find("iss") + 3] == "'" or fact[fact.find("iss") + 3] == "." or fact[fact.find("iss") + 3] == "," or fact[fact.find("iss") + 3] == "!" or fact[fact.find("iss") + 3] == "?":
+        fact = fact.replace("iss", "ises")
+
+    if fact.find("hs") != -1 and fact.find("highs") == -1 and fact.find("ouths") == -1  and fact.find("oths") == -1 and fact.find("heetahs") == -1 and fact.find("ariahs") == -1:
+        fact = fact.replace("hs", "hes")
+
+    if fact.find("lll") != -1:
+        fact = fact.replace("lll", "ll")
+
+    if fact.find("xs") != -1:
+        fact = fact.replace("xs", "xes")
+
+    if fact.find("'S") != -1:
+        fact = fact.replace("'S", "'s")
+
+    if fact.find("lely") != -1 and fact.find("malely") == -1:
+        fact = fact.replace("lely", "ly")
+
+    if fact.find("Ly") != -1:
+        fact = fact.replace("Ly", "ly")
+
+    if fact.find('S"') != -1:
+        fact = fact.replace('S"', 's"')
+
+    if fact.find("yed") != -1 and fact.find("played") == -1 and fact.find("destroyed") == -1:
+        fact = fact.replace("yed", "ied")
+
+    if fact.find("s-y") != -1 or fact.find("s-flavored") != -1:
+        fact = fact.replace("s-", "-")
+
+    if fact.find("ragu ") != -1 or fact.find("ragu-") != -1 or fact.find("ragu,") != -1 or fact.find("ragu.") != -1 or fact.find("ragu!") != -1 or fact.find("ragu?") != -1:
+        fact = fact.replace("ragu", "ragus")
+
+    if fact.find("Abys") != -1 and fact.find("Abyss") == -1:
+        fact = fact.replace("Abys", "Abyss")
+    
+    if fact.find("les-than") != -1:
+        fact = fact.replace("les-than", "less-than")
+
+    if (fact.find("Have you considered the fact that") != -1 or fact.find("What if") != -1 or fact.find("Were you aware that") != -1) and fact.find("...") == -1:
+        fact = fact.replace(".", "?").replace("!", "?")
+
+    if fact.find("you has") != -1 or fact.find("they has ") != -1 or fact.find("dey has ") != -1 or fact.find("I has ") != -1 or fact.find("y'all has ") != -1 or fact.find("we has ") != -1 or fact.find("thou has ") != -1 or fact.find("ya has ") != -1:
+        fact = fact.replace(" has ", " have ")
+
+    if fact.find("you wants") != -1 or fact.find("they wants ") != -1 or fact.find("dey wants ") != -1 or fact.find("I wants ") != -1 or fact.find("y'all wants ") != -1 or fact.find("we wants ") != -1 or fact.find("thou wants ") != -1 or fact.find("ya wants ") != -1:
+        fact = fact.replace(" wants ", " want ")
+
+    if fact.find("you teaches") != -1 or fact.find("they teaches ") != -1 or fact.find("dey teaches ") != -1 or fact.find("I teaches ") != -1 or fact.find("y'all teaches ") != -1 or fact.find("we teaches ") != -1 or fact.find("thou teaches ") != -1 or fact.find("ya teaches ") != -1:
+        fact = fact.replace(" teaches ", " teach ")
+
+    if fact.find("you has") != -1 or fact.find("they has") != -1 or fact.find("dey has") != -1 or fact.find("I has") != -1 or fact.find("y'all has") != -1 or fact.find("we has") != -1 or fact.find("thou has") != -1 or fact.find("ya has") != -1:
+        fact = fact.replace(" has", " have")
+
+    if fact.find("you was") != -1 or fact.find("they was") != -1 or fact.find("dey was") != -1 or fact.find("y'all was") != -1 or fact.find("we was") != -1 or fact.find("thou was") != -1 or fact.find("ya was") != -1:
+        fact = fact.replace(" was", " were")
+
+    if fact.find("you squints") != -1 or fact.find("they squints") != -1 or fact.find("dey squints") != -1 or fact.find("y'all squints") != -1 or fact.find("we squints") != -1 or fact.find("thou squints") != -1 or fact.find("ya squints") != -1:
+        fact = fact.replace(" squints and turns", " squint and turn")
+
+    if fact.find("together was") != -1:
+        fact = fact.replace("together was", "together were")
+
+    if fact.find(" me looks") != -1:
+        fact = fact.replace(" me looks", " I look")
+
+    if fact.find("thou have") != -1:
+        fact = fact.replace("thou have", "thou hast")
+
+    if fact.find("have gave") != -1:
+        fact = fact.replace("have gave", "have given")
+
+    if fact.find("have wrote") != -1:
+        fact = fact.replace("have wrote", "have written")
+
+    if fact.find("have broke") != -1:
+        fact = fact.replace("have broke", "have broken")
+
+    if fact.find("have saw") != -1:
+        fact = fact.replace("have saw", "have seen")
+
+    if fact.find("have did") != -1:
+        fact = fact.replace("have did", "have done")
+
+    if fact.find("have punched") != -1:
+        fact = fact.replace("have punched", "have been punched")
+
+    if fact.find("have squirted") != -1:
+        fact = fact.replace("have squirted", "have been squirted")
+    
+    if fact.find("have wore") != -1:
+        fact = fact.replace("have wore", "have worn")
+
+    if fact.find("have was") != -1:
+        fact = fact.replace("have was", "have been")
+
+    if fact.find("with only!") != -1:
+        fact = fact.replace("with only!", "with!")
+
+    if fact.find("been was") != -1:
+        fact = fact.replace("been was", "been ")
+
+    if fact.find("people was") != -1:
+        fact = fact.replace("people was", "people were")
+
+    if fact.find("have ate") != -1:
+        fact = fact.replace("have ate", "have eaten")
+
+    if fact.find("have hired") != -1:
+        fact = fact.replace("have hired", "have been hired")
+
+    if fact.find("have took") != -1:
+        fact = fact.replace("have took", "have taken")
+
+    if fact.find("have threw") != -1:
+        fact = fact.replace("have threw", "have thrown")
+
+    if fact.find(" an a ") != -1:
+        fact = fact.replace(" an a ", " a ")
+
+    if fact.find(" an an ") != -1:
+        fact = fact.replace(" an an ", " an ")
+
+    if fact.find(" Of A ") != -1:
+        fact = fact.replace(" Of A ", " of a ")
+
+    if fact.find("siss") != -1:
+        fact = fact.replace("siss", "sisters")
+
+    if fact.find("S ") != -1:
+        fact = fact.replace("S ", "s ")
+
+    if fact.find("pss") != -1:
+        fact = fact.replace("pss", "pses")
+
+    if fact.find("puss") != -1:
+        fact = fact.replace("puss", "puses")
+
+    if fact.find("ancreass") != -1:
+        fact = fact.replace("ancreass", "ancreases")
+
+    if fact.find("ligarches") != -1:
+        fact = fact.replace("ligarches", "ligarchs")
+
+    if fact.find("ruely") != -1:
+        fact = fact.replace("ruely", "ruly")
+
+    if fact.find("hocolateily") != -1:
+        fact = fact.replace("hocolateily", "hocolately")
+
+    if fact.find("olfs") != -1:
+        fact = fact.replace("olfs", "olves")
+
+    if fact.find("iefs") != -1:
+        fact = fact.replace("iefs", "ieves")
+
+    if fact.find("thou'll") != -1:
+        fact = fact.replace("thou'll", "thou shalt")
+    
+    if fact.find("'S") != -1:
+        fact = fact.replace("'S", "'s", 1)
+
+    if fact.find("me's") != -1 and fact.find("Aime's") == -1 and fact.find("Rome's") == -1 and fact.find("Supreme's") == -1:
+        fact = fact.replace("me's", "my")
+
+    if fact.find("you's") != -1:
+        fact = fact.replace("you's", "your")
+
+    if fact.find(" ya'll ") != -1:
+        fact = fact.replace(" ya'll ", " y'all'll ")
+
+    if fact.find("foots") != -1:
+        fact = fact.replace("foots", "feet")
+
+    if fact.find("icly ") != -1 and fact.find("chicly") == -1 and fact.find("publicly") == -1:
+        fact = fact.replace("icly ", "ically ")
+
+    if fact.find("a proletariat") != -1:
+        fact = fact.replace("a proletariat", "the proletariat")
+
+    if fact.find("a Proletariat") != -1:
+        fact = fact.replace("a Proletariat", "the Proletariat")
+
+    if fact.find("proletariats") != -1:
+        fact = fact.replace("proletariats", "the proletariat")
+
+    if fact.find("a bourgeoisie") != -1:
+        fact = fact.replace("a bourgeoisie", "the bourgeoisie")
+
+    if fact.find("a Bourgeoisie") != -1:
+        fact = fact.replace("a Bourgeoisie", "the Bourgeoisie")
+
+    if fact.find("bourgeoisies") != -1:
+        fact = fact.replace("bourgeoisies", "the bourgeoisie")
 
     if fact.find("\'s\'s") != -1:
         fact = fact.replace("\'s\'s", "s\'")
