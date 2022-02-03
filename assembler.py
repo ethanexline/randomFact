@@ -3,10 +3,10 @@ import lists
 import utility
 
 def returnFact():
-    #fact = utility.getRand(lists.begs) + " " + utility.getRand(lists.parties) + " " + utility.getRand(lists.verbs) + " " + utility.getRand(lists.parties) + utility.getRand(lists.ends)
+    fact = utility.getRand(lists.begs) + " " + utility.getRand(lists.parties) + " " + utility.getRand(lists.verbs) + " " + utility.getRand(lists.parties) + utility.getRand(lists.ends)
     #fact = "* gravy, * sauce, * syrup, * concentrate, *CCMan, *CCLand, the World's Smallest *CC." # juicy test fact
     #fact = "*---free *, *CC---Free *CC, less-than-*---flavored, More-Than-*CC---Free" # I like this test too
-    fact = 'Despite a lifelong battle with dyslexia,' # real test
+    #fact = 'Despite a lifelong battle with dyslexia,' # real test
 
     while (fact.find("_") != -1 or fact.find("#") != -1 or fact.find("@") != -1 or fact.find("&") != -1 or fact.find("+") != -1 or fact.find("^") != -1 or fact.find("|") != -1 
     or fact.find("=") != -1 or fact.find("%%") != -1 or fact.find("$") != -1 or fact.find("QQ") != -1 or fact.find("VV") != -1 or fact.find("~") != -1 or fact.find("*") != -1
@@ -759,9 +759,6 @@ def returnFact():
     if fact.find("have threw") != -1:
         fact = fact.replace("have threw", "have thrown")
 
-    if fact.find("roletariats") != -1:
-        fact = fact.replace("roletariats", "roletariat")
-
     if fact.find(" an a ") != -1:
         fact = fact.replace(" an a ", " a ")
 
@@ -837,6 +834,9 @@ def returnFact():
     if fact.find("a Proletariat") != -1:
         fact = fact.replace("a Proletariat", "the Proletariat")
 
+    if fact.find("proletariats") != -1:
+        fact = fact.replace("proletariats", "the proletariat")
+
     if fact.find("a bourgeoisie") != -1:
         fact = fact.replace("a bourgeoisie", "the bourgeoisie")
 
@@ -845,9 +845,6 @@ def returnFact():
 
     if fact.find("bourgeoisies") != -1:
         fact = fact.replace("bourgeoisies", "the bourgeoisie")
-
-    if fact.find("proletariats") != -1:
-        fact = fact.replace("proletariats", "the proletariat")
 
     if fact.find("Creamof") != -1:
         fact = fact.replace("Creamof", "CreamOf")
