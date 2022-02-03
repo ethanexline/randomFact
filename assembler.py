@@ -3,10 +3,10 @@ import lists
 import utility
 
 def returnFact():
-    fact = utility.getRand(lists.begs) + " " + utility.getRand(lists.parties) + " " + utility.getRand(lists.verbs) + " " + utility.getRand(lists.parties) + utility.getRand(lists.ends)
+    #fact = utility.getRand(lists.begs) + " " + utility.getRand(lists.parties) + " " + utility.getRand(lists.verbs) + " " + utility.getRand(lists.parties) + utility.getRand(lists.ends)
     #fact = "* gravy, * sauce, * syrup, * concentrate, *CCMan, *CCLand, the World's Smallest *CC." # juicy test fact
     #fact = "*---free *, *CC---Free *CC, less-than-*---flavored, More-Than-*CC---Free" # I like this test too
-    #fact = 'Despite a lifelong battle with dyslexia,' # real test
+    fact = '' # real test
 
     while (fact.find("_") != -1 or fact.find("#") != -1 or fact.find("@") != -1 or fact.find("&") != -1 or fact.find("+") != -1 or fact.find("^") != -1 or fact.find("|") != -1 
     or fact.find("=") != -1 or fact.find("%%") != -1 or fact.find("$") != -1 or fact.find("QQ") != -1 or fact.find("VV") != -1 or fact.find("~") != -1 or fact.find("*") != -1
@@ -45,7 +45,24 @@ def returnFact():
             fact = fact.replace("&", utility.randNum(), 1)
 
         if fact.find("+") != -1:
-            fact = fact.replace("+", utility.getRand(lists.places), 1)
+            replacement = utility.getRand(lists.places)
+            if fact.find("+CC") != -1:
+                replacement = replacement.title()
+                if replacement.find("^") != -1 and replacement.find("^CC") == -1:
+                    replacement = replacement.replace("^", "^CC")
+                if replacement.find("=") != -1 and replacement.find("=CC") == -1:
+                    replacement = replacement.replace("=", "=CC")
+                if replacement.find("$") != -1 and replacement.find("$CC") == -1:
+                    replacement = replacement.replace("$", "$CC")
+                if replacement.find("Vv") != -1:
+                    replacement = replacement.replace("Vv", "VVCC")
+                if replacement.find("Qq") != -1:
+                    replacement = replacement.replace("Qq", "QQCC")
+                if replacement.find("@") != -1:
+                    replacement = replacement.replace("@", "@CC")
+                fact = fact.replace("+CC", replacement, 1)
+            else:
+                fact = fact.replace("+", replacement, 1)
 
         while fact.find("^CC$CC") != -1:
             adjective = utility.getRand(lists.adjectives).title().replace(" ", "").replace("-", "")
@@ -325,6 +342,8 @@ def returnFact():
                     replacement = replacement.replace("%%", "%%CC")
                 if replacement.find("@") != -1:
                     replacement = replacement.replace("@", "@CC")
+                if replacement.find("+") != -1:
+                    replacement = replacement.replace("+", "+CC")
                 fact = fact.replace("%%CC", replacement, 1)
             else:
                 fact = fact.replace("%%", replacement, 1)
