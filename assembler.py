@@ -3,10 +3,10 @@ import lists
 import utility
 
 def returnFact():
-    fact = utility.getRand(lists.begs) + " " + utility.getRand(lists.parties) + " " + utility.getRand(lists.verbs) + " " + utility.getRand(lists.parties) + utility.getRand(lists.ends)
+    #fact = utility.getRand(lists.begs) + " " + utility.getRand(lists.parties) + " " + utility.getRand(lists.verbs) + " " + utility.getRand(lists.parties) + utility.getRand(lists.ends)
     #fact = "* gravy, * sauce, * syrup, * concentrate, *CCMan, *CCLand, the World's Smallest *CC." # juicy test fact
     #fact = "*---free *, *CC---Free *CC, less-than-*---flavored, More-Than-*CC---Free" # I like this test too
-    #fact = "Epiglottiss." # real test
+    fact = 'Despite a lifelong battle with dyslexia,' # real test
 
     while (fact.find("_") != -1 or fact.find("#") != -1 or fact.find("@") != -1 or fact.find("&") != -1 or fact.find("+") != -1 or fact.find("^") != -1 or fact.find("|") != -1 
     or fact.find("=") != -1 or fact.find("%%") != -1 or fact.find("$") != -1 or fact.find("QQ") != -1 or fact.find("VV") != -1 or fact.find("~") != -1 or fact.find("*") != -1
@@ -618,7 +618,7 @@ def returnFact():
     if fact.find("yly") != -1:
         fact = fact.replace("yly", "ily")
 
-    if fact.find("ys") != -1 and fact.find("hysic") == -1 and fact.find("MySpace") == -1 and fact.find("onkeys") == -1 and fact.find("Cowboys") == -1 and fact.find("oneys") == -1 and fact.find("Abyss") == -1 and fact.find("ays") == -1:
+    if fact.find("ys") != -1 and fact.find("hysic") == -1 and fact.find("MySpace") == -1 and fact.find("onkeys") == -1 and fact.find("Cowboys") == -1 and fact.find("oneys") == -1 and fact.find("Abyss") == -1 and fact.find("ays") == -1 and fact.find("yslexia") == -1:
         fact = fact.replace("ys", "ies")
 
     if fact.find("a the") != -1 and fact.find("Grandpa") == -1:
@@ -669,7 +669,7 @@ def returnFact():
     if fact.find("s-y") != -1 or fact.find("s-flavored") != -1:
         fact = fact.replace("s-", "-")
 
-    if fact.find("ragu ") != -1 or fact.find("ragu-") != -1 or fact.find("ragu,") != -1 or fact.find("ragu.") != -1:
+    if fact.find("ragu ") != -1 or fact.find("ragu-") != -1 or fact.find("ragu,") != -1 or fact.find("ragu.") != -1 or fact.find("ragu!") != -1 or fact.find("ragu?") != -1:
         fact = fact.replace("ragu", "ragus")
 
     if fact.find("Abys") != -1 and fact.find("Abyss") == -1:

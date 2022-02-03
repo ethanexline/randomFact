@@ -217,10 +217,10 @@ foods = ["broccoli", "carrots", "cabbages", "cauliflower", "celery", "creamed co
 
 interjection = ["OK", "alright", "cool", "whatever", "great", "perfect", "who\'d have thought", "yikes", "ouch", "thank goodness", "awkward", "awesome", "sheesh", "darn it all", 
 "shoot", "how ^", "that's too bad", "how sad", "uh oh", "for pete\'s sake", "for crying out loud", "tough *", "how frustrating", "how embarrassing", "hmm", "what a show of |",
-"never seen such |", "takes QQ | away", "bless QQ heart", "watch out", "preposterous", "wonderful", "for *'s sake", "tarnation", "consarnit", "^", "nice", "how dare @", 
+"never seen such |", "takes QQ | away", "bless QQ heart", "watch out", "preposterous", "wonderful", "for *'s sake", "tarnation", "consarnit", "^", "nice", "how dare @", "well I\'ll be a =\'s *",
 "what |", "welp", "oh well", "gadzooks", "eureka", "aw man", "forsooth", "alas", "amen", "how could this be", "it can't be true", utility.madeUpWord(False), "golly", "yay", "!! don\'t care",
 "crikey", "exclamation", "for |\'s sake", "what a =", "double drat", "so", "haha", "cringe", "don\'t get me started", "well slap my $ and call me a VV", "well, ??", "sorry",
-"hallelujah", "my my", "oh my", "holy =", "holy *", "really", "oh yeah", "uh-huh", "VV of a =", "well I'll be a ='s VV"]
+"hallelujah", "my my", "oh my", "holy =", "holy *", "really", "oh yeah", "uh-huh", "VV of a =", "well I\'ll be a =\'s VV", "well slap my $ and call me a =", "well I\'ll be a VV\'s ="]
 
 # ideas: quantities, occasions, colors
 # less necessary but still options: sports, languages, nationalities, countries?, cities?
