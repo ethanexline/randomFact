@@ -1186,11 +1186,11 @@ def returnFact():
     if fact.find("ummu") != -1 and fact.find("ummus") == -1:
         fact = fact.replace("ummu", "ummus")
 
-    if fact.find("mans'") != -1 and fact.find("rangutans'") == -1:
-        fact = fact.replace("mans'", "en's")
+    if fact.find("mans'") != -1 and fact.find("rangutans'") == -1 and fact.find("umans'") == -1:
+        fact = fact.replace("ans'", "en's")
 
-    if fact.find("mans ") != -1 and fact.find("rangutans ") == -1:
-        fact = fact.replace("mans ", "en ")
+    if fact.find("mans ") != -1 and fact.find("rangutans ") == -1 and fact.find("umans ") == -1:
+        fact = fact.replace("ans ", "en ")
 
     if fact.find("AlcoholLand") != -1:
         fact = fact.replace("AlcoholLand", "AlcoHolland")
