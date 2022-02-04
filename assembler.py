@@ -1307,7 +1307,7 @@ def returnFact():
     if fact.find('A e') != -1:
         fact = fact.replace('A e', 'An e')
 
-    if fact.find('A i') != -1 and fact.find("IKEA") == -1:
+    if fact.find('A i') != -1:
         fact = fact.replace('A i', 'An i')
 
     if fact.find('A o') != -1:
@@ -1319,8 +1319,11 @@ def returnFact():
     if fact.find('A E') != -1:
         fact = fact.replace('A E', 'An E')
 
-    if fact.find('A I') != -1 and fact.find('IKEA') == -1:
+    if fact.find('A I') != -1:
         fact = fact.replace('A I', 'An I')
+
+    if fact.find('A O') != -1:
+        fact = fact.replace('A O', 'An O')
 
     if fact.find('Ikea') != -1:
         fact = fact.replace('Ikea', 'IKEA')
@@ -1358,8 +1361,8 @@ def returnFact():
     if fact.find(' Ai ') != -1:
         fact = fact.replace(' Ai ', ' AI ')
 
-    if fact.find('A O') != -1:
-        fact = fact.replace('A O', 'An O')
+    if fact.find("IKEAn") != -1 or fact.find("MRSAn") != -1 or fact.find("NSAn") != -1 or fact.find("CIAn") != -1:
+        fact = fact.replace("An ", "A")
 
     if fact.find(" 1 dollars") != -1 or fact.find('"1 dollars') != -1:
         fact = fact.replace("1 dollars", "1 dollar")
