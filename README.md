@@ -1,3 +1,3 @@
-# randomFactBot
+# randomFact
 Just a goofy program that spits out ridiculous sentences.
-It's slowly becoming a cross-disciplinary project that will include a Twitter bot and an API endpoint.
+It has become a cross-disciplinary project that includes a Twitter bot and an API endpoint.
