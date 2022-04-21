@@ -1,4 +1,4 @@
-from random import randint
+from random import randint, choice
 
 def randYear():
     year = randint(-5000, 3000)
@@ -13,16 +13,12 @@ def randNum():
     num = randint(0, 100)
     return str(num)
 
-def getRand(group):
-    index = randint(0, len(group) - 1)
-    return group[index]
-
 def madeUpWord(c):
     i = 0
     word = ""
     numGoes = randint(3, 6)
     
-    wordParts = ["tel", "mon", "sup", "ne", "welt", "so", "sc", "wer", "ont", "onc", "chen", "ber", "ni", "clo", "shlo", "din", "ger", "que", "nte", "zel", "phi", "chur", "pret", 
+    wordParts = ["tel", "mon", "sup", "ner", "welt", "so", "sc", "wer", "ont", "onc", "chen", "ber", "ni", "clo", "shlo", "din", "ger", "que", "nte", "zel", "phi", "chur", "pret", 
     "ker", "ble", "ret", "but", "orn", "pel", "ton", "ex", "neef", "glut", "vri", "sta", "neb", "mud", "sted", "preen", "op", "pusk", "mit", "rosc", "ey", "flong", "delp", "per",
     "tod", "deg", "nan", "bre", "pley", "stel", "chag", "zeet", "bot", "norb", "blet", "ling", "tion", "twog", "wit", "milg", "gleem", "ster", "vred", "wask", "ley", "dang", 
     "dled", "yep", "yod", "flit", "cow", "slam", "stle", "sten", "onc", "ology", "bia", "fred", "nkey", "ma", "no", "yes", "ey", "chew", "low", "fled", "donk", "ot", "man", "wo", 
@@ -41,7 +37,7 @@ def madeUpWord(c):
     "blub", "philia", "\'ton", "sneek", "chotchni", "ccio", "piis", "teef"]
 
     while i < numGoes:
-        word += getRand(wordParts)
+        word += choice(wordParts)
         i += 1
 
     if c:

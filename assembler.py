@@ -1,11 +1,14 @@
 import re
 import lists
 import utility
+from random import choice, seed
 
-def returnFact(fact = utility.getRand(lists.begs) + " " + utility.getRand(lists.parties) + " " + utility.getRand(lists.verbs) + " " + utility.getRand(lists.parties) + utility.getRand(lists.ends)):
+def returnFact():
+    seed()
+    fact = choice(lists.begs) + " " + choice(lists.parties) + " " + choice(lists.verbs) + " " + choice(lists.parties) + choice(lists.ends)
     #fact = "* gravy, * sauce, * syrup, * concentrate, *CCMan, *CCLand, the World's Smallest *CC." # juicy test fact
     #fact = "*---free *, *CC---Free *CC, less-than-*---flavored, More-Than-*CC---Free" # I like this test too
-    +fact = '$---to-$--' # real test
+    #fact = '$---to-$--' # real test
 
     while (fact.find("_") != -1 or fact.find("#") != -1 or fact.find("@") != -1 or fact.find("&") != -1 or fact.find("+") != -1 or fact.find("^") != -1 or fact.find("|") != -1 
     or fact.find("=") != -1 or fact.find("%%") != -1 or fact.find("$") != -1 or fact.find("QQ") != -1 or fact.find("VV") != -1 or fact.find("~") != -1 or fact.find("*") != -1
@@ -17,13 +20,13 @@ def returnFact(fact = utility.getRand(lists.begs) + " " + utility.getRand(lists.
             fact = fact.replace("----", "--")
             
         if fact.find("_") != -1:
-            fact = fact.replace("_", utility.getRand(lists.companies), 1)
+            fact = fact.replace("_", choice(lists.companies), 1)
 
         if fact.find("#") != -1:
             fact = fact.replace("#", utility.randYear(), 1)
 
         if fact.find("@") != -1:
-            replacement = utility.getRand(lists.celebs)
+            replacement = choice(lists.celebs)
             if fact.find("@CC") != -1:
                 replacement = replacement.title()
                 if replacement.find("^") != -1 and replacement.find("^CC") == -1:
@@ -44,7 +47,7 @@ def returnFact(fact = utility.getRand(lists.begs) + " " + utility.getRand(lists.
             fact = fact.replace("&", utility.randNum(), 1)
 
         if fact.find("+") != -1:
-            replacement = utility.getRand(lists.places)
+            replacement = choice(lists.places)
             if fact.find("+CC") != -1:
                 replacement = replacement.title()
                 if replacement.find("^") != -1 and replacement.find("^CC") == -1:
@@ -64,7 +67,7 @@ def returnFact(fact = utility.getRand(lists.begs) + " " + utility.getRand(lists.
                 fact = fact.replace("+", replacement, 1)
 
         while fact.find("^CC$CC") != -1:
-            adjective = utility.getRand(lists.adjectives).title().replace(" ", "").replace("-", "").replace("'", "")
+            adjective = choice(lists.adjectives).title().replace(" ", "").replace("-", "").replace("'", "")
             if adjective.find("^") != -1:
                 adjective = adjective.replace("^", "^CC")
             if adjective.find("*") != -1:
@@ -80,7 +83,7 @@ def returnFact(fact = utility.getRand(lists.begs) + " " + utility.getRand(lists.
             if adjective.find("Qq") != -1:
                 adjective = adjective.replace("Qq", "QQCC")
 
-            part = utility.getRand(lists.parts).title().replace(" ", "").replace("-", "")
+            part = choice(lists.parts).title().replace(" ", "").replace("-", "")
             if part.find("^") != -1:
                 part = part.replace("^", "^CC")
             if part.find("*") != -1:
@@ -101,7 +104,7 @@ def returnFact(fact = utility.getRand(lists.begs) + " " + utility.getRand(lists.
             fact = fact.replace("^CC$CC", adjective + part, 1)
 
         while fact.find("^CC=CC") != -1:
-            adjective = utility.getRand(lists.adjectives).title().replace(" ", "").replace("-", "").replace("'", "")
+            adjective = choice(lists.adjectives).title().replace(" ", "").replace("-", "").replace("'", "")
             if adjective.find("^") != -1:
                 adjective = adjective.replace("^", "^CC")
             if adjective.find("*") != -1:
@@ -117,7 +120,7 @@ def returnFact(fact = utility.getRand(lists.begs) + " " + utility.getRand(lists.
             if adjective.find("Qq") != -1:
                 adjective = adjective.replace("Qq", "QQCC")
 
-            animal = utility.getRand(lists.animals).title().replace(" ", "").replace("-", "")
+            animal = choice(lists.animals).title().replace(" ", "").replace("-", "")
             if animal.find("^") != -1:
                 animal = animal.replace("^", "^CC")
             if animal.find("*") != -1:
@@ -139,9 +142,9 @@ def returnFact(fact = utility.getRand(lists.begs) + " " + utility.getRand(lists.
 
         if fact.find("^") != -1:
             if fact.find("^Cheese") != -1:
-                fact = fact.replace("^", utility.getRand(lists.adjectives).title().replace(" ", "").replace("\'", "").replace("-", ""), 1)
+                fact = fact.replace("^", choice(lists.adjectives).title().replace(" ", "").replace("\'", "").replace("-", ""), 1)
             elif fact.find("^CCMan") != -1:
-                replacement = utility.getRand(lists.adjectives)
+                replacement = choice(lists.adjectives)
                 if replacement.find("^") != -1:
                     replacement = replacement.title().replace(" ", "").replace("\'", "").replace("-", "")
                     replacement = replacement.replace("^", "^CC")
@@ -149,7 +152,7 @@ def returnFact(fact = utility.getRand(lists.begs) + " " + utility.getRand(lists.
                 else:
                     fact = fact.replace("^CCMan", replacement.title().replace(" ", "").replace("\'", "").replace("-", "") + "Man", 1)
             elif fact.find("^CCLand") != -1:
-                replacement = utility.getRand(lists.adjectives)
+                replacement = choice(lists.adjectives)
                 if replacement.find("^") != -1:
                     replacement = replacement.title().replace(" ", "").replace("\'", "").replace("-", "")
                     replacement = replacement.replace("^", "^CC")
@@ -161,7 +164,7 @@ def returnFact(fact = utility.getRand(lists.begs) + " " + utility.getRand(lists.
                 else:
                     fact = fact.replace("^CCLand", replacement.title().replace(" ", "").replace("\'", "").replace("-", "") + "Land", 1)
             elif fact.find("^CC-^CCLand") != -1:
-                replacement = utility.getRand(lists.adjectives)
+                replacement = choice(lists.adjectives)
                 if replacement.find("^") != -1:
                     replacement = replacement.replace(" ", "-")
                     replacement = replacement.title().replace("\'", "")
@@ -172,17 +175,17 @@ def returnFact(fact = utility.getRand(lists.begs) + " " + utility.getRand(lists.
                 else:
                     fact = fact.replace("^CC-^CCLand", replacement.title().replace(" ", "-").replace("\'", "") + " ^CCLand", 1)
             elif fact.find("^--") != -1:
-                replacement = utility.getRand(lists.adjectives)
+                replacement = choice(lists.adjectives)
                 if replacement.find(" ") != -1: 
                     replacement = replacement.replace(" ", "-")
                 fact = fact.replace("^--", replacement, 1)
             elif fact.find("^CC--") != -1:
-                replacement = utility.getRand(lists.adjectives).title()
+                replacement = choice(lists.adjectives).title()
                 if replacement.find(" ") != -1: 
                     replacement = replacement.replace(" ", "-")
                 fact = fact.replace("^--", replacement, 1)
             elif fact.find("^CC") != -1:
-                replacement = utility.getRand(lists.adjectives)
+                replacement = choice(lists.adjectives)
                 changed = False
                 if (len(replacement.split(" ")) > 1 or len(replacement.split("-")) > 1) and fact[0] != "^":
                     replacement = replacement.title()
@@ -208,10 +211,10 @@ def returnFact(fact = utility.getRand(lists.begs) + " " + utility.getRand(lists.
                 else:
                     fact = fact.replace("^CC", replacement.capitalize(), 1)
             else:
-                fact = fact.replace("^", utility.getRand(lists.adjectives), 1)
+                fact = fact.replace("^", choice(lists.adjectives), 1)
 
         if fact.find("|") != -1:
-            replacement = utility.getRand(lists.concepts)
+            replacement = choice(lists.concepts)
             if fact.find("|CC") != -1:
                 replacement = replacement.title()
                 if replacement.find("^") != -1:
@@ -232,22 +235,22 @@ def returnFact(fact = utility.getRand(lists.begs) + " " + utility.getRand(lists.
                     replacement = replacement.replace("%%", "%%CC")
                 fact = fact.replace("|CC", replacement, 1)
             else:
-                fact = fact.replace("|", utility.getRand(lists.concepts), 1)
+                fact = fact.replace("|", choice(lists.concepts), 1)
 
         if fact.find("QQ") != -1:
             if fact.find("QQCC") != -1:
-                replacement = utility.getRand(lists.possessives)
+                replacement = choice(lists.possessives)
                 if replacement.find("VV") != -1:
                     replacement = replacement.replace("VV", "VVCC", 1)
                     fact = fact.replace("QQCC", replacement, 1)
                 else:
                     fact = fact.replace("QQCC", replacement.capitalize(), 1)
             else:
-                fact = fact.replace("QQ", utility.getRand(lists.possessives), 1)
+                fact = fact.replace("QQ", choice(lists.possessives), 1)
 
         if fact.find("VV") != -1:
             if fact.find("VVCC") != -1:
-                replacement = utility.getRand(lists.family)
+                replacement = choice(lists.family)
                 if len(replacement.split(" ")) > 1:
                     if replacement.split(" ")[0].find("QQ") != -1:
                         replacement = replacement.replace("QQ", "QQCC", 1)
@@ -273,32 +276,32 @@ def returnFact(fact = utility.getRand(lists.begs) + " " + utility.getRand(lists.
                     else:
                         fact = fact.replace("VVCC", replacement.capitalize(), 1)
             else:
-                fact = fact.replace("VV", utility.getRand(lists.family), 1)
+                fact = fact.replace("VV", choice(lists.family), 1)
 
         if fact.find("=") != -1:
             if fact.find("= =") != -1:
-                fact = fact.replace("= =", utility.getRand(lists.animals).title().replace(" ", "") + utility.getRand(lists.animals).title().replace(" ", ""), 1)
+                fact = fact.replace("= =", choice(lists.animals).title().replace(" ", "") + choice(lists.animals).title().replace(" ", ""), 1)
             elif fact.find("=CCMan") != -1:
-                replacement = utility.getRand(lists.animals)
+                replacement = choice(lists.animals)
                 if replacement.find("VV") != -1:
                     replacement = replacement.replace("VV", "VVCC", 1)
                 if replacement.find("=") != -1:
                     replacement = replacement.replace("=", "=CC", 1).replace(" ", "")
                 fact = fact.replace("=CCMan", replacement.title().replace(" ", "") + "Man", 1)
             elif fact.find("=CCLand") != -1:
-                replacement = utility.getRand(lists.animals)
+                replacement = choice(lists.animals)
                 if replacement.find("VV") != -1:
                     replacement = replacement.replace("VV", "VVCC", 1)
                 if replacement.find("=") != -1:
                     replacement = replacement.replace("=", "=CC", 1).replace(" ", "")
                 fact = fact.replace("=CCLand", replacement.title().replace(" ", "").replace("\'", "").replace("-", "") + "Land", 1)
             elif fact.find("=CC--") != -1:
-                replacement = utility.getRand(lists.animals).title()
+                replacement = choice(lists.animals).title()
                 if replacement.find(" ") != -1:
                     replacement = replacement.replace(" ", "-")
                 fact = fact.replace("=CC--", replacement, 1)
             elif fact.find("=CC") != -1:
-                replacement = utility.getRand(lists.animals).title()
+                replacement = choice(lists.animals).title()
                 if replacement.find("=") != -1:
                     replacement = replacement.replace("=", "=CC")
                 if ((fact.find("Land") != -1 or fact.find("Man") != -1) and (fact[fact.find("Land") - 1] == "C" or fact[fact.find("Man") - 1] == "C")) and replacement.find(" ") != -1:
@@ -310,16 +313,16 @@ def returnFact(fact = utility.getRand(lists.begs) + " " + utility.getRand(lists.
                     replacement = replacement.title().replace(" ", "-")
                 fact = fact.replace("=CC", replacement, 1)
             elif fact.find("=--") != -1:
-                replacement = utility.getRand(lists.animals)
+                replacement = choice(lists.animals)
                 replacement = replacement.replace("=", "=--")
                 if replacement.find(" ") != -1:
                     replacement = replacement.replace(" ", "-", 1)
                 fact = fact.replace("=--", replacement, 1)
             else:
-                fact = fact.replace("=", utility.getRand(lists.animals), 1)
+                fact = fact.replace("=", choice(lists.animals), 1)
 
         if fact.find("%%") != -1:
-            replacement = utility.getRand(lists.parties)
+            replacement = choice(lists.parties)
             if fact.find("%%CC") != -1:
                 replacement = replacement.title()
                 if replacement.find("^") != -1:
@@ -349,7 +352,7 @@ def returnFact(fact = utility.getRand(lists.begs) + " " + utility.getRand(lists.
                 fact = fact.replace("%%", replacement, 1)
 
         if fact.find("$") != -1:
-            replacement = utility.getRand(lists.parts)
+            replacement = choice(lists.parts)
             if fact.find("$--") != -1:
                 replacement = replacement.replace("$", "$--")
                 replacement = replacement.replace("*", "*--")
@@ -377,7 +380,7 @@ def returnFact(fact = utility.getRand(lists.begs) + " " + utility.getRand(lists.
                 fact = fact.replace("$", replacement, 1)
 
         if fact.find("~") != -1:
-            replacement = utility.getRand(lists.disease)
+            replacement = choice(lists.disease)
             if fact.find("~CC") != -1:
                 replacement = replacement.title()
                 if replacement.find("^") != -1:
@@ -394,10 +397,10 @@ def returnFact(fact = utility.getRand(lists.begs) + " " + utility.getRand(lists.
                     replacement = replacement.replace("Qq", "QQCC")
                 fact.replace("~CC", replacement, 1)
             else:
-                fact = fact.replace("~", utility.getRand(lists.disease), 1)
+                fact = fact.replace("~", choice(lists.disease), 1)
 
         if fact.find("*") != -1:
-            replacement = utility.getRand(lists.foods)
+            replacement = choice(lists.foods)
             if fact.find("Man") != -1 and fact[fact.find("Man") - 1] == "C":
                 replacement = replacement[:-1].title() if replacement[-1] == "s" else replacement.title()
                 if replacement.find("*") != -1:
@@ -525,13 +528,13 @@ def returnFact(fact = utility.getRand(lists.begs) + " " + utility.getRand(lists.
                     replacement = replacement.replace("Qq", "QQCC")
                 fact = fact.replace("??CC", replacement, 1)
             else:
-                fact = fact.replace("??", utility.getRand(lists.interjection), 1)
+                fact = fact.replace("??", choice(lists.interjection), 1)
 
         if fact.find("!!") != -1:
             if fact.find("!!!") != -1:
-                fact = fact.replace("!!!", utility.getRand(lists.pronounsObject), 1)
+                fact = fact.replace("!!!", choice(lists.pronounsObject), 1)
             else:
-                fact = fact.replace("!!", utility.getRand(lists.pronounsSubject))
+                fact = fact.replace("!!", choice(lists.pronounsSubject))
 
         if fact.find("Vv") != -1:
             fact = fact.replace("Vv", "VVCC")
@@ -951,8 +954,11 @@ def returnFact(fact = utility.getRand(lists.begs) + " " + utility.getRand(lists.
     if fact.find('louss') != -1:
         fact = fact.replace('louss', 'louses')
 
-    if fact[fact.find("iss") + 3] == " " or fact[fact.find("iss") + 3] == "-" or fact[fact.find("iss") + 3] == "'" or fact[fact.find("iss") + 3] == "." or fact[fact.find("iss") + 3] == "," or fact[fact.find("iss") + 3] == "!" or fact[fact.find("iss") + 3] == "?":
-        fact = fact.replace("iss", "ises")
+    if fact.find("epidermiss") != -1:
+        fact = fact.replace("epidermiss", "epidermises")
+
+    if fact.find("epigottiss") != -1:
+        fact = fact.replace("epigottiss", "epigottises")
 
     if fact.find("hs") != -1 and fact.find("highs") == -1 and fact.find("ouths") == -1  and fact.find("oths") == -1 and fact.find("heetahs") == -1 and fact.find("ariahs") == -1:
         fact = fact.replace("hs", "hes")
@@ -1311,6 +1317,9 @@ def returnFact(fact = utility.getRand(lists.begs) + " " + utility.getRand(lists.
             fact = " ".join(newFact)
 
     fact = re.sub("(^|[.?!])\s*([a-zA-Z])", lambda p: p.group(0).upper(), fact)
+
+    if fact.find("\"\'s") != -1:
+        fact = fact.replace("\"\'s", "\'s\"")
 
     if fact.find('A a') != -1:
         fact = fact.replace('A a', 'An a')

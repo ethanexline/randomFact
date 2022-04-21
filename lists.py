@@ -1,4 +1,5 @@
 import utility
+from random import choice
 
 verbs = ["got", "chuggled", "fell in love with the idea of", "slurped", "locked eyes with", "consumed", "concieved", "started a ^ revolution around the idea of", "^ly chewed on",
 "won", "hired", "claimed", "started a standing ovation for", "delivered the keynote speech at a conference devoted to", "started a religion that worships", "punched the | out of",
@@ -30,7 +31,7 @@ verbs = ["got", "chuggled", "fell in love with the idea of", "slurped", "locked 
 "passed a case of ~ on to"]
 
 parties = ["a = wearing false $s", "the President of +", "the most ^ haircut of all time", "QQ $ (but & inches in length)", "a =", "Flat Earth Theory",
-"nuclear war", "white people", "^ people", "^ stool", "a = that " + utility.getRand(verbs) + " @", "the CFO of _", 'a new street gang called \"the ^CC VVCCs\"', '\"the ^CC VVCCs\"',
+"nuclear war", "white people", "^ people", "^ stool", "a = that " + choice(verbs) + " @", "the CFO of _", 'a new street gang called \"the ^CC VVCCs\"', '\"the ^CC VVCCs\"',
 "& push-ups", "a ^, ^ bodybuilder", "a = disguised as @", "a ^ly ^ Halloween costume", "the bathroom", "^ soup", "@\'s new $s", "^ *", "a highly ^ strain of ~",
  "a ^CC =CC Champion", "the annual _ dance-off", "Dracula (but if he was from +)", "a ^ly ^ handshake", "an extra set of $s", "a * dish with = meat", "^CC$CC", "^CC=CC",
 "^ly ^ *", "QQ ^ dentist", "@\'s accountant", "a mirror that makes you look ^ly ^", "gorgonzola cheese", "the CEO of _", "liquid *", "Obama\'s last name", "The World\'s Largest =CC",
@@ -57,12 +58,12 @@ begs = ["In other news,", "In light of today\'s events,", "Despite what !! may h
 "@ has released the following statement:", "The hidden country of " + utility.madeUpWord(True) + " is where", "To strike a balance between | and |,", "To fill QQ life with |,", 
 "To fill QQ $ with |,", "To impart | into QQ $, declare that", "To fill @ with |,", "^ly, !! has been made aware that", "If you ever visit +, ask the locals about how", 
 "It fills me with | to know that", "What if", "What !! teaches in schools now is that", "An unprecendented turn of events:", "If !! got out once in a while, !!'d know that",
-"Due to an outbreak of ~,", "History would never be the same after the day that", "Due to %% and QQ *,", "Before !! " + utility.getRand(verbs) + " %%,",
+"Due to an outbreak of ~,", "History would never be the same after the day that", "Due to %% and QQ *,", "Before !! " + choice(verbs) + " %%,",
 "I know it sounds ^, but", "%% tells me that", "All existing evidence suggests that", "We hold this truth to be self-evident, that", "Today's kids can\'t stop talking about how",
 "If !! wants to get kicked out of +, !! should say that", "Congress met today to discuss the issue of how", "Today's kids only worry about how",
 "^ band name suggestion:", "Our AI overlords wanted !!! to inform !!! that", "We regret to inform !!! that", "A ^ book premiers today which will reveal the story behind how", 
 "There is hope for %% as long as", "??, hope for humanity lost;", "?? -", "??;", "??,", "??...", "??!", "???", "The secret message on the back of the Constitution:",
-"Hope for humanity restored:", "Because of @\'s ^ |,", "In a display of ^ |,", "Since !! just contracted a ^ case of ~,", "After !! " + utility.getRand(verbs) + " %%,",]
+"Hope for humanity restored:", "Because of @\'s ^ |,", "In a display of ^ |,", "Since !! just contracted a ^ case of ~,", "After !! " + choice(verbs) + " %%,",]
 
 adjectives = ["dumb", "ugly", "brown", "campy", "proverbial", "obtuse", "arrogant", "swollen", "frightening", "hungry", "diseased", "naked", "squirming", "^---$--\'d", "surprising",
 "short", "rank", "malodorous", "cold", "long", "wide", "clammy", "strong", "stirring", "classy", "high-brow", "fat", "overweight", "wooden", "verdant", "al dente", "chewy", "fudgy",
@@ -105,7 +106,7 @@ ends = [" while @ was still president.", ", using QQ $ to chug a two-liter of li
 ", landing !!! in ^ water with +.", ", which @ then made a ^ joke about on _'s new social media platform.", ", which jumpstarted @\'s | for +\'s |.", "... ??.", ", ??!",
 ", making @ feel like a ^ =.", ", which gave @ ~.", ", which has to be the most ^ way to lose weight.", " - thanks a lot, VV!", ". ;)", "... ??!",
 ", which took a lot of |.", " to prove to QQ VV that !! has ^ |.", ", in hopes that it would make @ notice QQ |.", ", which prompted @ to have !!! cancelled.", 
-" - the three words I'd use to describe this would be ^, ^, and ^!", " - what a ^ time to be ^!", " - what a ^ way to have " + utility.getRand(verbs) + "!",
+" - the three words I'd use to describe this would be ^, ^, and ^!", " - what a ^ time to be ^!", " - what a ^ way to have " + choice(verbs) + "!",
 " by sitting and thinking very hard about %%.", " by the $ of @.", " - now that shows some ^ |!", " - now that takes some |!", " - seems a bit ^ to me...", ", which is SO not ^.", 
 ", giving everyone ~.", ", utilizing only %% and %%.", ", causing @ to break QQ $.", ", causing @ to instantly grow new $s.", ", after which @ got QQ $ pierced.", " - ??.",
 " - in other words, " + utility.madeUpWord(False) + ".", ", permanently eradicating ~.", ", which gave @ ~.", ", curing @'s severe case of ~.", ", which is how @ and @ met.", 
@@ -123,7 +124,7 @@ companies = ["Coca-Cola", "Monster Energy", "Frito-Lay", "Nestle", "Google", "Mi
 "Cost Cutters", "Dr. Pepper", "Pepsi", "GameStop", "|CC Inc", "$CCs-R-Us", "=CCs-R-Us", "Chuck-E-Cheese", "Candy Crush", "Angry Birds", "Staples", "OfficeMax", "PETA", "the CDC",
 "Instagram", "Netflix", "Snapchat", "Spotify", "Vine", "Twitch", "Hulu", "Unilever", "Perdue Pharma", "BetterHelp", "the CIA", "the FBI", "the Department of Justice",
 "the Department of Defense", "the NSA", "the FDA", "the US Government", utility.madeUpWord(True) + " Corp", "^CC$CC", "^CC=CC", "Studio Ghibli", "the Department of |CC", 
-"the Department of *CC", "the Department of =CCs"]
+"the Department of *CC", "the Department of =CCs", utility.madeUpWord(False).upper()]
 
 celebs = ["Dolly Parton", "Robert Pattinson", "the Geico =CC", "the = from Air Bud", "Keanu Reeves", "the Car =CC", "Crisp Rat",
 "Ben Shapiro", "PewDiePie", "Elvis", "Nickelback", "Guy Fieri", "Gordon Ramsay", "a =", "a ^ =", "a ^ =", "The ^CC Man", "a ^ piece of fruit", "Jennifer Lawrence",
@@ -167,7 +168,7 @@ animals = ["lion", "cat", "dog", "squid", "mollusk", "clam", "zebra", "axolotl",
 "porpoise", "frog", "pit bull", "eldritch horror", "dingo", "indeterminate bug", "hedgehog", "toucan", "turtle", "lizard", "toad", "tiger", "roach", "insect", "arachnid", 
 "cockroach", "butterfly", "caterpillar", "dragonfly", "behemoth", "mole", "mantis", "monster", "moth", "reptile", "amphibian", "mammal", "bird", "flamingo", "penguin", "baby",
 "centipede", "devil", "demon", "angel", "eagle", "hawk", "falcon", "owl", "parrot", "peacock", "pigeon", "man", "woman", "bard", "rogue", "paladin", "necromancer", "valkyrie", 
-"jester", "king", "technocrat", "oligarch", "dictator", "thief", "archer", "berserker", "viking", "spellsword", "alien", "platypus", "badger", "komodo dragon", 
+"jester", "king", "technocrat", "oligarch", "dictator", "thief", "archer", "berserker", "viking", "spellsword", "alien", "hyena", "platypus", "badger", "komodo dragon", 
 "stinko", "tortoise", "manta ray", "politician", "scientist", "astronaut", "doctor", "proletariat", "bourgeoisie", "pariah", "pope", "priest", "minion", "minstrel", "minister",
 "merchant", "mermaid", "seaman", "pirate", "monk", "ninja", "nun", "rottweiler", "weimaraner", "vischla", "vampire", "terrier", "hound", "warrior", "crane", "crony", "raven",
 "crow", "sparrow", "robin", "bat", "bee", "hornet", "yellowjacket", "wolverine", "wombat", "vagrant", "wabbit", "warthog", "weasel", "werewolf", "hagraven", "harpy", "hippogriff",
