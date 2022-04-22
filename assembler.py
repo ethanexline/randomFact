@@ -939,9 +939,6 @@ def returnFact():
     if fact.find("a the") != -1 and fact.find("Grandpa") == -1:
         fact = fact.replace("a the", "a")
 
-    if fact.find("sss") != -1:
-        fact = fact.replace("sss", "sses")
-
     if fact.find("ippopotamuss") != -1:
         fact = fact.replace("ippopotamuss", "ippopotamuses")
 
@@ -1004,6 +1001,9 @@ def returnFact():
 
     if fact.find("Abiess") != -1:
         fact = fact.replace("Abiess", "Abyss")
+
+    if fact.find("sss") != -1:
+        fact = fact.replace("sss", "sses")
     
     if fact.find("les-than") != -1:
         fact = fact.replace("les-than", "less-than")
