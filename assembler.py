@@ -933,7 +933,7 @@ def returnFact():
     if fact.find("yly") != -1:
         fact = fact.replace("yly", "ily")
 
-    if fact.find("ys") != -1 and fact.find("hysic") == -1 and fact.find("MySpace") == -1 and fact.find("onkeys") == -1 and fact.find("Cowboys") == -1 and fact.find("oneys") == -1 and fact.find("Abyss") == -1 and fact.find("ays") == -1 and fact.find("yslexia") == -1:
+    if fact.find("ys") != -1 and fact.find("hysic") == -1 and fact.find("MySpace") == -1 and fact.find("onkeys") == -1 and fact.find("Cowboys") == -1 and fact.find("oneys") == -1 and fact.find("ays") == -1 and fact.find("yslexia") == -1:
         fact = fact.replace("ys", "ies")
 
     if fact.find("a the") != -1 and fact.find("Grandpa") == -1:
@@ -990,8 +990,20 @@ def returnFact():
     if fact.find("ragu ") != -1 or fact.find("ragu-") != -1 or fact.find("ragu,") != -1 or fact.find("ragu.") != -1 or fact.find("ragu!") != -1 or fact.find("ragu?") != -1:
         fact = fact.replace("ragu", "ragus")
 
+    if fact.find("addys") != -1:
+        fact = fact.replace("addys", "addies")
+
+    if fact.find("lys") != -1:
+        fact = fact.replace("lys", "lies")
+
     if fact.find("Abys") != -1 and fact.find("Abyss") == -1:
         fact = fact.replace("Abys", "Abyss")
+
+    if fact.find("Abies") != -1:
+        fact = fact.replace("Abies", "Abyss")
+
+    if fact.find("Abiess") != -1:
+        fact = fact.replace("Abiess", "Abyss")
     
     if fact.find("les-than") != -1:
         fact = fact.replace("les-than", "less-than")
